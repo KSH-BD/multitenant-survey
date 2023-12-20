@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Multi-Select Tag Input</title>
+<style>
+.container {
+  width: 400px;
+  margin: 50px auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+}
+
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.selected-tag {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.selected-tag span {
+  margin-right: 5px;
+}
+
+.selected-tag button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <input type="text" id="tag-input" placeholder="Type and press Enter to add tags">
+  <div class="selected-tags"></div>
+</div>
+
+<script>
+  const tagInput = document.getElementById('tag-input');
+  const selectedTagsContainer = document.querySelector('.selected-tags');
+
+  tagInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' && tagInput.value !== '') {
+      const tag = document.createElement('div');
+      tag.classList.add('selected-tag');
+      tag.innerHTML = '<span>' + tagInput.value + '</span><button>x</button>';
+      selectedTagsContainer.appendChild(tag);
+
+      tagInput.value = '';
+    }
+  });
+
+  selectedTagsContainer.addEventListener('click', function(event) {
+    if (event.target.tagName === 'BUTTON') {
+      event.target.parentNode.remove();
+    }
+  });
+</script>
+</body>
+</html>

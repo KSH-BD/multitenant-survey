@@ -1,0 +1,59 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+<div class="ui very padded container" >
+
+  <h1 class="ui header">
+    <div class="content">
+    Tenant Settings
+    <div class="sub header">Manage your preferences</div>
+  </div>
+</h1>
+<br>
+  <div style="display: flex;justify-content: space-between;align-items: center;">
+      <h1>{{ tenant.name }}</h1>      
+    </div>
+    <br>
+    <div class="ui four cards">
+    <a href="{% url 'dashboard_list' id=tenant.id %}" class="black card">
+      <div style="display: flex;height: 10rem;justify-content: center;align-items: center;text-align: center;" class="image">
+        <i class="fa-solid fa-chart-line">
+          <h4>Dashboard</h4>
+        </i>                       
+      </div>
+    </a>
+    {% if request.user.role == 'admin'%}
+    <a href="{% url 'users_list' id=tenant.id %}" class="blue card">
+      <div style="display: flex;height: 10rem;justify-content: center;align-items: center;text-align: center;" class="image">
+        <i class="fa-solid fa-users">
+          <h4>User</h4>
+        </i>                       
+      </div>
+    </a>
+    <a href="{% url 'create_question' id=tenant.id %}" class="green card">
+      <div style="display: flex;height: 10rem;justify-content: center;align-items: center;text-align: center;" class="image">
+        <i class="fa-solid fa-circle-question">
+          <h4>Question</h4>
+        </i>                
+      </div>
+    </a>
+    {% endif %}
+    {% if request.user.role != 'dashboard' %}
+    <a href="{% url 'week_details' id=tenant.id %}" class="yellow card" style="{% if not tenant.question_set.first %}pointer-events: none;opacity: .2;{% endif %}">
+      <div style="display: flex;height: 10rem;justify-content: center;align-items: center;text-align: center;" class="image">
+        <i class="fa-brands fa-wpforms">
+          <h4>Week / Form</h4>        
+        </i>        
+      </div>
+    </a>
+    <a href="{% url 'employeelist' id=tenant.id %}" class="red card">
+      <div style="display: flex;height: 10rem;justify-content: center;align-items: center;text-align: center;" class="image">
+        <i class="fa-solid fa-user-tie">
+          <h4>Employee</h4>
+        </i>        
+      </div>
+    </a>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

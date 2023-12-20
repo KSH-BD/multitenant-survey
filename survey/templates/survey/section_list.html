@@ -1,0 +1,21 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+<div class="ui very text container">
+
+    <table class="ui table">
+        <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for section in sections %}
+        <tr>
+            <td>{{section.name}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock content %}

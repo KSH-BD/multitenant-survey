@@ -1,0 +1,5 @@
+{% for f in companyform %}
+  <div style="margin-top: 2em;margin-bottom: 2em;" class="ui field {% if ff.field.required %}required{% endif %}">
+    {{ f.label_tag }}
+    {{ f }}
+{% endfor %}

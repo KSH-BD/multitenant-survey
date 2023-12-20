@@ -1,0 +1,20 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+  <div class="ui very padded text container">
+    <div class="ui large breadcrumb">
+      <a href="{% url 'users_list' id=tenant.id %}" class="section">Users</a>
+      <i class="fa-solid fa-chevron-right fa-2xs" style="color: #95989d;margin: .5em;"></i>    
+      <div class="active section">User Edit</div>
+    </div>
+    <br><br>
+    <form class="ui form" action="." method="post">
+      {% csrf_token %}
+      <div class="ui field">
+        {{form}}
+      </div>
+      <button class="ui button primary" type="submit">Submit</button>
+    </form>
+  </div>        
+{% endblock %}
+

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div>
+      <h2>Chart</h2>
+      
+      {% for d in data %}                  
+      <div class="mx-auto w-11/12 overflow-hidden md:w-3/5">
+        <canvas data-te-chart="bar" data-te-dataset-label="Traffic" data-te-labels="{{ d.label }}" data-te-dataset-data="{{ d.value }}"></canvas>
+      </div>      
+      {% endfor %}
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>   
+    <script>
+      import { Chart, initTE } from 'tw-elements'      
+      initTE({ Chart })
+    </script>
+  </body>
+</html>

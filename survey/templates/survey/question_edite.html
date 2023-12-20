@@ -1,0 +1,23 @@
+<form class="ui form" action="{% url 'edit_question' id=tenant.id qid=question.id %}" method="post">
+    {% csrf_token %}
+    {% for f in form %}
+    <div class="field {% if f.name == 'dashboard' %}ui toggle checkbox{% endif %}">
+        {{f.label_tag}}
+        {{f}}        
+    </div>
+    {% endfor %}
+    <br>
+    <button class="ui button green" type="submit">Save</button>    
+</form>
+{% block js %}
+<script>
+    $(document).ready(function(){
+        $('.dropdown')
+        .dropdown();
+      });
+    $(document).ready(function(){
+        $('.checkbox')
+        .checkbox();
+      });
+</script>
+{% endblock js %}

@@ -1,0 +1,72 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/semantic.min.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://unpkg.com/htmx.org@1.9.7"></script>
+    {% block head %}{% endblock head %}
+  </head>
+  <body hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>     
+    {% block header %}
+    <div class="ui tiny menu">
+      <div class="right menu">
+        <div class="ui dropdown item">
+          Welcome {{request.user}}
+        </div>
+        <div class="item">        
+          <a class="ui primary button" href="{% url 'logout_page' %}">Logout</a>
+        </div>
+      </div>
+    </div>
+    {% endblock header %}
+    <div style="min-height: 100%;height: fit-content;width: 100%;padding-top: 2em;padding-bottom: 4em;" class="ui container">
+      
+      {% block content %}
+
+      {% endblock %}
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/semantic.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
+    <script>    
+          
+      $(document).ready(function(){
+        $('.dropdown')
+        .dropdown();
+      });
+
+      function taginput() {
+        var input = document.getElementById('tagInput')
+        var tagify = new Tagify(input, {
+          whitelist: input.getAttribute('data-whitelist').split(',')
+        })
+        tagify.on('keypress', (e) => {
+          if (event.key === 'Enter') {
+            event.preventDefault()
+          }
+        })
+        let savebtn = htmx.find('#add_option')
+        tagify.on('add', (e) => (savebtn.style.display = 'block'))
+      
+        tagify.on('remove', (e) => {
+          if (htmx.find('tag') == null) savebtn.style.display = 'none'
+        })
+      }
+      
+      try {
+        taginput()
+      } catch {
+        console.log('no tag input found')
+      }
+    </script>
+    {% block js %}
+    {% endblock js %}
+  </body>
+</html>

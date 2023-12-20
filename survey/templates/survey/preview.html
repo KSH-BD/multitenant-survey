@@ -1,0 +1,33 @@
+<form class="ui form">
+  <div class="fluid ui black segment">
+  {% for f in form %}
+    {% if f.name == 'Latitude' %}            
+      {% elif f.name == 'Longitude' %}
+      {% else %}
+      <div style="margin-top: 2em;margin-bottom: 2em;" class="field {% if f.field.required %}required{% endif %} {% if f.errors %}error{% endif %}">
+        {{ f.label_tag }}
+        {{ f }}                
+        {{ f.errors }}    
+      </div>
+    {% endif %}  
+  {% endfor %}
+        {% if f.tenant.has_cords %}
+      <div style="margin-left: .2em; margin-bottom: 3em;display: flex;gap:2em;justify-content: center;align-items: center;" class="three center fields ui">
+        <div class="ui field">
+          {{form.Latitude.label_tag}}
+          {{form.Latitude}}
+          {{form.Latitude.errors}}
+        </div>
+        <div class="ui field">
+          {{form.Longitude.label_tag}}
+          {{form.Longitude}}
+          {{form.Longitude.errors}}
+        </div>
+        <div class="ui field">
+          <button hx-on:click="getLocation()" style="margin-top: 1em;" class="ui button" type="button">Get Cords</button>
+        </div>
+        </div>
+        {% endif %}
+        <br>
+      </div>
+</form>

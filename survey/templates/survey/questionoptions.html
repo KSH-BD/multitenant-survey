@@ -1,0 +1,48 @@
+
+<div class="ui centered container segment">
+  <h3>Question : <span style="color: darkslateblue;">{{ question.text }}</span></h3>
+  <form
+    class="ui form"
+    hx-post="{% url 'questionoptions' id=question.tenant.id qid=question.id %}" 
+    hx-target=".content" 
+    hx-swap="innerhtml">
+    {% csrf_token %}
+    <div class="tags field">
+      <label for="tagInput">Enter Options:</label>
+      <input id="tagInput" name="tags" placeholder="Add Option" data-whitelist="tag1,tag2,tag3" />
+    </div>
+    <input id="add_option" class="ui button" type="submit" value="Save" style="display: none;" />
+  </form>
+  <table class="ui table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for op in question.questionoption_set.all %}
+      <tr>
+        <td>{{op.value}}</td>
+        <td>
+          <button 
+          class="ui red button tiny"
+          hx-post="{% url 'questionoptionsdelete' id=question.tenant.id qoid=op.id %}" 
+          hx-target=".content"           
+          hx-swap="innerhtml"
+          hx-confirm="Are you sure ?">          
+            delete</button></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% block js %}
+<script>
+  try {
+    taginput()
+  } catch {
+    console.log('no tag input found')
+  }
+</script>
+{% endblock js %}

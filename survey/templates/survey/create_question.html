@@ -1,0 +1,137 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+<div class="ui very padded container">
+  <div class="ui large breadcrumb">
+    <a href="{% url 'tenant_details' id=tenant.id %}" class="section">Home</a>
+    <i class="fa-solid fa-chevron-right fa-2xs" style="color: #95989d;margin: .5em;"></i>    
+    <div class="active section">Question Settings</div>
+  </div>
+  <br><br>
+
+<div style="display: flex;width: 100%;justify-content: space-between;align-items: flex-start;">
+  <button style="margin-bottom: 2em;" class="ui button" id="addQuestion"
+      hx-on:click="htmx.find('#save').style.display = 'block'"
+      hx-get="{% url 'create_question' id=tenant.id %}"
+      hx-target="#formContainer" 
+      hx-swap="beforeend"
+    >Add Question <i class="fa-solid fa-plus"></i></button>
+  
+</div>
+
+<form class="ui form" id="questionform" action="." method="post">
+  {% csrf_token %}
+    <div id="formContainer">
+    </div>        
+  <input class="ui button primary" id="save" type="submit" value="Save" style="display: none;"/>
+</form>
+
+<h4 class="ui dividing header"></h4>
+
+<br>
+<br>
+<br>
+<div class="ui form cord">
+  <div class="ui info message">    
+    <div class="header">
+      Survey Questions 
+    </div>
+    <ul class="list">
+      <li>Survey Questions will be showing in the dashboard.</li>
+      <li>Unchecking the survey question below will remove the survey questions for this tenant and all employee answers to the questions.</li>
+    </ul>
+  </div> 
+  
+  <div class="ui toggle checkbox">
+    <input 
+    hx-get="{% url 'cords_status' id=tenant.id %}"
+    {% if tenant.has_cords %}hx-confirm="Are you sure?"{% endif %}    
+    hx-select=".cord"
+    hx-target=".cord"
+    hx-swap="outerHTML"     
+    type="checkbox" {% if tenant.has_cords %}checked{% endif %} name="cords">
+    <label>Add Survey Questions</label>
+  </div>
+<br>
+<br>
+  <table class="ui celled blue striped table"
+    >
+    <thead>
+      <th>Current Tenant Questions</th>
+      <th>Data Type</th>
+      <th>Required ?</th>
+      <th>Dashboard ?</th>
+      <th>Options</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      {% for question in questions %}
+      <tr>
+        <td>{{question.text}}</td>
+        <td>{{question.type}}</td>
+        <td>{{question.required}}</td>
+        <td>{{question.dashboard}}</td>
+        <td width="330px">
+          {% if question.type == 'List' %}                  
+          <select class="ui search dropdown">
+            {% for q in question.questionoption_set.all %} 
+            <option>{{q}}</option>
+            {% endfor %}
+          </select>
+          &nbsp;&nbsp;&nbsp;
+          <button 
+          style="cursor: pointer;"
+          class="ui green basic label"           
+          hx-on:click="$('.ui.modal').modal('show')"
+          hx-get="{% url 'questionoptions' id=tenant.id qid=question.id %}" 
+          hx-target=".content" 
+          hx-swap="innerhtml"
+           >Add Options</button>
+          {% elif question.type == 'Radio' %}
+          <div class="grouped fields">
+            <div class="field">
+              {% for q in question.questionoption_set.all %} 
+              <div class="ui radio checkbox">
+                <input type="radio">
+                <label>{{q}}</label>
+              </div>              
+              {% endfor %}
+              &nbsp;&nbsp;&nbsp;
+          <button
+          style="cursor: pointer;"
+          class="ui green basic label"           
+          hx-on:click="$('.ui.modal').modal('show')"
+          hx-get="{% url 'questionoptions' id=tenant.id qid=question.id %}" 
+          hx-target=".content" 
+          hx-swap="innerhtml"
+           >Add Options</button>
+            </div>
+          </div>
+        {% endif %}
+      </td>     
+      <td>        
+          <button 
+          class="ui blue mini button"
+          hx-on:click="$('.ui.modal').modal('show')"
+          hx-get="{% url 'edit_question' id=tenant.id qid=question.id %}" 
+          hx-target=".content" 
+          hx-swap="innerhtml"
+          >Edit</button>
+          <button
+          id="deletebtn"
+          class="ui mini button red right"
+          type="button"        
+          hx-post="{% url 'delete_question' id=question.tenant.id qid=question.id %}" 
+          hx-target="table"           
+          hx-swap="outerHTML"
+          hx-select="table"
+          hx-confirm="Are you sure ?">Delete</button>      
+      </td>                         
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+</div>
+{% include "survey/modal.html" %}
+{% endblock content %}

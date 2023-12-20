@@ -1,0 +1,139 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<div style="background-color: f8f9fa;" class="fluid ui very text container">
+
+  <form class="ui form" hx-post="{% url 'submit_survey_form' id=f.tenant.id formid=f.id %}" method="post" novalidate>
+    {% csrf_token %}
+  <div style="margin-bottom: 3em;" class="fluid ui black segment">
+    <div class="image">
+      <img class="ui centered small image" style="width:100%;height:250px;" src="{% static 'images/img11.jpeg' %}">  
+    </div>
+  </div>
+   
+  <h1 class="ui header">
+    <div class="content">
+      {{ f.tenant.title }}
+    <div class="sub header">&nbsp;&nbsp;&nbsp; Week {{f.week.number}}</div>
+  </div>
+</h1>
+
+<div class="ui info message">
+  <div class="header">
+    Important Note :
+  </div>
+  <ul class="list">
+    <li>please enable location services on your device and click get cords button below to capture your latitude and longitude. This will help us enhance your user experience and provide location-specific information</li>
+  </ul>
+</div>
+
+  <br>
+  <div class="fluid ui black segment">
+    <div class="field transparent">
+      <label for="employeeid">Employee ID</label>
+      <input type="text" name="employeeid" value="{{employee.employee_id}}" readonly>
+    </div>  
+    <div class="field transparent">
+      <label for="employeename">Employee Name</label>
+      <input type="text" name="employeename" value="{{employee.name}}" readonly>
+    </div>  
+    <div class="field transparent">
+      <label for="employeename">Employee Email</label>
+      <input type="text" name="employeename" value="{{employee.email}}" readonly>
+    </div>  
+    {% if f.tenant.name == 'FM' %}
+    <div class="field transparent">
+      <label for="employeename">Company</label>
+      <input type="text" name="employeename" value="{{employee.company}}" readonly>
+    </div>  
+    <div class="field transparent">
+      <label for="employeename">Actual Zone</label>
+      <input type="text" name="employeename" value="{{employee.actual_zone}}" readonly>
+    </div>  
+    {% endif %}
+  </div>
+
+  <div class="fluid ui black segment">
+  {% for ff in form %}
+    {% if ff.name == 'Latitude' %}            
+      {% elif ff.name == 'Longitude' %}
+    {% else %}
+      <div style="margin-top: 2em;margin-bottom: 2em;" class="field {% if ff.field.required %}required{% endif %} {% if ff.errors %}error{% endif %}">
+        {% if f.tenant.name == 'FM' %}          
+          {{ ff.label_tag }}
+          {{ ff }}                
+          {{ ff.errors }}                                
+        {% else %}
+          {{ ff.label_tag }}
+          {{ ff }}                
+          {{ ff.errors }}    
+        {% endif %}
+      </div>
+      {% if f.tenant.name == 'FM' and ff.name == 'Current_City__-_المدينة_الحالية' %}   
+            <div id="company_zone" style="margin-top: 2em;margin-bottom: 2em;" class="field {% if ff.field.required %}required{% endif %} {% if ff.errors %}error{% endif %}"></div>             
+          {% endif %}  
+      {% endif %}        
+  {% endfor %}
+        {% if f.tenant.has_cords %}
+      <div style="margin-left: .2em; margin-bottom: 3em;display: flex;gap:2em;justify-content: center;align-items: center;" class="three center fields ui">
+        <div class="ui field {% if form.Latitude.errors %}error{% endif %}">
+          {{form.Latitude.label_tag}}
+          {{form.Latitude}}
+          {{form.Latitude.errors}}
+        </div>
+        <div class="ui field {% if form.Longitude.errors %}error{% endif %}">
+          {{form.Longitude.label_tag}}
+          {{form.Longitude}}
+          {{form.Longitude.errors}}
+        </div>
+        <div class="ui field">
+          <button hx-on:click="getLocation()" style="margin-top: 1em;" class="ui button" type="button">Get Cords</button>
+        </div>
+        </div>
+        {% endif %}
+        <br>
+        <button class="fluid ui primary button" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+{% block js %}
+<script>
+    $(document).ready(function(){
+        $('.dropdown')
+        .dropdown();
+      });
+      function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+
+        document.getElementById("id_Latitude").value = latitude 
+        document.getElementById("id_Longitude").value = longitude;
+    }
+
+    function showError(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                alert("User denied the request for Geolocation.");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                alert("Location information is unavailable.");
+                break;
+            case error.TIMEOUT:
+                alert("The request to get user location timed out.");
+                break;
+            case error.UNKNOWN_ERROR:
+                alert("An unknown error occurred.");
+                break;
+        }
+    }
+        
+</script>
+{% endblock %}

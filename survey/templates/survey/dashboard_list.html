@@ -1,0 +1,34 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+<div class="ui very padded container">
+  <div class="ui large breadcrumb">
+    <a href="{% url 'tenant_details' id=tenant.id %}" class="section">Home</a>
+    <i class="fa-solid fa-chevron-right fa-2xs" style="color: #95989d;margin: .5em;"></i>    
+    <div class="active section">Dashboard List</div>
+  </div>
+  <br><br>
+  <div style="display: flex;justify-content: space-between;align-items: center;">
+      <h1>{{ tenant.name }} Dashboard</h1>      
+  </div>
+  
+  <table class="ui celled blue striped table">
+    <thead>
+      <tr>
+        <th>Week Number</th>
+        <th>Link</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for form in tenant.form_set.all %}
+        <tr>
+          <td>{{ form.week.number }}</td>                  
+          <td><a class="ui blue basic label" href="{% url 'dashboard' id=tenant.id formid=form.id %}">Dashboard <i class="fa-solid fa-chart-line"></i></a></td>
+          <td>{{ form.created_at|date:"d-m-Y" }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>  
+</div>
+{% endblock %}

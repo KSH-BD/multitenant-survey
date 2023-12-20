@@ -1,0 +1,11 @@
+<form class="ui form" hx-post="{% url 'division-create' id=tenant.id %}" hx-target="#id_division" hx-swap="outerHTML" hx-select="#id_division" hx-on="htmx:afterRequest:{$('.ui.modal').modal('hide')}">
+    {% csrf_token %}
+    {% for f in form %}
+    <div class="field">
+        {{f.label_tag}}        
+        {{f}}        
+        {{f.errros}}        
+    </div>
+    {% endfor %}
+    <button class="ui button primary" type="submit">Submit</button>
+</form>

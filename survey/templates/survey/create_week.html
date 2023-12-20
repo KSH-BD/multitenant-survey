@@ -1,0 +1,12 @@
+{% extends 'survey/base.html' %}
+{% block content %}
+<form class="ui form text very container" action="." method="post">
+    <h1>Add New Week</h1>
+    {% csrf_token %}
+    <div class="field {% if form.errors %}error{% endif %}">
+      {{form}}                 
+    </div>
+    
+    <button class="ui button primary" type="submit">Save</button>
+  </form>
+{% endblock %}

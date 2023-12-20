@@ -1,0 +1,29 @@
+<div style="margin: 2em;margin-bottom: 3em;display: flex;align-items: center;" class="five fields ui segment" id="fragment">
+    {% for f in form %}
+    <div class="ui field">
+        {{ f.label_tag }}
+        {{ f }}        
+    </div>
+    {% endfor %}
+  <a style="margin-top: 2em;margin-left: 3em;height: 30px;text-align: center;" class="mini ui button red" 
+    hx-on:click="{
+        htmx.remove(htmx.closest(htmx.find('#fragment'),'div'));
+        if(htmx.find('#formContainer').innerHTML.trim() == ''){
+            htmx.find('#save').style.display = 'none'
+        }
+    }
+        "
+    >Remove</a>
+    {% block js %}
+    <script>
+        $(document).ready(function(){
+            $('.dropdown')
+            .dropdown();
+          });
+        $(document).ready(function(){
+            $('.checkbox')
+            .checkbox();
+          });
+    </script>
+    {% endblock js %}
+</div>

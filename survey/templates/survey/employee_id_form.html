@@ -1,0 +1,13 @@
+{% extends 'survey/base.html' %}
+
+{% block header %}{% endblock header %}
+{% block content %}
+    <form style="padding: 3em;" class="fluid ui form very text container padded" id="employeeexistform" action="." hx-post="{% url 'survey_form' id=f.tenant.id formid=f.id %}" hx-swap="outerHTML">
+        {% csrf_token %}        
+        <div class="field">
+            <label for="employeename">Enter Employee ID :</label>
+            <input type="number" name="employeeid" required />
+        </div>
+        <input class="ui button primary" type="submit" value="Submit" />
+    </form>    
+{% endblock %}

@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>Multi-Select Tag Input</title>
+    <style>
+      .container {
+        width: 400px;
+        margin: 50px auto;
+      }
+      
+      input[type='text'] {
+        width: 100%;
+        padding: 10px;
+      }
+      
+      .selected-tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      
+      .selected-tag {
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .selected-tag span {
+        margin-right: 5px;
+      }
+      
+      .selected-tag button {
+        border: none;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="." method="post">
+        {% csrf_token %}
+        <input type="text" id="tag-input" placeholder="Type and press Enter to add tags" />
+        <div class="selected-tags"></div>
+        <input type="hidden" id="options" name="options" value="" />
+        <input type="submit" value="ok">
+      </form>
+    </div>
+
+    <script>
+      const tagInput = document.getElementById('tag-input')
+      const selectedTagsContainer = document.querySelector('.selected-tags')
+      const h = document.querySelector('#options')
+      const data = []
+      
+      tagInput.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' && tagInput.value !== '') {
+          event.preventDefault()
+          const tag = document.createElement('div')
+          tag.classList.add('selected-tag')
+          tag.innerHTML = '<span>' + tagInput.value + '</span><button>x</button>'
+          selectedTagsContainer.appendChild(tag)
+          data.push(tagInput.value)
+          h.value = data
+          tagInput.value = ''
+        }
+      })
+      
+      selectedTagsContainer.addEventListener('click', function (event) {
+        if (event.target.tagName === 'BUTTON') {
+          event.target.parentNode.remove()
+        }
+      })
+    </script>
+  </body>
+</html>

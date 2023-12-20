@@ -1,0 +1,50 @@
+from django.urls import path
+from .views import *
+
+urlpatterns = [
+    path('login/', login_page, name='login_page'),
+    path('logout/', logout_page, name='logout_page'),
+    path('create_employee/', create_employee, name='create_employee'),
+    path('create_tenant/', create_tenant, name='create_tenant'),
+    path('create_week/<int:id>/', create_week, name='create_week'),
+    
+    path('tenant/<int:id>/form/<uuid:formid>/', survey_form, name='survey_form'),
+    path('tenant/<int:id>/form/<uuid:formid>/submit_survey_form/',
+         submit_survey_form, name='submit_survey_form'),
+    
+    path('tenants/', tenant_list, name='tenant_list'),
+    path('tenant/<int:id>/users/', users_list, name='users_list'),
+    path('tenant/<int:id>/users/users_register/', users_register, name='users_register'),
+    path('tenant/<int:id>/users/<int:userid>/users_edit/', users_edit, name='users_edit'),
+    path('tenant/<int:id>/users/<int:userid>/change_password/', change_password, name='change_password'),
+    path('tenant/<int:id>/', tenant_details, name='tenant_details'),
+    path('tenant/<int:id>/create_question/',create_question, name='create_question'),
+    path('tenant/<int:id>/create_question/<int:qid>/',edit_question, name='edit_question'),
+    path('tenant/<int:id>/create_question/<int:qid>/delete/',delete_question, name='delete_question'),
+    
+    path('tenant/<int:id>/create_question/<int:qoid>/questionoptionsdelete',questionoptionsdelete, name='questionoptionsdelete'),
+    
+    path('tenant/<int:id>/create_question/<int:qid>/questionoptions/',questionoptions, name='questionoptions'),
+    path('tenant/<int:id>/weeks/', week_details, name='week_details'),
+    path('tenant/<int:id>/employeelist/', employeelist, name='employeelist'),
+    path('tenant/<int:id>/employeelist/add',
+         createemployee, name='createemployee'),
+    path('tenant/<int:id>/employeelist/<int:empid>/edit',
+         updateemployee, name='updateemployee'),
+#     path('tenants/week/<int:id>', week_form_details, name='week_form_details'),
+    path('tenant/<int:id>/weeks/<uuid:formid>/', week_form_details, name='week_form_details'),
+    path('tenant/<int:id>/employeelist/<int:employeeid>/details/', employeedetails, name='employeedetails'),
+    path('tenant/<int:id>/data/', data, name='data'),
+    path('change_form_status/', change_form_status, name='change_form_status'),
+    path('tenant/<int:id>/section/create/', section_create_view, name='section-create'),
+    path('tenant/<int:id>/sections/', section_list_view, name='section-list'),
+    path('tenant/<int:id>/division/create/', division_create_view, name='division-create'),
+    path('tenant/<int:id>/department/create/', department_create_view, name='department-create'),
+    path('tenant/<int:id>/company/create/', company_create_view, name='company-create'),
+    path('tenant/<int:id>/job_title/create/', job_title_create_view, name='job_title-create'),
+    path('tenant/<int:id>/cords_status/', cords_status, name='cords_status'),
+    path('tenant/<int:id>/dashboard/', dashboard_list, name='dashboard_list'),
+    path('tenant/<int:id>/dashboard/<uuid:formid>/', dashboard, name='dashboard'),
+    path('tenant/<int:id>/dashboard/<uuid:formid>/', dashboard, name='dashboard'),
+    path('tenant/<int:id>/get_company_zone/<uuid:formid>/', get_company_zone, name='get_company_zone'),
+]

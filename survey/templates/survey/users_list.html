@@ -1,0 +1,48 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+  <div class="ui very container">
+    <div class="ui large breadcrumb">
+      <a href="{% url 'tenant_details' id=tenant.id %}" class="section">Home</a>
+      <i class="fa-solid fa-chevron-right fa-2xs" style="color: #95989d;margin: .5em;"></i>    
+      <div class="active section">Users List</div>
+    </div>
+    <br><br>
+
+    <h1 class="ui header">
+      <div class="content">
+        Users
+      </div>
+    </h1>
+    <br />
+    <a style="float:right;margin-top: 1em;margin-bottom: 1em;" class="ui teal button" href="{% url 'users_register' id=tenant.id %}">Add User <i class="fa-solid fa-plus"></i></a>
+
+    <table class="ui blue small very compact table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th ></th>          
+          <th >Action</th>          
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in tenant.authuser_set.all %}
+          <tr>
+            <td>{{ user.username }}</td>
+            <td>
+              <a style="float:right;margin-top: 1em;margin-bottom: 1em;" class="ui blue basic label" href="{% url 'users_edit' id=tenant.id userid=user.id %}">Edit <i class="fa-regular fa-pen-to-square"></i></a>
+            </td>
+            <td>
+              <a class="ui orange basic label" style="cursor: pointer;margin-top: 1em;margin-bottom: 1em;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'change_password' id=tenant.id userid=user.id %}" hx-target=".contentmodal" hx-swap="innerhtml">Change Password <i class="fa-solid fa-key"></i></a>              
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="ui tiny modal">
+    <div class="header">Header</div>
+    <div class="contentmodal padded">
+    </div>
+  </div>  
+{% endblock %}

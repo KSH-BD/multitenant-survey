@@ -1,0 +1,223 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+<div class="ui large breadcrumb">
+  <a href="{% url 'dashboard_list' id=form.tenant.id %}" class="section">Home</a>
+  <i class="fa-solid fa-chevron-right fa-2xs" style="color: #95989d;margin: .5em;"></i>    
+  <div class="active section">Dashboard</div>
+</div>
+<br><br>
+  <div id="map" hx-swap-oob="true" style="height: 500;" class="ui card segment fluid blue">
+    {{map|safe}}
+  </div>
+  <div class="ui segment blue">
+    <h2>Employee Status During war</h2>
+    <h3>Week {{form.week}}</h3>
+    <br>
+    <br>
+    {% if request.user.role != 'dashboard' and not request.user.company %}
+    <div>        
+      <form style="display: flex;width: 500px;gap:1em" class="ui form"
+      hx-post="{% url 'dashboard' id=form.tenant.id formid=form.id %}"
+      hx-target="#chart"
+      hx-select="#chart"
+      hx-swap="outerHTML">
+      <label for="section">Section</label>
+      <select class="ui dropdown" name="section" id="section">
+        <option selected disabled></option>
+        {% for val in form.tenant.section_set.all %}
+        <option value="{{val.name}}">{{val.name}}</option>
+        {% endfor %}
+      </select>
+      <label for="company">Company</label>
+      <select class="ui dropdown" name="company" id="company">
+        <option selected disabled></option>
+        {% for val in form.tenant.company_set.all %}
+        <option value="{{val.name}}">{{val.name}}</option>
+        {% endfor %}
+      </select>
+      <button type="submit" class="ui button">Filter</button>
+    </form>
+  </div> 
+  {% endif %}
+      <br>
+      <div id="chart" style="padding: 2em;" class="ui card segment fluid blue">              
+        <div class="ui cards centered">          
+          {% for i in data %}
+            {% if i.cleanname == 'StaffFamilySituation' %}
+              {% for item in i.ziped %}
+                <div class="card">
+                  <div class="content">
+                    <h5 style="color: #95989d;" class="center aligned">Employee Status</h5>                    
+                    <div class="center aligned header"></div>                    
+                    <div class="center aligned header">{{item.0}}</div>                    
+                    {% if item.0 == 'InjuredHarmed' %}
+                      <h2 style="color:lightskyblue" class="ui green tag center aligned">
+                        <i class="fa-solid fa-user-injured"></i>
+                      </h2>
+                    {% elif item.0 == 'Intactwell' %}
+                      <h2 style="color:lightgreen" class="ui green tag center aligned"><i class="fa-solid fa-heart-circle-check"></i></h2>
+                    {% elif item.0 == 'LootedRobbed' %}
+                      <h2 style="color:lightcoral" class="ui green tag center aligned"><i class="fa-solid fa-people-robbery"></i></h2>
+                      {% elif item.0 == 'Unsafe' %}
+                      <h2 style="color:lightcoral" class="ui green tag center aligned"><i class="fa-solid fa-heart-crack"></i></h2>
+                    {% endif %}
+                    <h3 style="color: lightslategrey;" class="center aligned">{{item.1}}</h3>
+                  </div>
+                </div>
+              {% endfor %}
+              {% elif i.cleanname == 'LaptopStatus' %}
+              {% for item in i.ziped %}
+                <div class="card">
+                  <div class="content">
+                    <h5 style="color: #95989d;" class="center aligned">Laptop Status</h5>                    
+                    <div class="center aligned header"></div>                    
+                    <div class="center aligned header">{{item.0}}</div>                                        
+                    {% if item.0 == 'Good' %}
+                    <h2 style="color:lightgreen" class="ui green tag center aligned"><i class="fa-solid fa-laptop"></i></h2>
+                    {% elif item.0 == 'Lost' %}
+                    <h2 style="color:lightslategray" class="ui green tag center aligned"><i class="fa-solid fa-laptop"></i></h2>
+                    {% elif item.0 == 'Stolen' %}
+                    <h2 style="color:lightsalmon" class="ui green tag center aligned"><i class="fa-solid fa-laptop"></i></h2>
+                    {% endif %}
+                    <h3 style="color: lightslategrey;" class="center aligned">{{item.1}}</h3>
+                  </div>
+                </div>
+              {% endfor %}
+           
+              {% elif i.cleanname == 'MobileStatus' %}
+              {% for item in i.ziped %}
+                <div class="card">
+                  <div class="content">
+                    <h5 style="color: #95989d;" class="center aligned">Mobile Status</h5>                    
+                    <div class="center aligned header"></div>                    
+                    <div class="center aligned header">{{item.0}}</div>                                        
+                    {% if item.0 == 'DontHavePhone' %}
+                    <h2 style="color:lightslategrey" class="ui green tag center aligned"><i class="fa-solid fa-mobile-screen-button"></i></h2>
+                    {% elif item.0 == 'Good' %}
+                    <h2 style="color:lightgreen" class="ui green tag center aligned"><i class="fa-solid fa-mobile-screen-button"></i></h2>
+                    {% elif item.0 == 'Lost' %}
+                    <h2 style="color:lightsalmon" class="ui green tag center aligned"><i class="fa-solid fa-mobile-screen-button"></i></h2>
+                    {% elif item.0 == 'Stolen' %}
+                    <h2 style="color:lightcoral" class="ui green tag center aligned"><i class="fa-solid fa-mobile-screen-button"></i></h2>
+                    {% endif %}
+                    <h3 style="color: lightslategrey;" class="center aligned">{{item.1}}</h3>
+                  </div>
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </div>        
+        <br>
+        {% if request.user.role != 'dashboard' and not request.user.company %}
+          <div class="ui wide segment fluid card blue">                  
+            <canvas style="height: 200px;width: 50%;" data-te-chart="bar" data-te-dataset-label="{{emp_pre_comapny.title}}" data-te-labels="{{ emp_pre_comapny.label }}" data-te-dataset-data="{{ emp_pre_comapny.value }}"></canvas>                  
+          </div>
+        {% endif %}
+        <div style="display:flex;padding:2em;margin-top:3em;gap:2em;justify-content: space-around;align-items: center;" class="ui five grid segment blue">
+          {% for d in data %}          
+          <div class="ui wide" style="margin-top: 2em;">
+            <canvas style="height: 450px;width: 50%;"  data-te-chart="bar" data-te-dataset-label="{{d.question}}" data-te-labels="{{ d.label }}" data-te-dataset-data="{{ d.value }}"></canvas>
+          </div>
+          <div class="ui wide" style="margin-top: 2em;">
+            <canvas
+            style="height: 450px;width: 50%;" 
+            data-te-chart="doughnut"
+            data-te-dataset-label="{{d.question}}"
+            data-te-labels="{{ d.label }}"
+            data-te-dataset-data="{{ d.value }}"
+            data-te-dataset-background-color="['rgba(63, 81, 181, 0.5)', 'rgba(77, 182, 172, 0.5)', 'rgba(66, 133, 244, 0.5)', 'rgba(156, 39, 176, 0.5)', 'rgba(233, 30, 99, 0.5)', 'rgba(66, 73, 244, 0.4)', 'rgba(66, 133, 244, 0.2)']">
+          </canvas>
+        </div>
+        <div class="ui divider"></div>
+        {% endfor %}
+                
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>  
+      </div>
+      <div class="ui styled fluid accordion">
+        <div class=" title">
+          Employee Submitted
+          <i class="dropdown icon"></i>
+        </div>
+        <div class=" content">
+      <div class="ui wide segment fluid card blue">                          
+        <table class="ui table">          
+          <thead>
+            <tr>              
+              <th>Employee ID</th>
+              <th>Employee Name</th>
+              <th>Email</th>
+              <th>Company</th>
+              <th>Phone</th>              
+            </tr>
+          </thead>
+          <tbody>
+            {% for emp in submitted %}
+            <tr>
+              <td>{{ emp.employee_id }}</td>            
+              <td>{{ emp.name }}</td>            
+              <td>{{ emp.email }}</td>            
+              <td>{{ emp.company }}</td>            
+              <td>{{ emp.phone_number }}</td>                          
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+      <br>
+      <div class="ui styled fluid accordion">
+        <div class=" title">
+          Employee Not Submitted
+          <i class="dropdown icon"></i>
+        </div>
+        <div class=" content">      
+      <div class="ui wide segment fluid card blue">                          
+        <table class="ui table">          
+          <thead>
+            <tr>              
+              <th>Employee ID</th>
+              <th>Employee Name</th>
+              <th>Email</th>
+              <th>Company</th>
+              <th>Phone</th>              
+            </tr>
+          </thead>
+          <tbody>
+            {% for emp in not_submitted %}
+            <tr>
+              <td>{{ emp.employee_id }}</td>            
+              <td>{{ emp.name }}</td>            
+              <td>{{ emp.email }}</td>            
+              <td>{{ emp.company }}</td>            
+              <td>{{ emp.phone_number }}</td>            
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+      <script>
+        $(document).ready(function(){
+          $('.dropdown')
+          .dropdown();
+          $('.ui.accordion')
+          .accordion();
+        });
+      </script>
+    </div>
+  </div>
+    {% endblock %}
+    {% block js %}
+    <script>
+      $(document).ready(function(){
+        $('.dropdown')
+        .dropdown();
+        $('.ui.accordion')
+        .accordion();
+      });
+    </script>
+    {% endblock %}
+    

@@ -1,0 +1,64 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+<div class="ui very padded container">
+  <div class="ui large breadcrumb">    
+    <a href="{% url 'tenant_details' id=tenant.id %}" class="section">Home</a>    
+    <i class="fa-solid fa-chevron-right fa-2xs" style="color: #95989d;margin: .5em;"></i>    
+    <div class="active section">Forms Settings</div>
+  </div>
+  <br><br>
+
+  <div style="display: flex;justify-content: space-between;align-items: center;">
+      <h2>{{ tenant.name }}</h2>      
+  </div>
+  {% if tenant.question_set.first %}
+      <a style="float:right;margin-top: 1em;margin-bottom: 1em;" class="ui teal button" href="{% url 'create_week' id=tenant.id %}">Add Week <i class="fa-solid fa-plus"></i></a>
+      {% endif %}      
+
+  <table class="ui celled blue striped table">
+    <thead>
+      <tr>
+        <th>Week Number</th>
+        <th>Form ID</th>
+        <th>Status</th>
+        <th>Details</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for week in tenant.week_set.all %}
+        <tr>
+          <td>{{ week.number }}</td>
+          <td style="display:flex;justify-content: space-between;">
+            {% if week.form.status == 'o' %}
+            <a class="ui blue basic label" href="{% url 'survey_form' id=tenant.id formid=week.form.id %}">{{ week.form.id }}</a>
+            {% else %}
+            <span style="color:lightslategray" class="ui gray basic label">{{ week.form.id }}</span>
+            {% endif %}
+            {% if week.form.status == 'o' %}
+            <div class="ui icon" data-tooltip="Copy Link">
+              <i hx-on:click="navigator.clipboard.writeText('localhost:8000{% url 'survey_form' id=tenant.id|safe formid=week.form.id|safe %}')" style="color:lightseagreen;cursor: pointer;" class="fa-solid fa-copy"></i>
+            </div>
+            {% endif %}
+          </td>
+          <td>
+            <div class="ui toggle checkbox" id="form_status">
+              <input 
+              hx-post="{% url 'change_form_status' %}"
+              hx-select="table"
+              hx-target="table"
+              hx-swap="outterHTML" 
+              hx-vals='{"id": "{{ week.form.id|safe }}"}'
+              type="checkbox" {% if week.form.status == 'o' %}checked{% endif %} name="status">
+              <label>{% if week.form.status == 'o' %}Open{%else%}Closed{% endif %}</label>
+            </div>
+          </td>
+          <td><a class="ui blue basic label" href="{% url 'week_form_details' id=tenant.id formid=week.form.id %}">Details</a></td>
+          <td>{{ week.created_at|date:"d-m-Y" }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>  
+</div>
+{% endblock %}

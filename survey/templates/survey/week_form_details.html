@@ -1,0 +1,59 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+  <div style="padding: 1em;" class="ui very">
+    <h2>Form Details </h2>
+
+    <div class="ui">
+      <div class="ui grid very container">
+        <div class="four wide column">
+          <div class="ui big label">Week Number : {{ form.week.number }}</div>
+        </div>
+        <div class="four wide column">
+          <div class="ui big label">
+            Status :{% if form.status == 'o' %}
+              Open
+            {% else %}
+              Closed
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />    
+      <div class=""></div>
+    <table class="ui celled blue striped compact small table">
+      <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Section</th>
+        {% for head in tenant.question_set.all %}
+          <th>{{ head.text }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in data %}
+          <tr>
+            {% if d.data %}
+              <td>{{ d.emp.name }}</td>
+              <td>{{ d.emp.email }}</td>
+              <td>{{ d.emp.phone_number }}</td>
+              <td>{{ d.emp.section }}</td>
+              {% for head in tenant.question_set.all %}
+                {% for i in d.data %}
+                {% if head == i.question %}
+                <td>{{ i }}</td>                
+                {% endif %}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}            
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

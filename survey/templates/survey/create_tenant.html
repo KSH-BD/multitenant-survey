@@ -1,0 +1,13 @@
+{% extends 'survey/base.html' %}
+{% block content %}
+<div class="ui very container">
+  <h1>Add New Tenant</h1>
+  <form class="ui form" action="." method="post">
+    {% csrf_token %}
+    <div class="field">
+      {{ form }}
+    </div>
+    <button class="ui button primary" type="submit">Submit</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+  <h1 class="ui header">
+    <div class="content">
+      Tenant {{tenant.name}} Employees
+      <div class="sub header">Manage your preferences</div>
+    </div>
+  </h1>
+  <br>
+  <a href="{% url 'createemployee' id=tenant.id %}">Add</a>
+  <table class="ui blue small very compact table">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Employee Email</th>
+        <th>Employee Phone</th>
+        <th>Employee Emergency Email</th>      
+        <th>Employee Emergency Phone</th>      
+        <th>Section</th>      
+        <th>Company</th>      
+        <th>Job Title</th>      
+        <th>Job Type</th>      
+        <th>Action</th>      
+      </tr>
+    </thead><tbody>
+      {% for emp in tenant.employee_set.all %}
+      <tr>
+        <td>{{emp.employee_id}}</td>        
+        <td><a href="{% url 'employeedetails' id=emp.tenant.id employeeid=emp.employee_id %}">{{emp.name}}</a></td>        
+        <td>{{emp.email}}</td>        
+        <td>{{emp.phone_number}}</td>        
+        <td>{{emp.emergency_email}}</td>        
+        <td>{{emp.emergency_number}}</td>        
+        <td>{{emp.section}}</td>        
+        <td>{{emp.company}}</td>        
+        <td>{{emp.job_title}}</td>        
+        <td>{{emp.job_type}}</td>        
+        <td><a href="{% url 'updateemployee' id=tenant.id empid=emp.id %}">Edit</a></td>        
+      </tr>      
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock content %}

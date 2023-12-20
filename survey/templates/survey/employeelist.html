@@ -1,0 +1,54 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+<div style="padding: 2em;">
+
+<div class="ui large breadcrumb">
+  <a href="{% url 'tenant_details' id=tenant.id %}" class="section">Home</a>
+  <i class="fa-solid fa-chevron-right fa-2xs" style="color: #95989d;margin: .5em;"></i>    
+  <div class="active section">Employees Settings</div>
+</div>
+<br><br>
+
+  <h1 class="ui header">
+    <div class="content">
+      {{tenant.name}} Employees      
+    </div>
+  </h1>
+  <br>
+  <a style="margin-top: 1em;margin-bottom: 1em;" class="ui teal right floated button" href="{% url 'createemployee' id=tenant.id %}">Add Employee <i class="fa-solid fa-plus"></i></a>  
+  <table class="ui blue small very compact table">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Employee Email</th>
+        <th>Employee Phone</th>
+        <th>Employee Emergency Email</th>      
+        <th>Employee Emergency Phone</th>      
+        <th>Section</th>      
+        <th>Company</th>      
+        <th>Job Title</th>      
+        <th>Job Type</th>      
+        <th>Action</th>      
+      </tr>
+    </thead><tbody>
+      {% for emp in tenant.employee_set.all %}
+      <tr>
+        <td>{{emp.employee_id}}</td>        
+        <td><a class="fluid ui basic button" href="{% url 'employeedetails' id=emp.tenant.id employeeid=emp.employee_id %}">{{emp.name}}</a></td>        
+        <td>{{emp.email}}</td>        
+        <td>{{emp.phone_number}}</td>        
+        <td>{{emp.emergency_email}}</td>        
+        <td>{{emp.emergency_number}}</td>        
+        <td>{{emp.section}}</td>        
+        <td>{{emp.company}}</td>        
+        <td>{{emp.job_title}}</td>        
+        <td>{{emp.job_type}}</td>        
+        <td><a style="margin-top: 1em;margin-bottom: 1em;" class="fluid ui blue basic label" href="{% url 'updateemployee' id=tenant.id empid=emp.id %}">Edit <i class="fa-regular fa-pen-to-square"></i></a></td>        
+      </tr>      
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock content %}

@@ -1,0 +1,100 @@
+{% extends 'survey/base.html' %}
+
+{% block content %}
+  <div style="padding: 2em;" class="ui text ">
+    <h2>Employee Information : </h2>
+    
+    <div class="ui  segment padded">
+    <div class="ui grid">
+        <div class="four wide column">
+            <div class="ui large label">
+                ID : {{employee.employee_id}}
+            </div>
+        </div>
+        <div class="four wide column">        
+            <div class="ui large label">                
+            Name : {{employee.name}}
+              </div>        
+        </div>
+        <div class="four wide column">
+            <div class="ui large label">                
+                Email : {{employee.email}}
+            </div>                            
+        </div>
+        <div class="four wide column">
+            <div class="ui large label">                
+                Phone : {{employee.phone_number}}
+            </div>            
+        </div>        
+        <div class="four wide column">
+            <div class="ui large label">                
+                Section : {{employee.section}}
+            </div>            
+        </div>        
+        <div class="four wide column">
+            <div class="ui large label">                
+                Division : {{employee.division}}
+            </div>            
+        </div>        
+        <div class="four wide column">
+            <div class="ui large label">                
+                Department : {{employee.department}}
+            </div>            
+        </div>        
+        <div class="four wide column">
+            <div class="ui large label">                
+                Company : {{employee.company}}
+            </div>            
+        </div>        
+        <div class="four wide column">
+            <div class="ui large label">                
+                Job Title : {{employee.job_title}}
+            </div>            
+        </div>        
+        <div class="four wide column">
+            <div class="ui large label">                
+                Job Type : {{employee.job_type}}
+            </div>            
+        </div>        
+        <div class="four wide column">
+            <div class="ui large label">                
+                Job Type : {{employee.job_type}}
+            </div>            
+        </div>        
+        </div>        
+      </div>
+    <br />  
+    <div class="ui divider"></div>
+    <br />  
+    <h2>History : </h2>
+
+    <table class="ui blue table">
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Date</th>
+          {% for d in data %}
+            {% if forloop.counter == 1 %}
+              {% for w in d %}
+                <th>{{ w.question.text }}</th>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in data %}
+          <tr>
+            {% for w in d %}
+              {% if forloop.counter == 1 %}
+                <td>{{ w.week.number }}</td>
+                <td>{{ w.week.created_at|date:"d-m-Y"}}</td>
+              {% endif %}
+              <td>{{ w.answer.answer }}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
