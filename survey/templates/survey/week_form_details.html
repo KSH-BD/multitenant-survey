@@ -23,6 +23,8 @@
     <br />
     <br />    
       <div class=""></div>
+      <a style="margin-top: 1em;margin-bottom: 1em;" class="ui green right floated button" href="{% url 'weekdownload' id=tenant.id formid=form.id %}">Export <i class="fa-solid fa-file-csv"></i></a>  
+
     <table class="ui celled blue striped compact small table">
       <thead>
         <tr>
@@ -30,27 +32,17 @@
           <th>Email</th>
           <th>Phone Number</th>
           <th>Section</th>
-        {% for head in tenant.question_set.all %}
-          <th>{{ head.text }}</th>
+        {% for head in headers %}
+          <th>{{ head }}</th>
           {% endfor %}
         </tr>
       </thead>
       <tbody>
         {% for d in data %}
-          <tr>
-            {% if d.data %}
-              <td>{{ d.emp.name }}</td>
-              <td>{{ d.emp.email }}</td>
-              <td>{{ d.emp.phone_number }}</td>
-              <td>{{ d.emp.section }}</td>
-              {% for head in tenant.question_set.all %}
-                {% for i in d.data %}
-                {% if head == i.question %}
-                <td>{{ i }}</td>                
-                {% endif %}
-                {% endfor %}
+          <tr>                        
+              {% for i in d %}              
+                <td>{{ i }}</td>                                                          
               {% endfor %}
-            {% endif %}            
           </tr>
         {% endfor %}
       </tbody>

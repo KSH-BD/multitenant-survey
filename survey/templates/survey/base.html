@@ -20,8 +20,15 @@
         <div class="ui dropdown item">
           Welcome {{request.user}}
         </div>
-        <div class="item">        
-          <a class="ui primary button" href="{% url 'logout_page' %}">Logout</a>
+        <div style="display: flex;gap:1em" class="item">        
+          {% if request.user.username != "admin" %}
+          <button class="ui button"
+          hx-on:click="$('.ui.modal').modal('show')" 
+          hx-get="{% url 'change_password' id=request.user.tenant.id userid=request.user.id %}" 
+          hx-target=".contentmodal" 
+          hx-swap="innerhtml">Change Password <i class="fa-solid fa-key"></i></button>
+          {% endif %}
+          <a class="ui primary button" href="{% url 'logout_page' %}">Logout  <i class="fa-solid fa-right-from-bracket"></i></a>
         </div>
       </div>
     </div>
@@ -31,6 +38,7 @@
       {% block content %}
 
       {% endblock %}
+      {% include "survey/modal.html" %}
     </div>    
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="{% static 'js/semantic.min.js' %}"></script>

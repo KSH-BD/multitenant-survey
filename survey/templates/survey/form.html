@@ -12,9 +12,24 @@
         </div>
       {% endfor %}
     </div>
+    {% if f.tenant.title %}
+    <h1>{{ f.tenant.title }}</h1>
+    {% endif %}
+    <h2>Week {{ f.week.number }} </h2>
   <div class="field">
     <label for="employeename">Enter Employee ID :</label>
     <input type="number" name="employeeid" required />
   </div>
-    <input class="ui button primary" type="submit" value="Submit" />
+  <div class="ui info message">
+    <div class="header">
+      Important Notes :
+    </div>
+    <ul class="list">
+      <li>if you're uncertain about your ID , please reach out to HR for assistance.</li>
+      <li>Before filling out the form , ensure that you've dissconnected from any VPN connections.</li>
+      <li>Make sure to enable your location settings in your device or browser</li>
+      <li>Grant this website permission to access your location when propmted by the pop-up notification</li>
+    </ul>
+  </div>
+<input class="fluid ui button primary" type="submit" value="Next" />
 </form>

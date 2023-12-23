@@ -10,25 +10,21 @@
         {{ f }}
         {{ f.errors }}
         {% if f.name == 'section' %}
-        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'section-create' id=tenant.id %}" hx-select="form" hx-target=".content" hx-swap="innerhtml">Add</a>
+        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'section-create' id=tenant.id %}" hx-select="form" hx-target=".contentmodal" hx-swap="innerhtml">Add</a>
         {% elif f.name == 'division' %}
-        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'division-create' id=tenant.id %}" hx-select="form" hx-target=".content" hx-swap="innerhtml">Add</a>
+        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'division-create' id=tenant.id %}" hx-select="form" hx-target=".contentmodal" hx-swap="innerhtml">Add</a>
         {% elif f.name == 'department' %}
-        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'department-create' id=tenant.id %}" hx-select="form" hx-target=".content" hx-swap="innerhtml">Add</a>
+        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'department-create' id=tenant.id %}" hx-select="form" hx-target=".contentmodal" hx-swap="innerhtml">Add</a>
         {% elif f.name == 'company' %}
-        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'company-create' id=tenant.id %}" hx-select="form" hx-target=".content" hx-swap="innerhtml">Add</a>
+        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'company-create' id=tenant.id %}" hx-select="form" hx-target=".contentmodal" hx-swap="innerhtml">Add</a>
         {% elif f.name == 'job_title' %}
-        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'job_title-create' id=tenant.id %}" hx-select="form" hx-target=".content" hx-swap="innerhtml">Add</a>
+        <a style="cursor: pointer;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'job_title-create' id=tenant.id %}" hx-select="form" hx-target=".contentmodal" hx-swap="innerhtml">Add</a>
         {% endif %}        
       </div>
       {% endfor %}
       <button class="ui button primary" type="submit">Submit</button>
     </form>
   </div>  
-    <div class="ui tiny modal">
-      <div class="header">Header</div>
-      <div class="content">
-      </div>
-    </div>  
+    {% include "survey/modal.html" %}
 {% endblock %}
 

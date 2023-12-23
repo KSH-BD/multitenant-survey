@@ -4,14 +4,17 @@ import csv
 import json
 import folium
 import string
+import datetime
 import pandas as pd
 from .models import *
 from uuid import uuid4
 from django import forms
+from pprint import pprint
 import plotly.express as px
 from django.conf import settings
 from django.db.models import Count
 from django.contrib import messages
+from django.http import FileResponse
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 from .decorators import unauthenticated_users, adminonly
@@ -85,23 +88,32 @@ def lookahead(iterable):
     # Report the last value.
     yield last, False
 
+import operator
+
 @login_required(login_url='/survey/login/')
 @unauthenticated_users
 def week_form_details(request, id, formid):
-    tenant = Tenant.objects.prefetch_related(
-        "employee_set__answer_set").get(id=id)
-    form = tenant.form_set.get(id=formid)
-
+    tenant = Tenant.objects.get(id=id)
+    form = tenant.form_set.prefetch_related("week","answer_set").get(id=formid)
+    
     # print(Answer.objects.filter(form=form).all())
     # data = [{'emp': emp, 'data': [x for x in emp.answer_set.filter(
     #     form=form).all()]} for emp in tenant.employee_set.all()]
     data = []
     temp = []
-    prev = None
-    for curr,has_more in lookahead(form.answer_set.order_by("employee__name").all()):   
+    item = []
+    prev = None    
+    headers = tenant.question_set.order_by("id").values_list('text', flat=True)
+    
+    for curr,has_more in lookahead(form.answer_set.select_related("employee").order_by("employee__name")):   
         if not has_more:
             temp.append(curr)
-            data.append({"emp":prev.employee,"data":temp})            
+            item.clear()
+            item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
+            data.append(item[0] + sorted(temp,key=operator.attrgetter('question_id')))            
+            # data.append(item[0] + temp)            
+            
+            # data.append({"emp":prev.employee,"data":temp})            
             break            
         
         if not prev:
@@ -112,11 +124,15 @@ def week_form_details(request, id, formid):
             temp.append(curr)
             # print(temp)        
         else:
-            data.append({"emp":prev.employee,"data":temp})
+            item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
+            data.append(item[0] + sorted(temp,key=operator.attrgetter('question_id')))
+            # data.append({"emp":prev.employee,"data":temp})
             temp = []
+            item = []
             temp.append(curr)
             prev = curr
-    # print(data)
+    
+    print(data)
         # if not prev or curr.employee.employee_id == prev.employee.employee_id:
         #     print(f"prev : {prev}")
         #     print(f"curr : {curr}")
@@ -133,7 +149,7 @@ def week_form_details(request, id, formid):
     
     # print(data1)
 
-    return render(request, 'survey/week_form_details.html', {'form': form, "data": data, "tenant": tenant})
+    return render(request, 'survey/week_form_details.html', {'form': form, "data": data, "tenant": tenant,"headers":headers})
 
 @login_required(login_url='/survey/login/')
 @unauthenticated_users
@@ -251,8 +267,7 @@ def submit_survey_form(request, id,formid):
             for x, y in form.cleaned_data.items():
                 dataid = form.fields[x].widget.attrs['data-id']
                 q = Question.objects.get(id=dataid)
-                answer = Answer(employee=employee, form=f,
-                                question=q, answer=y)
+                answer = Answer(employee=employee, form=f,question=q, answer=y)
                 answer.save()
             return render(request, "survey/success.html")
         else:         
@@ -297,8 +312,8 @@ def change_password(request,id,userid):
     if request.method == "POST":
         passwd = request.POST.get("change_password")
         user.set_password(passwd)
-        user.save()
-        return redirect("users_list", id=tenant.id)
+        user.save()       
+        return render(request,"survey/success_password_change.html")
     return render(request,'survey/change_password.html',{"tenant":tenant,"user":user})
 
 @login_required(login_url='/survey/login/')
@@ -400,9 +415,29 @@ def employeedetails(request, id, employeeid):
     tenant = Tenant.objects.get(id=id)
     employee = tenant.employee_set.filter(employee_id=employeeid).first()
 
-    formsdata = [[{"week": form.week, "question": x, "answer": x.answer_set.filter(employee=employee, form=form).first(
-    )} for x in tenant.question_set.order_by("created_at").all()] for form in tenant.form_set.all()]
-    context = {"employee": employee, "data": formsdata}
+    data = []
+    temp = []
+    prev = None
+    for curr,has_more in lookahead(Answer.objects.select_related("form").filter(employee=employee).order_by("created_at").all()):   
+        if not has_more:
+            temp.append(curr)
+            data.append({"form":prev.form,"data":temp})            
+            break            
+        
+        if not prev:
+            prev = curr
+            temp.append(curr)
+        elif curr.form.id == prev.form.id:
+            prev = curr
+            temp.append(curr)
+            
+        else:
+            data.append({"form":prev.form,"data":temp})
+            temp = []
+            temp.append(curr)
+            prev = curr    
+    
+    context = {"employee": employee, "data": data}
     return render(request, "survey/employeedetails.html", context)
 
 @login_required(login_url='/survey/login/')
@@ -410,16 +445,21 @@ def employeedetails(request, id, employeeid):
 def createemployee(request, id):
     tenant = Tenant.objects.get(id=id)
     form = EmployeeForm()
-
+    if tenant.name != "FM":
+        form.fields.pop("actual_zone")
+        
     if request.method == "POST":
         form = EmployeeForm(request.POST)
+        if tenant.name != "FM":
+            form.fields.pop("actual_zone")
+        
         if form.is_valid():
             empid = form.cleaned_data.get("employee_id")
             email = form.cleaned_data.get("email")
             if tenant.employee_set.filter(employee_id=empid).first():
                 form.add_error(
                     'employee_id', 'user with this id already exist')
-                # form.add_error('email', 'user with this email already exist')            
+                            
             else:
                 i = form.save(commit=False)
                 i.section = form.cleaned_data.get('section').name if form.cleaned_data.get('section') else ""
@@ -446,6 +486,8 @@ def updateemployee(request, id, empid):
     tenant = Tenant.objects.get(id=id)
     employee = Employee.objects.get(id=empid)
     form = EmployeeForm(request.POST or None, instance=employee)
+    if tenant.name != "FM":
+        form.fields.pop("actual_zone")
     # if request.method == "POST":
     #     form = EmployeeForm(request.POST)
     if form.is_valid():
@@ -797,9 +839,8 @@ def section_list_view(request, id):
 @login_required(login_url='/survey/login/')
 @unauthenticated_users
 def dashboard(request, id, formid):
-    tenant = Tenant.objects.prefetch_related("employee_set").get(id=id)
-    form = Form.objects.prefetch_related(
-        "answer_set", "answer_set__question").get(id=formid)
+    tenant = Tenant.objects.get(id=id)
+    form = Form.objects.select_related("tenant").get(id=formid)
     
     tiles = 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png'
     attr = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
@@ -818,108 +859,106 @@ def dashboard(request, id, formid):
     latitude = []
     
     allemp = set(x for x in tenant.employee_set.all())
-    submited = set(x.employee for x in form.answer_set.all())    
+    submited = set(x.employee for x in form.answer_set.select_related("employee").all())    
     not_submited = allemp.difference(submited)    
         
-    e_p_c = pd.DataFrame(list(form.tenant.employee_set.values(
+    e_p_c = pd.DataFrame(list(tenant.employee_set.values(
         "company").order_by().annotate(nums_of_employess=Count("id"))))
     emp_pre_comapny = {"title": "number of employees per company", "label": e_p_c.company.values.tolist(
     ), "value": e_p_c.nums_of_employess.values.tolist()}
 
-    for q in form.tenant.question_set.filter(dashboard=True).all():
+    for q in tenant.question_set.filter(dashboard=True).all():
         df = ""
         if "Hx-Request" in request.headers:
             section = request.POST.get("section")
             company = request.POST.get("company")
 
             allemp = set(x for x in tenant.employee_set.filter(section=section,company=company).all())
-            submited = set(x.employee for x in form.answer_set.filter(employee__section=section,employee__company=company).all())    
+            submited = set(x.employee for x in form.answer_set.select_related("employee").filter(employee__section=section,employee__company=company).all())    
             not_submited = allemp.difference(submited) 
     
             if section and company:
-                df = pd.DataFrame(list(form.answer_set.filter(question__text=q.text, employee__section=section, employee__company=company).values(
+                df = pd.DataFrame(list(form.answer_set.select_related("employee","question").filter(question__text=q.text, employee__section=section, employee__company=company).values(
                     "answer").order_by("question__id").annotate(nums_of_employess=Count("employee__id"))))
-                idlist = [x.employee.employee_id for x in tenant_question.answer_set.filter(
+                idlist = [x.employee.employee_id for x in tenant_question.answer_set.select_related("employee").filter(
                     form=form, employee__section=section, employee__company=company).order_by("employee_id").all()]
-                namelist = [x.employee.name for x in tenant_question.answer_set.filter(
+                namelist = [x.employee.name for x in tenant_question.answer_set.select_related("employee").filter(
                     form=form, employee__section=section, employee__company=company).order_by("employee_id").all()]
                 
                 try:
-                    latitude = [x.answer for x in lat.answer_set.filter(
+                    latitude = [x.answer for x in lat.answer_set.select_related("employee").filter(
                         form=form, employee__section=section, employee__company=company).order_by("employee_id").all()]
-                    longitude = [x.answer for x in lon.answer_set.filter(
+                    longitude = [x.answer for x in lon.answer_set.select_related("employee").filter(
                         form=form, employee__section=section, employee__company=company).order_by("employee_id").all()]
                 except:
                     print("no lat/lon")
                 
                 cords = list(zip(idlist, namelist, latitude, longitude))
             elif section:
-                df = pd.DataFrame(list(form.answer_set.filter(question__text=q.text, employee__section=section).values(
+                df = pd.DataFrame(list(form.answer_set.select_related("employee").filter(question__text=q.text, employee__section=section).values(
                     "answer").order_by("question__id").annotate(nums_of_employess=Count("employee__id"))))
-                idlist = [x.employee.employee_id for x in tenant_question.answer_set.filter(
+                idlist = [x.employee.employee_id for x in tenant_question.answer_set.select_related("employee").filter(
                     form=form, employee__section=section).order_by("employee_id").all()]
-                namelist = [x.employee.name for x in tenant_question.answer_set.filter(
+                namelist = [x.employee.name for x in tenant_question.answer_set.select_related("employee").filter(
                     form=form, employee__section=section).order_by("employee_id").all()]
                 try:
-                    latitude = [x.answer for x in lat.answer_set.filter(
+                    latitude = [x.answer for x in lat.answer_set.select_related("employee").filter(
                         form=form, employee__section=section).order_by("employee_id").all()]
-                    longitude = [x.answer for x in lon.answer_set.filter(
+                    longitude = [x.answer for x in lon.answer_set.select_related("employee").filter(
                         form=form, employee__section=section).order_by("employee_id").all()]
                 except:
                     print("no lat/lon")
                     
             elif company:
-                df = pd.DataFrame(list(form.answer_set.filter(question__text=q.text, employee__company=company).values(
+                df = pd.DataFrame(list(form.answer_set.select_related("employee","question").filter(question__text=q.text, employee__company=company).values(
                     "answer").order_by("question__id").annotate(nums_of_employess=Count("employee__id"))))
-                idlist = [x.employee.employee_id for x in tenant_question.answer_set.filter(
+                idlist = [x.employee.employee_id for x in tenant_question.answer_set.select_related("employee").filter(
                     form=form, employee__company=company).order_by("employee_id").all()]
-                namelist = [x.employee.name for x in tenant_question.answer_set.filter(
+                namelist = [x.employee.name for x in tenant_question.answer_set.select_related("employee").filter(
                     form=form, employee__company=company).order_by("employee_id").all()]
                 try:
-                    latitude = [x.answer for x in lat.answer_set.filter(
+                    latitude = [x.answer for x in lat.answer_set.select_related("employee").filter(
                         form=form, employee__company=company).order_by("employee_id").all()]
-                    longitude = [x.answer for x in lon.answer_set.filter(
+                    longitude = [x.answer for x in lon.answer_set.select_related("employee").filter(
                         form=form, employee__company=company).order_by("employee_id").all()]
                 except:
                     print("no lat/lon")
             else:
-                df = pd.DataFrame(list(form.answer_set.filter(question__text=q.text).values(
+                df = pd.DataFrame(list(form.answer_set.select_related("employee","question").filter(question__text=q.text).values(
                     "answer").order_by("question__id").annotate(nums_of_employess=Count("employee__id"))))
                 
         elif tenant.name == "FM" and request.user.role == "dashboard" and request.user.company:            
-            df = pd.DataFrame(list(form.answer_set.filter(question__text=q.text,employee__company=request.user.company).values(
+            df = pd.DataFrame(list(form.answer_set.select_related("employee","question").filter(question__text=q.text,employee__company=request.user.company).values(
                 "answer").order_by("question__id").annotate(nums_of_employess=Count("employee__id"))))
 
-            idlist = [x.employee.employee_id for x in tenant_question.answer_set.filter(
+            idlist = [x.employee.employee_id for x in tenant_question.select_related("employee").answer_set.filter(
                 form=form,employee__company=request.user.company).order_by("employee_id").all()]
-            namelist = [x.employee.name for x in tenant_question.answer_set.filter(
+            namelist = [x.employee.name for x in tenant_question.answer_set.select_related("employee").filter(
                 form=form,employee__company=request.user.company).order_by("employee_id").all()]
             try:
-                latitude = [x.answer for x in lat.answer_set.filter(
-                    form=form,employee__company=request.user.company).order_by("employee_id").all()]
-                longitude = [x.answer for x in lon.answer_set.filter(
+                latitude = [x.answer for x in lat.answer_set.select_related("employee").filter(
+                    form=form,employee__company=request.user.select_related("employee").company).order_by("employee_id").all()]
+                longitude = [x.answer for x in lon.answer_set.select_related("employee").filter(
                     form=form,employee__company=request.user.company).order_by("employee_id").all()]
             except:
                 print("no lat/lon")
                     
             cords = list(zip(idlist, namelist, latitude, longitude))
             allemp = set(x for x in tenant.employee_set.filter(company=request.user.company).all())
-            submited = set(x.employee for x in form.answer_set.filter(employee__company=request.user.company).all())    
+            submited = set(x.employee for x in form.answer_set.select_related("employee").filter(employee__company=request.user.company).all())    
             not_submited = allemp.difference(submited) 
         
         else:
-            df = pd.DataFrame(list(form.answer_set.filter(question__text=q.text).values(
+            df = pd.DataFrame(list(form.answer_set.select_related("question","employee").filter(question__text=q.text).values(
                 "answer").order_by("question__id").annotate(nums_of_employess=Count("employee__id"))))
 
-            idlist = [x.employee.employee_id for x in tenant_question.answer_set.filter(
+            idlist = [x.employee.employee_id for x in tenant_question.answer_set.select_related("employee").filter(
                 form=form).order_by("employee_id").all()]
-            namelist = [x.employee.name for x in tenant_question.answer_set.filter(
+            namelist = [x.employee.name for x in tenant_question.answer_set.select_related("employee").filter(
                 form=form).order_by("employee_id").all()]
             try:                
-                latitude = [x.answer for x in lat.answer_set.filter(
-                    form=form).order_by("employee_id").all()]
-                longitude = [x.answer for x in lon.answer_set.filter(
-                    form=form).order_by("employee_id").all()]
+                latitude = [x.answer for x in lat.answer_set.select_related("employee").filter(form=form).order_by("employee_id").all()]
+                longitude = [x.answer for x in lon.answer_set.select_related("employee").filter(form=form).order_by("employee_id").all()]
             except:
                 print("no lat/lon")
                     
@@ -942,14 +981,66 @@ def dashboard(request, id, formid):
     return render(request, "survey/dashboard.html", {"data": data, "form": form, "emp_pre_comapny": emp_pre_comapny, "map": m._repr_html_(),"submitted":list(submited),"not_submitted":list(not_submited)})
 
 
-def download(request):
+def weekdownload(request,id,formid):
+    tenant = Tenant.objects.get(id=id)
+    form = tenant.form_set.filter(id=formid).first()
+    
+    data = []
+    temp = []
+    item = []
+    prev = None
+    
+    for curr,has_more in lookahead(form.answer_set.select_related("employee").order_by("employee__name")):   
+        if not has_more:
+            temp.append(curr)
+            item.clear()
+            item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
+            data.append(item[0] + temp)            
+            break            
+        
+        if not prev:
+            prev = curr
+            temp.append(curr)
+        elif curr.employee.employee_id == prev.employee.employee_id:
+            prev = curr
+            temp.append(curr)
+        else:
+            item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
+            data.append(item[0] + temp)
+            temp = []
+            item = []
+            temp.append(curr)
+            prev = curr
+            
     d = pd.DataFrame(data)
-    d.columns = ["Employee Name","Employee ID","Employee Type","Department","Divsion","Email","Position","Phone Number","Section"]
-    filename = f"employees{datetime.datetime.now()}.csv"
-    export_path = os.path.join(app.root_path,"export")
+    d.columns = ["Employee Name","Email","Phone Number","Section"] + list(tenant.question_set.values_list('text', flat=True))
+
+    # d.drop(columns=d.columns[0], axis=1, inplace=True)
+    
+    filename = f"form_{datetime.datetime.now()}.csv"
+    export_path = os.path.join(os.getcwd(), "survey/export")
     fullpath = os.path.join(export_path,filename)        
     d.to_csv(fullpath,index=False)
-    # file_path = os.path.join(settings.MEDIA_ROOT, "survey/export")
+    return FileResponse(open(fullpath, 'rb'), as_attachment=True)
+
+def employeedownload(request,id):
+    tenant = Tenant.objects.get(id=id)
+    
+
+    d = pd.DataFrame(list(tenant.employee_set.all().values()))
+    d.drop(columns=d.columns[0], axis=1, inplace=True)
+    d.drop(columns=d.columns[-3:], axis=1, inplace=True)
+    if tenant.name != "FM":
+        d.drop(columns=d.columns[-5], axis=1, inplace=True)
+
+    # d.columns = ["Employee ID"]
+    filename = f"employees{datetime.datetime.now()}.csv"
+    # export_path = os.path.join(app.root_path,"export")
+    export_path = os.path.join(os.getcwd(), "survey/export")
+    fullpath = os.path.join(export_path,filename)        
+    d.to_csv(fullpath,index=False)
+    return FileResponse(open(fullpath, 'rb'), as_attachment=True)
+
     # if os.path.exists(file_path):
     #     with open(file_path, 'rb') as fh:
     #         response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")

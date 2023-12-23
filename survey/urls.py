@@ -8,6 +8,7 @@ urlpatterns = [
     path('create_tenant/', create_tenant, name='create_tenant'),
     path('create_week/<int:id>/', create_week, name='create_week'),
     
+    path('tenant/<int:id>/form/<uuid:formid>/download', weekdownload, name='weekdownload'),
     path('tenant/<int:id>/form/<uuid:formid>/', survey_form, name='survey_form'),
     path('tenant/<int:id>/form/<uuid:formid>/submit_survey_form/',
          submit_survey_form, name='submit_survey_form'),
@@ -47,4 +48,5 @@ urlpatterns = [
     path('tenant/<int:id>/dashboard/<uuid:formid>/', dashboard, name='dashboard'),
     path('tenant/<int:id>/dashboard/<uuid:formid>/', dashboard, name='dashboard'),
     path('tenant/<int:id>/get_company_zone/<uuid:formid>/', get_company_zone, name='get_company_zone'),
+    path('tenant/<int:id>/employeelist/download/', employeedownload, name='employeedownload'),
 ]

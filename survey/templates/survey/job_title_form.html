@@ -1,4 +1,4 @@
-<form class="ui form" hx-post="{% url 'job_title-create' id=tenant.id %}" hx-target="#id_job_title" hx-swap="outerHTML" hx-select="#id_job_title" hx-on="htmx:afterRequest:{$('.ui.modal').modal('hide')}">
+<form style="padding: 2em;" class="ui form" hx-post="{% url 'job_title-create' id=tenant.id %}" hx-target="#id_job_title" hx-swap="outerHTML" hx-select="#id_job_title" hx-on="htmx:afterRequest:{$('.ui.modal').modal('hide')}">
     {% csrf_token %}
     {% for f in form %}
     <div class="field">

@@ -102,6 +102,7 @@ class Employee(models.Model):
 class Tenant(models.Model):
     name = models.CharField(max_length=100)
     title = models.CharField(max_length=100,blank=True,null=True)
+    image_url = models.TextField(null=True,blank=True)
     has_cords = models.BooleanField(default=False)
     slug = AutoSlugField(populate_from='name',null=True,blank=True)
     created_at = models.DateTimeField(auto_now_add=True)

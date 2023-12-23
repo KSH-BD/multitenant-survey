@@ -75,7 +75,7 @@
           <th>Date</th>
           {% for d in data %}
             {% if forloop.counter == 1 %}
-              {% for w in d %}
+              {% for w in d.data %}
                 <th>{{ w.question.text }}</th>
               {% endfor %}
             {% endif %}
@@ -85,12 +85,12 @@
       <tbody>
         {% for d in data %}
           <tr>
-            {% for w in d %}
+            {% for w in d.data %}
               {% if forloop.counter == 1 %}
-                <td>{{ w.week.number }}</td>
-                <td>{{ w.week.created_at|date:"d-m-Y"}}</td>
+                <td>{{ w.form.week.number }}</td>
+                <td>{{ w.form.week.created_at|date:"d-m-Y"}}</td>
               {% endif %}
-              <td>{{ w.answer.answer }}</td>
+              <td>{{ w }}</td>
             {% endfor %}
           </tr>
         {% endfor %}

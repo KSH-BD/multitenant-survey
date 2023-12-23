@@ -1,0 +1,847 @@
+employee_id,name,email,phone_number,job_type,job_title,section,division,actual_zone,department,company,emergency_number,emergency_email,tenant_id,created_at,updated_at
+1,Alfadil Mohammed,Alfadel.mohamed@Shabakkatsd.com,900901404,,Account Manager,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548359+00:00,2023-12-22 13:23:19.548402+00:00
+2,Hozayfa Omer Elsheikh Mahdi,huzifa.Omer@Shabakkattsd.com,912713091,,Operation Manager,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548448+00:00,2023-12-22 13:23:19.548460+00:00
+3,Omer Esmail Mohammed Esmail,Omer.mohamed@Shabkkatsd.com,900901422,,PWR.Technical Coordinator,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548499+00:00,2023-12-22 13:23:19.548510+00:00
+4,Zainelaabedin Mohamed elfki,zainelaabden.elfki@Shabakkat.com,912784994,,Tel.Technical Coordinator,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548548+00:00,2023-12-22 13:23:19.548558+00:00
+5,Elmonthir Ahmed,elmonthir.ahmed@Shabakkatsd.com,912716197,,Tel.Technical Coordinator,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548595+00:00,2023-12-22 13:23:19.548606+00:00
+6,Mohamed Abdallah Elkhalifa ,Eng.moh.elkhalifa@gmail.com,912714963,,Tel.Technical Coordinator,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548643+00:00,2023-12-22 13:23:19.548654+00:00
+7,Mohamed Abd Elfattah,Mohfttah@gmail.com,912503143,,PWR.Technical Coordinator,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548722+00:00,2023-12-22 13:23:19.548741+00:00
+8,Abd Allah Mohamed,Abamaba82@hotmail.com,912714823,,PWR.Technical Coordinator,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548783+00:00,2023-12-22 13:23:19.548795+00:00
+9,Esam Addin Abdalsalam,Esam.mohamed@Shabakkatsd.com,912503119,,PM supervissor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548842+00:00,2023-12-22 13:23:19.548862+00:00
+10,Deena Hussin,deena.hussen@Shabakkatsd.com,912788923,,Spare part Supervissor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548902+00:00,2023-12-22 13:23:19.548914+00:00
+11,Musab Mohammed Salih,Musabmsg@gmail.com,900901867,,Z5  Coordinator,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548951+00:00,2023-12-22 13:23:19.548962+00:00
+12,Hamid Mohamed,,912509244,,Logistic,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.548999+00:00,2023-12-22 13:23:19.549010+00:00
+13,Aymen Almubarek,Aymen.adalat@gmail.com,912715888,,Fleet,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549046+00:00,2023-12-22 13:23:19.549057+00:00
+14,Einas Ibrahim,Einas.Ibrahim@Shabakkatsd.com,912509266,,Dispatcher Supervissor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549094+00:00,2023-12-22 13:23:19.549105+00:00
+15,Amal Hosin,amalhussein7998@gmail.com,912162283,,Finance officer,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549142+00:00,2023-12-22 13:23:19.549153+00:00
+16,Shadia Omer ,shadooo9961@gmail.com,912509252,,HR / Admin,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549189+00:00,2023-12-22 13:23:19.549201+00:00
+17,Tasnem Azhari,Tasneem.Azhari@Shabakkatsd.com,912503099,,Finance Manager,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549244+00:00,2023-12-22 13:23:19.549255+00:00
+18,Haron Abdelshafi Abdelgabar,,912713510,,Office cleaner,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549296+00:00,2023-12-22 13:23:19.549308+00:00
+19,Motdather Tigani Adem,,900901470,,Office guard,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549346+00:00,2023-12-22 13:23:19.549358+00:00
+20,Ashraf Fadul Habeila  Abu Hamra,ashraf.abuhamra@gmail.com,912713212,,Office Supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549399+00:00,2023-12-22 13:23:19.549411+00:00
+21,FakherAldeen Osman Edrees,fakheryosman@gmail.com,912779830,,Office Supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549451+00:00,2023-12-22 13:23:19.549463+00:00
+22,Balla Hamid Mohamed Ahmed,Balla.Mohamed@Shabakkatsd.com,912509242,,Office Supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549501+00:00,2023-12-22 13:23:19.549512+00:00
+23,Motaz Omer Abdalla Shagag,mutaz.shagaq@Shabakkatsd.com,912509248,,Office Supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549549+00:00,2023-12-22 13:23:19.549560+00:00
+24,Jafer Saad  Osman ,jaffar.elexzain@gmail.com ,912714706,,Office Supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549596+00:00,2023-12-22 13:23:19.549608+00:00
+25,Sharif Mustafa Ali,sha83rif@gmaicom,912715430,,Engineer/office supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549647+00:00,2023-12-22 13:23:19.549658+00:00
+26,Mohamed Abdalbasit SidAhmed,moh.abdelbaset112@gmail.com,912714840,,office supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549696+00:00,2023-12-22 13:23:19.549707+00:00
+27,Jamal Eldin Mohamed Abdagadir,jojojmoh43@gmail.com,912509259,,Engineer/office supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549743+00:00,2023-12-22 13:23:19.549754+00:00
+28,Yasin ALser Mohamed Yasin,yasinyas311@gmail.com,900901478,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549801+00:00,2023-12-22 13:23:19.549813+00:00
+29,Abdalazem Ashraf Mahmoud diab,NOC.Easter-Region@shabakkatsd.com,912765633,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549850+00:00,2023-12-22 13:23:19.549861+00:00
+30,Roua yagoub khalafallh,,912765633,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549898+00:00,2023-12-22 13:23:19.549909+00:00
+31,Marwa omer mohamed emam ,,912765633,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549946+00:00,2023-12-22 13:23:19.549957+00:00
+32,Abdallah Tagalser Mohammed Mahmoud ,,912765633,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.549993+00:00,2023-12-22 13:23:19.550005+00:00
+33,Mukhtar Salah Aldeen Abed alrhaman,,912765633,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550042+00:00,2023-12-22 13:23:19.550053+00:00
+34,Omer Gafar Mohamed Yousif,,912765633,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550093+00:00,2023-12-22 13:23:19.550104+00:00
+35,Reem Abdelrahman Ibrahim,,912765633,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550142+00:00,2023-12-22 13:23:19.550153+00:00
+36,ALbsher Mohamed Ali,,912509266,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550190+00:00,2023-12-22 13:23:19.550201+00:00
+37,Mohamed ALmostafa Alfateh Ihmdon,OMC.Sudan@shabakkatsd.com,912509266,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550238+00:00,2023-12-22 13:23:19.550249+00:00
+38,Areej Alfateh Ihmdon,,912509266,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550285+00:00,2023-12-22 13:23:19.550296+00:00
+39,Ahmed Jmal Obied Awad Elkarim,,912509266,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550332+00:00,2023-12-22 13:23:19.550342+00:00
+40,Ahmed Omer Babiker,,912509266,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550407+00:00,2023-12-22 13:23:19.550427+00:00
+41,Asgad Osman ,,912509266,,Dispatcher,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550469+00:00,2023-12-22 13:23:19.550480+00:00
+42,Hafiz Mohammad Adam Mohammad,,912713557,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550521+00:00,2023-12-22 13:23:19.550532+00:00
+43,Mohamed Abdallah,,912533048,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550568+00:00,2023-12-22 13:23:19.550579+00:00
+44,Mohamed Faisal Mohamed Abd Allah,,912503098,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550616+00:00,2023-12-22 13:23:19.550627+00:00
+45,Alaa Aldeen Hasan Yosif,,111828600,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550663+00:00,2023-12-22 13:23:19.550674+00:00
+46,Abdalbasit Mohamed Albashir Ali  ,,912713542,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550710+00:00,2023-12-22 13:23:19.550721+00:00
+47,Moneer Ahmed Abaker Ahmed,,912786429,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550757+00:00,2023-12-22 13:23:19.550768+00:00
+48,Omer Osman Mohammed Alsheikh,,912713809,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550804+00:00,2023-12-22 13:23:19.550815+00:00
+49,Nasr Eldeen Edris Yousif Ismail,,913808667,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550851+00:00,2023-12-22 13:23:19.550862+00:00
+50,Izzeldeen Mubarak,,912509257,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550898+00:00,2023-12-22 13:23:19.550909+00:00
+51,Hosam Hakim,,912509273,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550947+00:00,2023-12-22 13:23:19.550958+00:00
+52,Salah Ahmed Badar Alameen,,912509262,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.550995+00:00,2023-12-22 13:23:19.551006+00:00
+53,Hassan Bbker Ibrahim Abdalah ,,922530113,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551042+00:00,2023-12-22 13:23:19.551053+00:00
+54,Kamal Sharif Abdelgadir Alhaderi,,912712994,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551090+00:00,2023-12-22 13:23:19.551100+00:00
+55,Joher Hassen Joher Akash,,912714641,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551137+00:00,2023-12-22 13:23:19.551148+00:00
+56,Walid Ahmed Abdeldaem Mohamed,,908893606,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551184+00:00,2023-12-22 13:23:19.551195+00:00
+57,Mohamed Jbreel Mohamed Mustafa,,912503120,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551231+00:00,2023-12-22 13:23:19.551242+00:00
+58,Amin Abdrhman ,,912509245,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551278+00:00,2023-12-22 13:23:19.551289+00:00
+59,Haytham Ahmed Osman Ahmed,,912509261,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551325+00:00,2023-12-22 13:23:19.551336+00:00
+60,Mawya Abdelrahman Musa,,912783812,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551372+00:00,2023-12-22 13:23:19.551383+00:00
+61,Khalid Abdallah Almahi Mohamed Ahmed,,902290497,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551419+00:00,2023-12-22 13:23:19.551430+00:00
+62,Mohamed Abdallah Nour Alhadi,,900746161,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.551466+00:00,2023-12-22 13:23:19.551477+00:00
+63,Omran Ibrahim nugat Ibrahim,,912780089,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558346+00:00,2023-12-22 13:23:19.558377+00:00
+64,Abd Elbagi Abd Allah Edris Abd Allah,,912784194,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558416+00:00,2023-12-22 13:23:19.558427+00:00
+65,Mojahid Bashir,,912781208,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558461+00:00,2023-12-22 13:23:19.558472+00:00
+66,Ahmed Hussein ,,912731610,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558504+00:00,2023-12-22 13:23:19.558514+00:00
+67,Anwar Algaily Mohammed,,912506278,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558546+00:00,2023-12-22 13:23:19.558555+00:00
+68,Haydar,,900746162,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558588+00:00,2023-12-22 13:23:19.558597+00:00
+69,Ali Ibrahim Ali Ibrahim,alihalfa66@gmail.com,912536849,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558629+00:00,2023-12-22 13:23:19.558638+00:00
+70,Omer Abdellah Ahmed,,912715287,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558670+00:00,2023-12-22 13:23:19.558680+00:00
+71,Altahir Abdelrahman yaihya,,912785269,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558711+00:00,2023-12-22 13:23:19.558721+00:00
+72,Sabir Mohamed,,,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558753+00:00,2023-12-22 13:23:19.558762+00:00
+73,Esam Eldin Mohamed Haj alamin,,912715692,,Team Leader,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558794+00:00,2023-12-22 13:23:19.558803+00:00
+74,Ali Mohamed Omer Osman,,912715071,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558835+00:00,2023-12-22 13:23:19.558844+00:00
+75,Musa Salih,,912509253,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558875+00:00,2023-12-22 13:23:19.558885+00:00
+76,Yassin Osman,,,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558915+00:00,2023-12-22 13:23:19.558925+00:00
+77,Alwasg mohammed alhasin,elwathigelhussin@gmail.com,900901869,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558956+00:00,2023-12-22 13:23:19.558965+00:00
+78,Hessen Seleman adri,,912731749,,Power Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.558996+00:00,2023-12-22 13:23:19.559005+00:00
+79,Osman Mohammed Musa ,,912714814,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559037+00:00,2023-12-22 13:23:19.559046+00:00
+80,Abdelrahman Abdallah Ahmed Alkhider,,912713835,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559078+00:00,2023-12-22 13:23:19.559087+00:00
+81,Alamen Mohamed Abdallah,,912716286,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559118+00:00,2023-12-22 13:23:19.559127+00:00
+82,Ohaj Mohmed Hameed,,900716484,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559158+00:00,2023-12-22 13:23:19.559168+00:00
+83,Ali Mustafa Ali Mohameden,alimustefa55@gmail.com,912509260,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559199+00:00,2023-12-22 13:23:19.559208+00:00
+84,Ayman Abdelmonem Ahmed,,912714302,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559238+00:00,2023-12-22 13:23:19.559248+00:00
+85,Musa Ibrahim Idrees,,912786387,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559279+00:00,2023-12-22 13:23:19.559289+00:00
+86,Hashim Abdalrasool Hussein Abdalgadir,Hashimabdalrasool@gmail.com,900901530,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559321+00:00,2023-12-22 13:23:19.559331+00:00
+87,Saaed Howatallah  Gadora,,912714092,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559361+00:00,2023-12-22 13:23:19.559371+00:00
+88,Abdallah  Mohamed Abdallah,,912714755,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559401+00:00,2023-12-22 13:23:19.559411+00:00
+89,Amin Hasan Mohamed,,991307780,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559441+00:00,2023-12-22 13:23:19.559451+00:00
+90,Dafalla Babekir Dafalla Babekir,Daffalla.babiker@yahoo.com,912789266,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559481+00:00,2023-12-22 13:23:19.559490+00:00
+91,Mohamed Mustafa Abdelwahid Osman ,,912789087,,Power Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559521+00:00,2023-12-22 13:23:19.559530+00:00
+92,Moawia  Jamaleldin Algojoli,,912506281,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559560+00:00,2023-12-22 13:23:19.559570+00:00
+93,Ibrahim FadlAllah,,113403891,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559600+00:00,2023-12-22 13:23:19.559609+00:00
+94,Imad Elkamil Abdelrahman Ahmed,,900901407,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559640+00:00,2023-12-22 13:23:19.559649+00:00
+95,yosif Ali,,900901473,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559680+00:00,2023-12-22 13:23:19.559689+00:00
+96,Altayb Imam Albsheer,,912500302,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559720+00:00,2023-12-22 13:23:19.559729+00:00
+97,Fadallah  Hamad Gabash,fadullallah95hammad@gmail.com,912511178,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559760+00:00,2023-12-22 13:23:19.559769+00:00
+98,Algali Alriyh,,900746160,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559799+00:00,2023-12-22 13:23:19.559809+00:00
+99,Mohamed Salih,,901926131,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559839+00:00,2023-12-22 13:23:19.559848+00:00
+100,Ebn omer,,906680738,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559879+00:00,2023-12-22 13:23:19.559888+00:00
+101,Mohamed Ibrahim Fazani,,912736974,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559919+00:00,2023-12-22 13:23:19.559928+00:00
+102,Hisham Osman Khalid,,912714239,,Power Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559958+00:00,2023-12-22 13:23:19.559968+00:00
+103,Abdallah Ahmed Abdallah,,912714534,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.559998+00:00,2023-12-22 13:23:19.560007+00:00
+104,Mohamed Babeker Yosif,,905210768,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560038+00:00,2023-12-22 13:23:19.560047+00:00
+105,Hamid Osman Abu Zainab,,912714479,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560078+00:00,2023-12-22 13:23:19.560087+00:00
+106,Mubasher ibrahim,,900901424,,Telecom-Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560118+00:00,2023-12-22 13:23:19.560127+00:00
+107,Ameer Ahmed Ali,,912715355,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560157+00:00,2023-12-22 13:23:19.560166+00:00
+108,Alameen Mohamed ,ameen.m.a.955@gmail.com,912501088,,Telecom-Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560197+00:00,2023-12-22 13:23:19.560206+00:00
+109,Malik Adem ,,912731750,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560236+00:00,2023-12-22 13:23:19.560246+00:00
+110,Mohamed Gasm Elsed Abdulradi  ,,912501158,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560276+00:00,2023-12-22 13:23:19.560286+00:00
+111,Mohund Gasm Elsed,,917053191,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560316+00:00,2023-12-22 13:23:19.560325+00:00
+112,Safwat Aldoma Adam Ibrahim,,912509247,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560370+00:00,2023-12-22 13:23:19.560380+00:00
+113,Alboshra Mohamed Ahmed ,,912531916,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560409+00:00,2023-12-22 13:23:19.560418+00:00
+114,Aymen Almahi Farah Alshazli,,,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560447+00:00,2023-12-22 13:23:19.560456+00:00
+115,Mohamed Imam,m.imam100@yahoo.com,912133615,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560486+00:00,2023-12-22 13:23:19.560495+00:00
+116,Mohamed Othman Omar Mohamed,,900901472,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560524+00:00,2023-12-22 13:23:19.560533+00:00
+117,Ahmed Ibraheim Musa,,901235324,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560562+00:00,2023-12-22 13:23:19.560571+00:00
+118,Alser Ali Awed Almodeef,,,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560601+00:00,2023-12-22 13:23:19.560610+00:00
+119,Jafer Abakar Mokhtar Ahmed,gaafarmukhtar@gmail.com,912506279,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560639+00:00,2023-12-22 13:23:19.560648+00:00
+120,Naser Yosif Mohamed Ali,,912713681,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560704+00:00,2023-12-22 13:23:19.560721+00:00
+121,Abdalsawi Gismalseed Abdalsawi,,912503126,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560753+00:00,2023-12-22 13:23:19.560763+00:00
+122,AbdElaziz Ali Musa Godad,,,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560793+00:00,2023-12-22 13:23:19.560803+00:00
+123,Adam Mohmamed Ibraheim Albasha,,900901405,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560833+00:00,2023-12-22 13:23:19.560843+00:00
+124,Mohaned Mohamed Ahmed Hussien,,912506291,,Power Supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.560873+00:00,2023-12-22 13:23:19.560882+00:00
+125,Ali Mohamed Ali Sulayman,,900901535,,Power Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564051+00:00,2023-12-22 13:23:19.564078+00:00
+126,Osama Makki Hassan,,,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564112+00:00,2023-12-22 13:23:19.564123+00:00
+127,Mohamed NoorAldayim Adam Awad,mohammednor9090@gmail.com,912771259,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564153+00:00,2023-12-22 13:23:19.564163+00:00
+128,Badereldin Salah Adam,,912715149,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564192+00:00,2023-12-22 13:23:19.564201+00:00
+129,Mohamed Abdallah Altahir Mohamed,,900901471,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564230+00:00,2023-12-22 13:23:19.564239+00:00
+130,Musa Alfahel Alhag Mohamed,,,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564268+00:00,2023-12-22 13:23:19.564277+00:00
+131,Elshareef Hassan Elshareed,,912737098,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564306+00:00,2023-12-22 13:23:19.564315+00:00
+132,Alwalead Abdelrahman,,900901405,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564344+00:00,2023-12-22 13:23:19.564353+00:00
+133,Mohamed Ibrahim Abdelgadir,,912509255,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564382+00:00,2023-12-22 13:23:19.564391+00:00
+134,Diyaa Aldeen Nasir Abdalrahman Mohamed,,912503028,,Power Supervisor,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564420+00:00,2023-12-22 13:23:19.564429+00:00
+135,Ahmed Abdelrahman Mohamed Abdallah,,914589245,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564457+00:00,2023-12-22 13:23:19.564466+00:00
+136,Mohameed Awad Fadlalmola Rehan,,912855322,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564495+00:00,2023-12-22 13:23:19.564504+00:00
+137,Mohammed Alfatih Rahma Mohamed   ,,912716049,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564533+00:00,2023-12-22 13:23:19.564542+00:00
+138,Amar Asad Monhal Ehaimir,,912713112,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564571+00:00,2023-12-22 13:23:19.564580+00:00
+139,Basheer Mhamed Ali yosif,,912509279,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564609+00:00,2023-12-22 13:23:19.564618+00:00
+140,Mohamed Alhassan Abdalrahman,,911164281,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564647+00:00,2023-12-22 13:23:19.564656+00:00
+141,Musa Alameen Mohamed Ali,,900901864,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564712+00:00,2023-12-22 13:23:19.564729+00:00
+142,Faysal Eltoum Elfadol Fadlelseed ,,912749018,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564763+00:00,2023-12-22 13:23:19.564773+00:00
+143,Hosam Abobakr osman Gabir,,912789242,,Power Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564803+00:00,2023-12-22 13:23:19.564812+00:00
+144,Samir Bayomi Adam Beraima  ,,901111166,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564841+00:00,2023-12-22 13:23:19.564850+00:00
+145,Munzir Kamal Youssif Alrasheed ,monzer121@gmail.com,901236384,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564879+00:00,2023-12-22 13:23:19.564888+00:00
+146,Mohamed Omer Mohamed Zain,,912162990,,Telecom Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564917+00:00,2023-12-22 13:23:19.564927+00:00
+147,Ramah Ibn Omer Alata Badri,rmmah86@gmail.com,912723070,,Power Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564956+00:00,2023-12-22 13:23:19.564965+00:00
+148,Mirghani Hasan Alhaj Hamed,,965748439,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.564994+00:00,2023-12-22 13:23:19.565004+00:00
+149,Abdelkreem Allein Altaher Alemam ,allienkarim@gmail.com,900901421,,Team leader ,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.565032+00:00,2023-12-22 13:23:19.565042+00:00
+150,Yousif Hassan Musa Mohamed ,,912509933,,Power-Tech,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.565071+00:00,2023-12-22 13:23:19.565080+00:00
+151,Mohamed Almustafa Alshaikh Alrayah ,mohamedalrayah345@gmail.com,912731606,,Power Eng,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.565110+00:00,2023-12-22 13:23:19.565119+00:00
+152,Mirghani Ibrahim Eisa aldai,,968108854,,Helper,FM,,,,Shabakkat,,,3,2023-12-22 13:23:19.565148+00:00,2023-12-22 13:23:19.565157+00:00
+153,Abdalbagi Hmaid Abdalbagi,,900128929,,Team leader ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565186+00:00,2023-12-22 13:23:19.565195+00:00
+154,Abdallah Mohammed Abdallah,,912495859,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565224+00:00,2023-12-22 13:23:19.565233+00:00
+155,Abdallateif Shareif Abdallateif,,916401320,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565262+00:00,2023-12-22 13:23:19.565271+00:00
+156,Ahmed Alobeid ,quality@maxwell-sd.net,900934114,,PM coordinator ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565300+00:00,2023-12-22 13:23:19.565309+00:00
+157,Ahmed Bala Shokr Allah ,,915070148,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565338+00:00,2023-12-22 13:23:19.565347+00:00
+158,Alaaeldeen Osman Mohaamed ,alaa@maxwell-sd.net,912335701,,Project manager ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565391+00:00,2023-12-22 13:23:19.565400+00:00
+159,Alsari BushaAbdAlbagi,,917982844,,Telecom Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565429+00:00,2023-12-22 13:23:19.565438+00:00
+160,Altayeb Ali Ragab ,,900934111,,Telecom Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565467+00:00,2023-12-22 13:23:19.565482+00:00
+161,Amgad Ahmed Sharafalden,,916269321,,Telecom Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565520+00:00,2023-12-22 13:23:19.565529+00:00
+162,Badraldeen Osman Mohammed ,,900934109,,Telecom Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565558+00:00,2023-12-22 13:23:19.565567+00:00
+163,Bakri Hussain Ali,,911630090,,Telecom Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565596+00:00,2023-12-22 13:23:19.565605+00:00
+164,Bakri Yahya AbdAlaziz ,,911336021,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565633+00:00,2023-12-22 13:23:19.565642+00:00
+165,Basheer Yousif Alimam,,906400217,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565670+00:00,2023-12-22 13:23:19.565679+00:00
+166,Esamelden Hassan Osman Mohammed,power@maxwell-sd.net,910400561,,Power Supervisor,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565708+00:00,2023-12-22 13:23:19.565716+00:00
+167,Hashim Ismaeel Ali Rabih,,900934113,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565744+00:00,2023-12-22 13:23:19.565753+00:00
+168,Hassan Nagmaldeen Mohammed Miskeen,,900934110,,Team leader ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565810+00:00,2023-12-22 13:23:19.565827+00:00
+169,Khalid Mahgoub Yousuf Elshafei,telecom@maxwell-sd.net,900905760,,Telecom supervisor ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565859+00:00,2023-12-22 13:23:19.565868+00:00
+170,Maaz Ihmede Ali Ihmede,Muazihmede93@gmail.com,900905680,,Office supervisor ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565897+00:00,2023-12-22 13:23:19.565906+00:00
+171,Makki Babiker Yousef ,,900128652,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565935+00:00,2023-12-22 13:23:19.565944+00:00
+172,Mohammed Abdallah Abdalkreem ,,915452452,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.565972+00:00,2023-12-22 13:23:19.565981+00:00
+173,Mohammed Alfatih ,,911092702,,Team leader ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566010+00:00,2023-12-22 13:23:19.566019+00:00
+174,Mohammed Alfatih Mohammed Fadlallah,,900906252,,Team leader ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566048+00:00,2023-12-22 13:23:19.566057+00:00
+175,Mohammed Almustafa Hisham ,,903230716,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566085+00:00,2023-12-22 13:23:19.566094+00:00
+176,Mohammed Ibraheem Ali Mohammed ,,911261383,,power support,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566123+00:00,2023-12-22 13:23:19.566132+00:00
+177,Mohammed Mansour Bushra Omer,,912401588,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566160+00:00,2023-12-22 13:23:19.566169+00:00
+178,Mohammed Yahya ,,917146013,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566198+00:00,2023-12-22 13:23:19.566207+00:00
+179,Mustafa Ali Musa ,,900128609,,Team leader ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566235+00:00,2023-12-22 13:23:19.566245+00:00
+180,Muzamil Mohammed ,,900128795,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566273+00:00,2023-12-22 13:23:19.566282+00:00
+181,Nagi AbdAlgadir ,,900934115,,Team leader ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566311+00:00,2023-12-22 13:23:19.566320+00:00
+182,Omer Abdalgadir Abdalrhman Mohammed,,911163483,,Team leader ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566348+00:00,2023-12-22 13:23:19.566372+00:00
+183,Omer Mohammed Alawad ,FM.dwaim@maxwell-sd.net,900128581,,Office supervisor ,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566402+00:00,2023-12-22 13:23:19.566412+00:00
+184,Waleed Adam Saadallah,,900128619,,Power-Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566443+00:00,2023-12-22 13:23:19.566452+00:00
+185,Waleed Mohammed,,900934115,,Telecom Tech,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566482+00:00,2023-12-22 13:23:19.566491+00:00
+186,Mohamed Ahmed AbdAllah,,911038413,,Dispatcher,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.566521+00:00,2023-12-22 13:23:19.566530+00:00
+187,AbdAlaziz Basheer Hakim,,900222343,,Dispatcher,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.569689+00:00,2023-12-22 13:23:19.569720+00:00
+188,Mobasher Jaafar Hassan Ahmed,,901807171,,Dispatcher,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.569754+00:00,2023-12-22 13:23:19.569764+00:00
+189,Hana Ibrahim Hamad,,908537447,,Dispatcher,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.569794+00:00,2023-12-22 13:23:19.569803+00:00
+190,AbdAlrahman Ahmed Mahdi,,969077800,,Dispatcher,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.569831+00:00,2023-12-22 13:23:19.569840+00:00
+191,"Ibrahim AbdAlwali Ibrahim, ",,913290501,,Dispatcher,FM,,,,Maxwell,,,3,2023-12-22 13:23:19.569868+00:00,2023-12-22 13:23:19.569877+00:00
+192,Mustafa Haroon Mohamed Ali ,,912327663,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.569905+00:00,2023-12-22 13:23:19.569914+00:00
+193,Idress Abdullah Bakhet Idress,,910095069,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.569942+00:00,2023-12-22 13:23:19.569951+00:00
+194,Mustafa Altgani Mohamed Saleh,,122961518,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.569979+00:00,2023-12-22 13:23:19.569987+00:00
+195,Mohamed Abd Al Malik Khamis,,910072785,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570015+00:00,2023-12-22 13:23:19.570024+00:00
+196,Abdulshakoor Haroon Omer,,914831185,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570052+00:00,2023-12-22 13:23:19.570061+00:00
+197,Sabeir Ahmed Mohamed Ibrahim,,910406627,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.570088+00:00,2023-12-22 13:23:19.570097+00:00
+198,Sharif Abu Zaid Abbas Ahmed,,910072683,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570125+00:00,2023-12-22 13:23:19.570133+00:00
+199,Abdalhmid Yagoub Abker Adam,,928471223,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570161+00:00,2023-12-22 13:23:19.570170+00:00
+200,Al Zubair Abdulrahman Mohamed Juma,,912527739,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570198+00:00,2023-12-22 13:23:19.570242+00:00
+201,Yaser Abaker Musa Bahar,,910092718,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570280+00:00,2023-12-22 13:23:19.570290+00:00
+202,Osman Abdalaziz Osman Abdalla,,926588876,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.570320+00:00,2023-12-22 13:23:19.570329+00:00
+203,Mohamed Abdul Jabar Ahmed Mohamed,,910072008,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.570358+00:00,2023-12-22 13:23:19.570367+00:00
+204,Anwar Abdallah Adam Mohammed,,910072632,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.570395+00:00,2023-12-22 13:23:19.570404+00:00
+205,Mohammed Ahmed Adam Tahir,,910071940,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.570432+00:00,2023-12-22 13:23:19.570441+00:00
+206,Mokhtar Abu lhasan Abdulmajid,,910071897,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.570469+00:00,2023-12-22 13:23:19.570478+00:00
+207,Alfadil Salih Altahir Salih,,915735154,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570506+00:00,2023-12-22 13:23:19.570516+00:00
+208,Alnazeer Bushara Mohamed Idriss,,914475003,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570544+00:00,2023-12-22 13:23:19.570553+00:00
+209,Mahdi Salih Mahdi Rodwan,,912552864,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570581+00:00,2023-12-22 13:23:19.570590+00:00
+210,Isam Mohamed Mahdi Ali,,900098835,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570618+00:00,2023-12-22 13:23:19.570627+00:00
+211,Mohamed Adam Al Doma Mohamed,,916498832,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570656+00:00,2023-12-22 13:23:19.570665+00:00
+212,Mohamed Osman Abbakr Hassan,,914560659,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570693+00:00,2023-12-22 13:23:19.570702+00:00
+213,Muhanned Mohammed Nour Ahmed,,902431154,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570730+00:00,2023-12-22 13:23:19.570740+00:00
+214,Ahmed Bushra Abbakr Bada,,910072315,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570769+00:00,2023-12-22 13:23:19.570778+00:00
+215,Ashraf saifaldin Mohamed Ibrahim,,910072325,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.570807+00:00,2023-12-22 13:23:19.570816+00:00
+216,Ishaq Adam Mohamed Ahmed,,913067881,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.570863+00:00,2023-12-22 13:23:19.570884+00:00
+217,Mokhtar Adam Mohammed Abdalla,,910071897,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.570936+00:00,2023-12-22 13:23:19.570947+00:00
+218,Yosif Mohammed Ababaker Mohammed,,924169088,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.570977+00:00,2023-12-22 13:23:19.570986+00:00
+219,Mohammed Yosf Ishag Mahmoud,,91253295,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.571015+00:00,2023-12-22 13:23:19.571024+00:00
+220,Abu Alhassan Abakar Hassan Mahmoud,,9100711009,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.571054+00:00,2023-12-22 13:23:19.571068+00:00
+221,Ahmed Mohammed Ali Ahmed,,9010071436,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.571115+00:00,2023-12-22 13:23:19.571130+00:00
+222,Hafiz Ahmed Abker Salih,,918344747,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.571178+00:00,2023-12-22 13:23:19.571194+00:00
+223,Mohamed almokhtar Ibn Omer Mohmed Elnour Elbakri,,910097307,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.571240+00:00,2023-12-22 13:23:19.571256+00:00
+224,Abdulmajid Yousef Ahmed Abdalla,,912845157,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571308+00:00,2023-12-22 13:23:19.571326+00:00
+225,Alsadig Ishag Adam Khareif,,913265771,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571373+00:00,2023-12-22 13:23:19.571384+00:00
+226,Malik Mohammed Yahia,,912103218,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571413+00:00,2023-12-22 13:23:19.571422+00:00
+227,Hitham Suraj Mohammed Suraj,,910071551,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571450+00:00,2023-12-22 13:23:19.571459+00:00
+228,Ahmed Babiker Mohamed Abdelnabi,,912536842,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571488+00:00,2023-12-22 13:23:19.571497+00:00
+229,Haider Mohammed Ahmed Osman,,910406649,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571525+00:00,2023-12-22 13:23:19.571534+00:00
+230,Mohammed Saifaldein Mohammed Yahia,,917370952,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571562+00:00,2023-12-22 13:23:19.571571+00:00
+231,Hassan Abdulrahim Mohamed,,912460572,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.571599+00:00,2023-12-22 13:23:19.571607+00:00
+232,Ezaldein Mohamed Eltegani Adam,,910070605,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.571635+00:00,2023-12-22 13:23:19.571644+00:00
+233,Abdalla Hamed Shkifat Hasaballa,,910818748,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.571673+00:00,2023-12-22 13:23:19.571681+00:00
+234,Mohamed Hamza Omar Fadul,,911435347,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.571713+00:00,2023-12-22 13:23:19.571728+00:00
+235,Ibrahim Mohammed Adam Bilal,,910070044,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.571759+00:00,2023-12-22 13:23:19.571767+00:00
+236,Mustafa Eldow Mohamed Eldow,,910069804,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571795+00:00,2023-12-22 13:23:19.571804+00:00
+237,Saleh Hamdan Abdullah Al Sakin,,910071621,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.571832+00:00,2023-12-22 13:23:19.571841+00:00
+238,Ismail Hamid Mohamed Malla,,910071712,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.571869+00:00,2023-12-22 13:23:19.571878+00:00
+239,Ismail Abdalla Adam Abdalla,,125613923,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571907+00:00,2023-12-22 13:23:19.571915+00:00
+240,Tareq Ahmed Mohamed Adam,,910071926,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571944+00:00,2023-12-22 13:23:19.571953+00:00
+241,Mamdouh Al Sadiq Abdul Mawla,,920202821,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.571981+00:00,2023-12-22 13:23:19.571990+00:00
+242,Bakri Taha Mohamad Ali,,910071621,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.572018+00:00,2023-12-22 13:23:19.572026+00:00
+243,Khalid Hefzuallah Mirghani Abdalla,,912330576,,GM,FM,,,,AGM,,,3,2023-12-22 13:23:19.572054+00:00,2023-12-22 13:23:19.572063+00:00
+244,Ahmed Husain Ibrahim Taha,,912506657,,Operation Manager,FM,,,,AGM,,,3,2023-12-22 13:23:19.572091+00:00,2023-12-22 13:23:19.572104+00:00
+245,Ahmed Salah Abdalla Mohamed,,910069555,,HR Manager,FM,,,,AGM,,,3,2023-12-22 13:23:19.572136+00:00,2023-12-22 13:23:19.572145+00:00
+246,Eiman Izzeldeen Abdalla Adam,,910400973,,Dispatcher Supervissor,FM,,,,AGM,,,3,2023-12-22 13:23:19.572173+00:00,2023-12-22 13:23:19.572182+00:00
+247,Fatima Sideeq Yousif Abdalla,,910400889,,PM Coordinator,FM,,,,AGM,,,3,2023-12-22 13:23:19.572210+00:00,2023-12-22 13:23:19.572219+00:00
+248,Hamza Haroon Musa Adam,,910400890,,Telecom supervisor ,FM,,,,AGM,,,3,2023-12-22 13:23:19.572247+00:00,2023-12-22 13:23:19.572255+00:00
+249,Khalid Abdelkarim Elobeid Ahmed,,910400881,,Power Head,FM,,,,AGM,,,3,2023-12-22 13:23:19.575893+00:00,2023-12-22 13:23:19.575924+00:00
+250,Zakaria Yousif Ishag Mahmoud,,9104400886,,Power coordinator,FM,,,,AGM,,,3,2023-12-22 13:23:19.575958+00:00,2023-12-22 13:23:19.575969+00:00
+251,Amira Mohamed Elkhir Ali Mohamed,,910400975,,Dispatcher,FM,,,,AGM,,,3,2023-12-22 13:23:19.575998+00:00,2023-12-22 13:23:19.576008+00:00
+252,Assmaa Omer Mohamed Babiker,,914397212,,Dispatcher,FM,,,,AGM,,,3,2023-12-22 13:23:19.576037+00:00,2023-12-22 13:23:19.576046+00:00
+253,Ayman Ali Ibrahim Ahmed,,910400882,,Dispatcher,FM,,,,AGM,,,3,2023-12-22 13:23:19.576074+00:00,2023-12-22 13:23:19.576083+00:00
+254,Hisham Mohamed Ahmed Eltaiyb,,900567276,,Dispatcher,FM,,,,AGM,,,3,2023-12-22 13:23:19.576111+00:00,2023-12-22 13:23:19.576120+00:00
+255,Mohamed Amin Salih,,910400971,,Logistic,FM,,,,AGM,,,3,2023-12-22 13:23:19.576148+00:00,2023-12-22 13:23:19.576157+00:00
+256,Mohamed Hassan Mohamed Ali,,900533366,,CFO,FM,,,,AGM,,,3,2023-12-22 13:23:19.576185+00:00,2023-12-22 13:23:19.576194+00:00
+257,Mobasher Gafar Hassan Ahmed,,910406619,,Telecom supervisor ,FM,,,,AGM,,,3,2023-12-22 13:23:19.576225+00:00,2023-12-22 13:23:19.576234+00:00
+258,Omer Elfaroug Faisal Nasr Barri,,910407445,,Support,FM,,,,AGM,,,3,2023-12-22 13:23:19.576263+00:00,2023-12-22 13:23:19.576272+00:00
+259,Osman Eltigani Osman Adam,,910092971,,Logistic,FM,,,,AGM,,,3,2023-12-22 13:23:19.576300+00:00,2023-12-22 13:23:19.576309+00:00
+260,Sara Mohmed Hassan AbdEltam,,919321047,,PM Coordinator,FM,,,,AGM,,,3,2023-12-22 13:23:19.576337+00:00,2023-12-22 13:23:19.576345+00:00
+261,Wagdi Abdelrahman Ajeb Brama,,910407447,,Power coordinator,FM,,,,AGM,,,3,2023-12-22 13:23:19.576373+00:00,2023-12-22 13:23:19.576382+00:00
+262,Yousra Hassan Elsubki Khalid,,910071986,,Power assistant,FM,,,,AGM,,,3,2023-12-22 13:23:19.576410+00:00,2023-12-22 13:23:19.576419+00:00
+263,Muhab Mustafa Mohamed Ali,,922922322,,Business Support Manager,FM,,,,AGM,,,3,2023-12-22 13:23:19.576446+00:00,2023-12-22 13:23:19.576455+00:00
+264,Mohammed Abdalgader,,905815053,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.576483+00:00,2023-12-22 13:23:19.576492+00:00
+265,Ibrahim Hamdan Abdalla,,912173884,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.576520+00:00,2023-12-22 13:23:19.576528+00:00
+266,Abdulsamad Ibnomer Ahmed Saboon,,966096599,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.576557+00:00,2023-12-22 13:23:19.576565+00:00
+267,Alaa Eldeen Kabos Sabit Formel,,0901231568/0913473122,,Power Eng,FM,,,,AGM,,,3,2023-12-22 13:23:19.576593+00:00,2023-12-22 13:23:19.576602+00:00
+268,Zainalabdein Adam Mohammed Hamouda,,913245602,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.576631+00:00,2023-12-22 13:23:19.576640+00:00
+269,Alfateh Omer salatin Gardoud,,907927221,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.576669+00:00,2023-12-22 13:23:19.576678+00:00
+270,Mohamed Abdallah El Mahi Saad,,927582148,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.576706+00:00,2023-12-22 13:23:19.576715+00:00
+271,Mohamed Elfatih Ibrahim Elawad,,123208737,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.576743+00:00,2023-12-22 13:23:19.576752+00:00
+272,Galal Ibrahim Abdalla Koko,,1290606690,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.576781+00:00,2023-12-22 13:23:19.576789+00:00
+273,Abdelrahim Mohamed Adam Mohamed,,967937098,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.576817+00:00,2023-12-22 13:23:19.576826+00:00
+274,Amer Mohamed Hassan Adam,,127927827,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.576854+00:00,2023-12-22 13:23:19.576863+00:00
+275,Mozamil Fattour Kabbashi Koko,,128519986,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.576891+00:00,2023-12-22 13:23:19.576899+00:00
+276,Alhaj Alnemary Hamouda Body,,123477400/0912867079,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.576927+00:00,2023-12-22 13:23:19.576936+00:00
+277,Mohamed Abdelrahman Hamid Guma,,126608093,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.576964+00:00,2023-12-22 13:23:19.576972+00:00
+278,Fathalrhman Adam Mohammed Ageena,,123031837,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.577000+00:00,2023-12-22 13:23:19.577009+00:00
+279,Wael Osama Omer Ali,,121635905,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577037+00:00,2023-12-22 13:23:19.577046+00:00
+280,Hafiz Abdallah Babiker Ali,,916876429,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577074+00:00,2023-12-22 13:23:19.577082+00:00
+281,Adam Mohamed Adam Jumaa,,122307738,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577111+00:00,2023-12-22 13:23:19.577119+00:00
+282,Taha Mohammed Rahama Karshoum,,912433173,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.577147+00:00,2023-12-22 13:23:19.577156+00:00
+283,Mohamed Ahmed Osman Abdalsmd,,912138847,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.577184+00:00,2023-12-22 13:23:19.577193+00:00
+284,Misl Yousief Teya Almola,,918677911,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577220+00:00,2023-12-22 13:23:19.577229+00:00
+285,Musa Alrofai,,0912963238/0123163238,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577257+00:00,2023-12-22 13:23:19.577266+00:00
+286,Amier Mohammed Osman Mohamed,,913530799,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.577293+00:00,2023-12-22 13:23:19.577302+00:00
+287,Hasbo Mohmmed Ahmed Yousof,,910406618,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.577330+00:00,2023-12-22 13:23:19.577338+00:00
+288,Mohamed Ibrahim Jad Allah,,900185345,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577367+00:00,2023-12-22 13:23:19.577375+00:00
+289,Saif Aldoula Rabih Anber,,917654548,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.577403+00:00,2023-12-22 13:23:19.577412+00:00
+290,Ameed Ahmed Hamid Abdelssater,,910406607,,Power Eng,FM,,,,AGM,,,3,2023-12-22 13:23:19.577440+00:00,2023-12-22 13:23:19.577448+00:00
+291,Ibrahim Mohamed Ahmed Abdallah Mohamed,,111032509,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577476+00:00,2023-12-22 13:23:19.577485+00:00
+292,Mohamed Abdelrahim Suliman Balola,,,,Helper,FM,,,,AGM,,,3,2023-12-22 13:23:19.577513+00:00,2023-12-22 13:23:19.577522+00:00
+293,Nasereldein Ibrahim Abdelrahman Omer,,922295741,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577550+00:00,2023-12-22 13:23:19.577559+00:00
+294,Mahmoud Mohamed Mahmoud Mohamed,,9128889608,,Telecom Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577587+00:00,2023-12-22 13:23:19.577595+00:00
+295,Mohanad Ahmed Abdelrazig Mohamed,,1.22E+18,,team leader,FM,,,,AGM,,,3,2023-12-22 13:23:19.577623+00:00,2023-12-22 13:23:19.577632+00:00
+296,Alamin Said Karshom Saloma,,963877960,,Power-Tech,FM,,,,AGM,,,3,2023-12-22 13:23:19.577660+00:00,2023-12-22 13:23:19.577669+00:00
+297,Mohammed  Abdalbagi Omer,,910402516,,team leader,FM,,,,Elico,,,3,2023-12-22 13:23:19.577697+00:00,2023-12-22 13:23:19.577706+00:00
+298,Ahmed Hassan Musa,,910402513,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.577734+00:00,2023-12-22 13:23:19.577743+00:00
+299,Nasraldeen Hassan Ahmed Khames,,910402514,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.577771+00:00,2023-12-22 13:23:19.577780+00:00
+300,Mohamed Issa Shawish,,,,Helper,FM,,,,Elico,,,3,2023-12-22 13:23:19.577808+00:00,2023-12-22 13:23:19.577816+00:00
+301,El-Siddig Abdelrahim Siddig Mohammed ,,910402522,,team leader,FM,,,,Elico,,,3,2023-12-22 13:23:19.577844+00:00,2023-12-22 13:23:19.577853+00:00
+302,Mutaz Gindeel Yousif,,910402510,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.577881+00:00,2023-12-22 13:23:19.577890+00:00
+303,Awad abbaker,,910402520,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.577918+00:00,2023-12-22 13:23:19.577927+00:00
+304,Ammar Mohamed Abbaker,,,,Helper,FM,,,,Elico,,,3,2023-12-22 13:23:19.577955+00:00,2023-12-22 13:23:19.577964+00:00
+305,Amro Hassan Fadelalmula Badwei ,,910402523,,team leader,FM,,,,Elico,,,3,2023-12-22 13:23:19.577991+00:00,2023-12-22 13:23:19.578000+00:00
+306,Ammar Mohamed Gurashi Ahmed,,910402515,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.578028+00:00,2023-12-22 13:23:19.578037+00:00
+307,Amin Abd Algadir Mohamed Ahmed,,910402511,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.578065+00:00,2023-12-22 13:23:19.578073+00:00
+308,waleed basher ibrahem,,,,Helper,FM,,,,Elico,,,3,2023-12-22 13:23:19.578101+00:00,2023-12-22 13:23:19.578110+00:00
+309,Sultan Salih Omer,,910402526,,team leader,FM,,,,Elico,,,3,2023-12-22 13:23:19.578138+00:00,2023-12-22 13:23:19.578146+00:00
+310,Tarig Albagir Mohamed Jafar,,910402519,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.578174+00:00,2023-12-22 13:23:19.578183+00:00
+311,Ahmed Altahir Ahmed Hassan,,910402518,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.581178+00:00,2023-12-22 13:23:19.581203+00:00
+312,Mohamed Gindeel yousif,,,,Helper,FM,,,,Elico,,,3,2023-12-22 13:23:19.581237+00:00,2023-12-22 13:23:19.581247+00:00
+313,Abu Baker Eltag Abd Elmahmoud,,910402530,,team leader,FM,,,,Elico,,,3,2023-12-22 13:23:19.581277+00:00,2023-12-22 13:23:19.581285+00:00
+314,Almuhtadi Mustafa Taha Hamza,,910402529,,Power Eng,FM,,,,Elico,,,3,2023-12-22 13:23:19.581314+00:00,2023-12-22 13:23:19.581322+00:00
+315,Alsidig Younis Shuaib,,,,Helper,FM,,,,Elico,,,3,2023-12-22 13:23:19.581351+00:00,2023-12-22 13:23:19.581359+00:00
+316,Michael Berhe Kafle,,910402524,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.581387+00:00,2023-12-22 13:23:19.581396+00:00
+317,Murwan Hashim Adam Ali,,910402512,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.581424+00:00,2023-12-22 13:23:19.581433+00:00
+318,Abd Alaziz Abd Allah Osman,,912614163,,Power-Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.581461+00:00,2023-12-22 13:23:19.581469+00:00
+319,Ibrahim Mohamed Alhassan,,910402517,,Telecom Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.581497+00:00,2023-12-22 13:23:19.581506+00:00
+320,Izzeldin sidig Alebaid Ahmed,,910402528,,Telecom Tech,FM,,,,Elico,,,3,2023-12-22 13:23:19.581534+00:00,2023-12-22 13:23:19.581542+00:00
+321,Mohamed Abdalla ,,910402525,,Zone Manager,FM,,,,Elico,,,3,2023-12-22 13:23:19.581570+00:00,2023-12-22 13:23:19.581579+00:00
+322,Hadeel Albashir Ibrahim,,910402554,,ZM Assistant,FM,,,,Elico,,,3,2023-12-22 13:23:19.581607+00:00,2023-12-22 13:23:19.581616+00:00
+323,Mustafa Abdalmaged ,,902010110,,project Supervisor ,FM,,,,Elico,,,3,2023-12-22 13:23:19.581644+00:00,2023-12-22 13:23:19.581652+00:00
+324,Faisal Hammad Mohamed Alamin,,910402527,,Maintenance Manager,FM,,,,Elico,,,3,2023-12-22 13:23:19.581680+00:00,2023-12-22 13:23:19.581689+00:00
+325,Mayada Badi Hassan ,,916610446,,Dispatcher Supervissor,FM,,,,Elico,,,3,2023-12-22 13:23:19.581716+00:00,2023-12-22 13:23:19.581725+00:00
+326,Noha Khalil Karar,,920332833,,Dispatcher,FM,,,,Elico,,,3,2023-12-22 13:23:19.581753+00:00,2023-12-22 13:23:19.581761+00:00
+327,Alfatih Yassin Awad Babiker,,121149191,,Dispatcher,FM,,,,Elico,,,3,2023-12-22 13:23:19.581789+00:00,2023-12-22 13:23:19.581798+00:00
+328,Amro Mohamed Dahi,,999943284,,Dispatcher,FM,,,,Elico,,,3,2023-12-22 13:23:19.581826+00:00,2023-12-22 13:23:19.581834+00:00
+329,Mohamed Almostafa Almahi,,917770717,,Dispatcher,FM,,,,Elico,,,3,2023-12-22 13:23:19.581863+00:00,2023-12-22 13:23:19.581872+00:00
+330,Muhanad Mohamed Sayed,,122122173,,Dispatcher,FM,,,,Elico,,,3,2023-12-22 13:23:19.581901+00:00,2023-12-22 13:23:19.581910+00:00
+331,Mihad Altigani Nour,,122122173,,Dispatcher,FM,,,,Elico,,,3,2023-12-22 13:23:19.581938+00:00,2023-12-22 13:23:19.581946+00:00
+332,Emadaldeen Hashim Khairallah ,Emadaldeen.Hashim@Gmail.com,910402508,,Operation Director,FM,,,,Elico,,,3,2023-12-22 13:23:19.581974+00:00,2023-12-22 13:23:19.581983+00:00
+333,Waleed Faisal Afifi ,Waleed@alzabrakanict.com,990999911,,GM,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582011+00:00,2023-12-22 13:23:19.582019+00:00
+334,Mujtaba Yassir Babiker Fadul,mujtaba@alzabrakanict.com,900187087,,FM manager,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582048+00:00,2023-12-22 13:23:19.582057+00:00
+335,Nasma Altaher ,nasma@alzabrakanict.com,990999908,,Accountant ,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582086+00:00,2023-12-22 13:23:19.582094+00:00
+336,Saber Rady ,saber@alzabrakanict.com,990999909,,Logistic Manager,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582123+00:00,2023-12-22 13:23:19.582134+00:00
+337,Habib Belal ,,930033303,,Logistic,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582183+00:00,2023-12-22 13:23:19.582200+00:00
+338,Mohamed Elhaj ,,900936658,,Zone Manager,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582247+00:00,2023-12-22 13:23:19.582261+00:00
+339,Mohamed Ahmed Alturabi,,900717681,,PM coordinator,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582291+00:00,2023-12-22 13:23:19.582299+00:00
+340,Mohamed Farog,,912733204,,Power Supervisor,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582328+00:00,2023-12-22 13:23:19.582337+00:00
+341,Ahmed Elsadiq,,900912823,,WH manager,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582365+00:00,2023-12-22 13:23:19.582373+00:00
+342,Salih Mohammed Salih Albashir ,,900912830,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582401+00:00,2023-12-22 13:23:19.582410+00:00
+343,SirAlkhatim Mustafa SirAlkhatim Mustaf,,900717678,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582437+00:00,2023-12-22 13:23:19.582446+00:00
+344,Naeem Amin Mohamed Adam,,900184138,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582474+00:00,2023-12-22 13:23:19.582483+00:00
+345,Mohamed Bushara ,,900912824,,Helper,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582511+00:00,2023-12-22 13:23:19.582519+00:00
+346,Alwasila Hamdna allah,,900184075,,Power Eng,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582547+00:00,2023-12-22 13:23:19.582556+00:00
+347,Samwel Hassan Osman Babiker,,900717683,,Team leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582584+00:00,2023-12-22 13:23:19.582592+00:00
+348,Ahmed Ebied Ahmed Ataelmanan,,900912825,,Helper,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582621+00:00,2023-12-22 13:23:19.582629+00:00
+349,Anwar Ali Ibraheem Mohammed ,,900184148,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582658+00:00,2023-12-22 13:23:19.582666+00:00
+350,Musab abdeazeem,,906633603,,Team leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582694+00:00,2023-12-22 13:23:19.582703+00:00
+351,Muawiya Musa Hamdan Mohamad,,900184470,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582731+00:00,2023-12-22 13:23:19.582739+00:00
+352,Abdalla Mohamed Ibrahim seidahmed,,900184211,,Helper,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582767+00:00,2023-12-22 13:23:19.582776+00:00
+353,Hassan Ali Mustafa ,,900184224,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582804+00:00,2023-12-22 13:23:19.582812+00:00
+354,Adel Babiker Mohamed Ali,,900912832,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582840+00:00,2023-12-22 13:23:19.582849+00:00
+355,Ayman Mohamed Elmukhtar Eltayeb,,900717682,,Team leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582877+00:00,2023-12-22 13:23:19.582885+00:00
+356,Mumen Abd Allah  Khalifa Ali,,900184264,,Helper,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582913+00:00,2023-12-22 13:23:19.582922+00:00
+357,Mojahed AbdAljaleil Abeidi Ali,,900184247,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582950+00:00,2023-12-22 13:23:19.582958+00:00
+358,waleed abdelbasit,,900184376,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.582986+00:00,2023-12-22 13:23:19.582995+00:00
+359,Abubakar Nasr Eldin Mohamed Omer,,900184510,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583047+00:00,2023-12-22 13:23:19.583057+00:00
+360,Abdalla Basheir Abdallah Albasheir,,900184803,,Helper,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583086+00:00,2023-12-22 13:23:19.583095+00:00
+361,AYMAN ISAQ ,,9924213727,,Team leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583123+00:00,2023-12-22 13:23:19.583132+00:00
+362,Monem gasim rezig,,900912827,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583171+00:00,2023-12-22 13:23:19.583183+00:00
+363,Ibrahim Khalifa Abdelrhman,,900187004,,Team leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583212+00:00,2023-12-22 13:23:19.583220+00:00
+364,Ali  Abdalla Salih,,900912826,,Helper,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583252+00:00,2023-12-22 13:23:19.583265+00:00
+365,Khalid Abdellatif Mohamed Shiekh ,,900184063,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583295+00:00,2023-12-22 13:23:19.583303+00:00
+366,Sameer Mohamed Abdoon Saber,,900184507,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583342+00:00,2023-12-22 13:23:19.583359+00:00
+367,Mohamed Emad Hasab Elnabi ,,900184751,,Helper,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583414+00:00,2023-12-22 13:23:19.583429+00:00
+368,AbdElwahab TagElsir Margani Mohamed,,900184209,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583459+00:00,2023-12-22 13:23:19.583468+00:00
+369,Ahmed Mohammed Hassan Alfaki Elfaki �,,900184090,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583496+00:00,2023-12-22 13:23:19.583505+00:00
+370,Fathi Abdelkhaliq,,900185698,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583533+00:00,2023-12-22 13:23:19.583542+00:00
+371,Almohtadi Salih Taha,,900185682,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583571+00:00,2023-12-22 13:23:19.583579+00:00
+372,Muhanned Awad,,900943075,,team leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.583637+00:00,2023-12-22 13:23:19.583653+00:00
+373,Mohamed Abdallah,,900185867,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587565+00:00,2023-12-22 13:23:19.587596+00:00
+374,Aymen Ibrahiem,,900185440,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587630+00:00,2023-12-22 13:23:19.587641+00:00
+375,Abdelsalam Abdelgyoum,,900187019,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587670+00:00,2023-12-22 13:23:19.587679+00:00
+376,Abdalmonem Gameraldeen Albashary Gameraldeen,,900912821,,Power Eng,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587708+00:00,2023-12-22 13:23:19.587717+00:00
+377,Abdalmotaal Zaki Mohammed Alameen,,900184067,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587745+00:00,2023-12-22 13:23:19.587754+00:00
+378,Seead Yagoub�Saeed Sakin,,900184362,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587782+00:00,2023-12-22 13:23:19.587822+00:00
+379,Yousif Khalil Yousif Bashir,,900912884,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587861+00:00,2023-12-22 13:23:19.587872+00:00
+380,Maryoud Yousif Ibrahim Musa,,900187202,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587901+00:00,2023-12-22 13:23:19.587910+00:00
+381,Yousif Mohamed Yosif,,900912822,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587939+00:00,2023-12-22 13:23:19.587948+00:00
+382,Hamad Elniel Mohamed Ahmed Ibrahim ,,900912831,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.587976+00:00,2023-12-22 13:23:19.587985+00:00
+383,Nassar Awad Mohamed,nasar.zbkzainms@alzabrakan.com/nassarawad71@gmail.com,900185501,,Zone Manager,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588013+00:00,2023-12-22 13:23:19.588022+00:00
+384,Saif Aldawla Mohamed Ahmed,saif.aldawla@hotmail.com,900185449,,Power Supervisor,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588050+00:00,2023-12-22 13:23:19.588059+00:00
+385,Alrasheed Adam Yahia,,912526675,,Area Supervisor,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588087+00:00,2023-12-22 13:23:19.588095+00:00
+386,Adil Abdalgadir,,919883301,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588123+00:00,2023-12-22 13:23:19.588132+00:00
+387,Mossab Mohamed,,919112216,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588160+00:00,2023-12-22 13:23:19.588168+00:00
+388,Mohiualdin Adam,,912293051,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588196+00:00,2023-12-22 13:23:19.588205+00:00
+389,Abdalfatah Alsiir,,115881139,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588234+00:00,2023-12-22 13:23:19.588242+00:00
+390,Luay Abd elazim,,910801910,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588271+00:00,2023-12-22 13:23:19.588280+00:00
+391,Mohamed Ali ,,913531622,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588309+00:00,2023-12-22 13:23:19.588317+00:00
+392,Abd almoneim Yagop,,123184043,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588346+00:00,2023-12-22 13:23:19.588354+00:00
+393,Hossam Hassan,,912719233,,Team Leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588382+00:00,2023-12-22 13:23:19.588391+00:00
+394,Ali Bannaga,,928868019,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588419+00:00,2023-12-22 13:23:19.588428+00:00
+395,Mustafa Abualhassan,,9697972691,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588456+00:00,2023-12-22 13:23:19.588465+00:00
+396,Mohamed Ahmed,,900909119,,Team leader,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588492+00:00,2023-12-22 13:23:19.588501+00:00
+397,Sofyan Ali,,915410218,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588529+00:00,2023-12-22 13:23:19.588537+00:00
+398,Philip Elisa,,906538877,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588565+00:00,2023-12-22 13:23:19.588574+00:00
+399,Daffalla Abdalla,,124131013,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588602+00:00,2023-12-22 13:23:19.588611+00:00
+400,Mohamed Yousuf ,,123834842,,Telecom Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588639+00:00,2023-12-22 13:23:19.588648+00:00
+401,Hassan Ahmed,,967678795,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588676+00:00,2023-12-22 13:23:19.588684+00:00
+402,Mohamed Gahalla,,901982918,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588713+00:00,2023-12-22 13:23:19.588721+00:00
+403,Aljylana Adam,,901353412,,Power-Tech,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588749+00:00,2023-12-22 13:23:19.588758+00:00
+404,Mona Bakheet Alata,monabakheet90@gmail.com / mona.zbkzainms@alzabrakanict.com,900185636,,PM coordinator,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588786+00:00,2023-12-22 13:23:19.588795+00:00
+405,Margani Mohamed,,124959584,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588822+00:00,2023-12-22 13:23:19.588831+00:00
+406,Ahmed Aameed,,927791014,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588859+00:00,2023-12-22 13:23:19.588868+00:00
+407,Nehal Alfateh,,124622277,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588896+00:00,2023-12-22 13:23:19.588905+00:00
+408,Abobaker Taha,,990967447,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588933+00:00,2023-12-22 13:23:19.588941+00:00
+409,Wala Mohamed,,926006857,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.588969+00:00,2023-12-22 13:23:19.588978+00:00
+410,Raneem Najm,,900242189,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.589006+00:00,2023-12-22 13:23:19.589015+00:00
+411,Afrah Mansor ,,119003715,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.589043+00:00,2023-12-22 13:23:19.589051+00:00
+412,Alnoor Mohamed ,,119720120,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.589079+00:00,2023-12-22 13:23:19.589088+00:00
+413,Majed Yaser ,,116022644,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.589116+00:00,2023-12-22 13:23:19.589125+00:00
+414,Roaa Shams aldeen,,966781261,,Dispatcher,FM,,,,Zabrakan,,,3,2023-12-22 13:23:19.589153+00:00,2023-12-22 13:23:19.589162+00:00
+415,Ahmed Mohamed Fadul,ahmed.fadul@lulu-tech.com,912531653,,Technical Manager ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589190+00:00,2023-12-22 13:23:19.589199+00:00
+416,Mohamed Ismail Moahmed,mohammed.ismail@lulu-tech.com,901235678,,Technical Manager Support,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589226+00:00,2023-12-22 13:23:19.589235+00:00
+417,Mohamed Mokhtar Mohamed,m.mukhtar1@lulu-tech.com,900901531,,Operation Manager ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589263+00:00,2023-12-22 13:23:19.589271+00:00
+418,Hamid Mohamed Ali,hamid@lulu-tech.com,900903653,,Power support ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589299+00:00,2023-12-22 13:23:19.589308+00:00
+419,Samia Alsayed Esmaiel Hamdan Hamid,samia.Ismail@lulu-tech.com/samias110@yahoo.com,900906312,,NOC&QC Supervisor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589336+00:00,2023-12-22 13:23:19.589345+00:00
+420,SAM OMER IBRAHIM ABBAS ,samomer7@gmail.com,900901479,,Dispatcher Supervissor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589373+00:00,2023-12-22 13:23:19.589382+00:00
+421,Ali Abdalgfar Ali Mohammed,zytoona11@gmail.com,096 299 9908,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589410+00:00,2023-12-22 13:23:19.589419+00:00
+422,Mohamed Mojtaba,,999970995,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589446+00:00,2023-12-22 13:23:19.589455+00:00
+423,ABAZER MOHAMMED HASHIM IBRAHIM,Abazer951@gmail.com,096�827�4210 ,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589483+00:00,2023-12-22 13:23:19.589492+00:00
+424,Alaa Adlie Mohammed Mahmoud,AlaaAdlie 06@gmail.com,969545463,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589519+00:00,2023-12-22 13:23:19.589528+00:00
+425,Esraa Disogy Mohamed mostafa,esraadm00@gmail.com,90 292 1272,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589556+00:00,2023-12-22 13:23:19.589565+00:00
+426,Nora ,,908741122,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589593+00:00,2023-12-22 13:23:19.589601+00:00
+427,Mohmed Mubarak Abbass,moh_hemoudi@hotmail.com,965166636,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589630+00:00,2023-12-22 13:23:19.589638+00:00
+428,Monzer Adil,Monzeraboalol@gmail.com,960040081,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589666+00:00,2023-12-22 13:23:19.589675+00:00
+429,Manar Mobarak,,907272013,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589703+00:00,2023-12-22 13:23:19.589712+00:00
+430,Aya Mohammedelhassan Mohammed Ibrahem,ayaaibrahim09@gmail.com,115707060 whats NO,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589740+00:00,2023-12-22 13:23:19.589748+00:00
+431,alnoor mohamd alnoor,sudani.mr.light@gmail.com,909342086,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589776+00:00,2023-12-22 13:23:19.589785+00:00
+432,khalid omar ahmed omar ,khalidomarust@gmail.com,924247186,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589812+00:00,2023-12-22 13:23:19.589821+00:00
+433,Aamar Mohamed Elzaki Karar,amarm7544@gamil.com,908328131,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589849+00:00,2023-12-22 13:23:19.589857+00:00
+434,Jehan Alnoor,,918618990,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.589885+00:00,2023-12-22 13:23:19.589894+00:00
+435,Fatima Abu alkaream Ali,,969852207,,Dispatcher,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.592691+00:00,2023-12-22 13:23:19.592712+00:00
+436,Muaaz Mohammed Ahmed,,912506179,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.592745+00:00,2023-12-22 13:23:19.592755+00:00
+437,Mustafa Gumaa Adm,,912503105,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.592784+00:00,2023-12-22 13:23:19.592793+00:00
+438,Munzer Abid Abdalla,,962755273,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.592822+00:00,2023-12-22 13:23:19.592830+00:00
+439,Abdalrhman Adam Musa,,914524905,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.592859+00:00,2023-12-22 13:23:19.592867+00:00
+440,Mojahid Abdalati ,,912509246,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.592896+00:00,2023-12-22 13:23:19.592905+00:00
+441,Omer Ahmed Abdala ,,912503084,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.592933+00:00,2023-12-22 13:23:19.592942+00:00
+442,Sufyan Adam ,,911573949,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.592970+00:00,2023-12-22 13:23:19.592979+00:00
+443,Mohammed Ajb Ali,,911573031,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593006+00:00,2023-12-22 13:23:19.593031+00:00
+444,Ahmed Ali Mohammed Ali,,912506172,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593062+00:00,2023-12-22 13:23:19.593070+00:00
+445,Mohammed Ebrihim Yagoub,,919767685,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593099+00:00,2023-12-22 13:23:19.593108+00:00
+446,Mohammed Haker Mohammed,,901958548,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593136+00:00,2023-12-22 13:23:19.593145+00:00
+447,Abobkr Hassan Yousif,,900907248,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593172+00:00,2023-12-22 13:23:19.593181+00:00
+448,FkhrEldin Abdalrhman ,,911573393,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593209+00:00,2023-12-22 13:23:19.593218+00:00
+449,Falah Mohammed Abdala ,,901236382,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593246+00:00,2023-12-22 13:23:19.593255+00:00
+450,Mutaz Bakry Mirghni,,900906305,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593283+00:00,2023-12-22 13:23:19.593291+00:00
+451,Rafea GsmAlseed Abdalfadeel,,912506174,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593320+00:00,2023-12-22 13:23:19.593329+00:00
+452,Musab Siddig Abdalati,,900906306,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593358+00:00,2023-12-22 13:23:19.593366+00:00
+453,Alamin Hsbalrsool Alamin,,911572789,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593394+00:00,2023-12-22 13:23:19.593403+00:00
+454,Mohammed Alnoor Ahmed,,912501464,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593431+00:00,2023-12-22 13:23:19.593440+00:00
+455,Elser Ali Hussien,,901236385,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593468+00:00,2023-12-22 13:23:19.593476+00:00
+456,Ahmed Ismail Ahmed,,900075074,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593504+00:00,2023-12-22 13:23:19.593513+00:00
+457,Khalifa Mohaamd Abdalrhman,,912503053,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593541+00:00,2023-12-22 13:23:19.593550+00:00
+458,Mohaamed Siddig Hago,m.hago@lulu-tech.com,900943634,,Power Supervisor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593578+00:00,2023-12-22 13:23:19.593587+00:00
+459,Mohammed Almustafa Adm,m.mustafa@lulu-tech.com,912501668,,office manmager,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593615+00:00,2023-12-22 13:23:19.593624+00:00
+460,Rami Yagoub Omer,rami.yagoub@lulu-tech.com,912506173,,office manmager,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593652+00:00,2023-12-22 13:23:19.593661+00:00
+461,Ahmed hassan Omer,,900751195,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593689+00:00,2023-12-22 13:23:19.593697+00:00
+462,Mohammed omer Ali,,900906306,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593725+00:00,2023-12-22 13:23:19.593734+00:00
+463,Mohammed Musa Dfa alla,,916979182,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593762+00:00,2023-12-22 13:23:19.593770+00:00
+464,Ali Suliman Freha,,916400205,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593798+00:00,2023-12-22 13:23:19.593807+00:00
+465,Khalid Mohammed Ali Aboraida,khalid@lulu-tech.com,912506175,,Zone Manager,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593835+00:00,2023-12-22 13:23:19.593844+00:00
+466,Mohammed Taha Elsarief,m.taha@lulu-tech.com,900907250,,Power Supervisor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593872+00:00,2023-12-22 13:23:19.593880+00:00
+467,Yasir Elshafea Elhassan,'yasir@lulu-tech.com',901236035,,Telecom supervisor ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593908+00:00,2023-12-22 13:23:19.593917+00:00
+468,Khalaf allah Mohammed Khalafallah,khalafallah@lulu-tech.com,912501529,,office manmager,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593945+00:00,2023-12-22 13:23:19.593954+00:00
+469,Ali Mohammed Bilal,,900906317,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.593982+00:00,2023-12-22 13:23:19.593991+00:00
+470,Mohammed Jafar Wahshab,,900901862,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594019+00:00,2023-12-22 13:23:19.594027+00:00
+471,Mohammed Shawgi Mahjob,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594055+00:00,2023-12-22 13:23:19.594064+00:00
+472,Aldai Adam Ismaeil,,900943636,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594092+00:00,2023-12-22 13:23:19.594100+00:00
+473,Fakhry Ahmed Abdelrahman,,912509269,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594129+00:00,2023-12-22 13:23:19.594137+00:00
+474,Hamid Ahmed Mohamed Hamed,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594165+00:00,2023-12-22 13:23:19.594173+00:00
+475,Ahmed mohamed Albashjeer,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594201+00:00,2023-12-22 13:23:19.594210+00:00
+476,idrees mohamed abdelmageed,,900906315,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594238+00:00,2023-12-22 13:23:19.594247+00:00
+477,mohamed ibrahim omer,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594275+00:00,2023-12-22 13:23:19.594283+00:00
+478,sami osman mohamed,,900906313,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594311+00:00,2023-12-22 13:23:19.594319+00:00
+479,fayz abbas suliman,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594347+00:00,2023-12-22 13:23:19.594356+00:00
+480,tarig mohamed ali,,,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594383+00:00,2023-12-22 13:23:19.594392+00:00
+481,ahmed sayed,,900906318,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594419+00:00,2023-12-22 13:23:19.594428+00:00
+482,ali adam ismaeil,,912501637,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594455+00:00,2023-12-22 13:23:19.594464+00:00
+483,mosaab hassan daldom,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594492+00:00,2023-12-22 13:23:19.594500+00:00
+484,baderaldeen ahmed atya,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594528+00:00,2023-12-22 13:23:19.594537+00:00
+485,mosadag abdallah mohamed,,,,Driver,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594565+00:00,2023-12-22 13:23:19.594573+00:00
+486,gamereldin altayeb mostafa,,912509258,,Driver,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594601+00:00,2023-12-22 13:23:19.594609+00:00
+487,hamza mohamed ali ,Hamza.Mohammed@lulu-tech.com,912509276,,Telecom-Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594638+00:00,2023-12-22 13:23:19.594646+00:00
+488,mohamed saad omer,,900907247,,Telecom-Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594674+00:00,2023-12-22 13:23:19.594683+00:00
+489,mohaned yosif mostafa,,900901406,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594711+00:00,2023-12-22 13:23:19.594720+00:00
+490,mosab ahmed naser,,912501596,,Telecom-Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594748+00:00,2023-12-22 13:23:19.594756+00:00
+491,abdelhafez abdelrahman mohamed,,900906309,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594784+00:00,2023-12-22 13:23:19.594793+00:00
+492,maky ismaiel eldgeel,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594821+00:00,2023-12-22 13:23:19.594829+00:00
+493,bakry ahmed babiker,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594857+00:00,2023-12-22 13:23:19.594866+00:00
+494,modather ibrahim mohamed,,,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594894+00:00,2023-12-22 13:23:19.594902+00:00
+495,montasir mohamed basheer,,912509276,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594930+00:00,2023-12-22 13:23:19.594939+00:00
+496,magdy ibrahim suliman,,900901865,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.594967+00:00,2023-12-22 13:23:19.594975+00:00
+497,nasereldeen balla ahmed,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597612+00:00,2023-12-22 13:23:19.597631+00:00
+498,anwar husain suliman,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597665+00:00,2023-12-22 13:23:19.597675+00:00
+499,maaz omer abbas,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597704+00:00,2023-12-22 13:23:19.597713+00:00
+500,abderaheem ibrahim babiker,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597742+00:00,2023-12-22 13:23:19.597751+00:00
+501,mohamed ali babiker,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597780+00:00,2023-12-22 13:23:19.597788+00:00
+502,omer sedahmed abdelmaged,,,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597817+00:00,2023-12-22 13:23:19.597826+00:00
+503,abusofyan hashim mohamed,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597855+00:00,2023-12-22 13:23:19.597864+00:00
+504,yosif adam idrees,,,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597892+00:00,2023-12-22 13:23:19.597901+00:00
+505,abdelrahman khalid abdelrahman,abdulrahman.khalid@lulu-tech.com,900918537,,Telecom-Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597930+00:00,2023-12-22 13:23:19.597939+00:00
+506,abdelbagy mamon alameen,,900907249,,Telecom-Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.597967+00:00,2023-12-22 13:23:19.597976+00:00
+507,abdelfarag mahmoud abdelfarag,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598004+00:00,2023-12-22 13:23:19.598013+00:00
+508,alhady yasir alhady,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598041+00:00,2023-12-22 13:23:19.598050+00:00
+509,yasir salah mohamed,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598078+00:00,2023-12-22 13:23:19.598087+00:00
+510,mohamed younis abdalla,,,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598114+00:00,2023-12-22 13:23:19.598123+00:00
+511,alnoor hamad sulfab,,,,driver,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598151+00:00,2023-12-22 13:23:19.598161+00:00
+512,mohamed aboelkhayrat adam babiker,,912503123,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598190+00:00,2023-12-22 13:23:19.598199+00:00
+513,alshaikh mohamed hassan,,900943654,,Telecom-Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598230+00:00,2023-12-22 13:23:19.598239+00:00
+514,maaz mohamed alhaj,'Maaz Alhaj' <maazlhj@gmail.com>,900948828,,Telecom-Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598268+00:00,2023-12-22 13:23:19.598276+00:00
+515,mohamed mahjoob sedahmeed,,,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598304+00:00,2023-12-22 13:23:19.598312+00:00
+516,alwaleed gamal dirar,,,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598339+00:00,2023-12-22 13:23:19.598348+00:00
+517,saifeldeen seedahmed omer,,900901534,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598375+00:00,2023-12-22 13:23:19.598384+00:00
+518,ahmed abdelrahman babiker,,,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598411+00:00,2023-12-22 13:23:19.598419+00:00
+519,ashraf gasmallah osman,,900906316,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598447+00:00,2023-12-22 13:23:19.598455+00:00
+520,Mohamed Hamadnallah,M.Hamadnallah@lulu-tech.com,912501618,,Zone Manager,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598482+00:00,2023-12-22 13:23:19.598490+00:00
+521,Mustafa Sid Ahmed,Mostafa@lulu-tech.com,900943646,,PM supervissor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598518+00:00,2023-12-22 13:23:19.598526+00:00
+522,Ahmed Eltigani,mozafer@lulu-tech.com,900906314,,Power Supervisor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598554+00:00,2023-12-22 13:23:19.598562+00:00
+523,Mohamed Issa,m.eisa@lulu-tech.com,912506176,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598590+00:00,2023-12-22 13:23:19.598598+00:00
+524,Ashraf Mahmoud,Ashraf@lulu-tech.com,900907318,,Telecom supervisor ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598627+00:00,2023-12-22 13:23:19.598635+00:00
+525,Yousri Abdelrazig,N/A,912501564,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598663+00:00,2023-12-22 13:23:19.598671+00:00
+526,Saeed Abdelmunim,Saeed@lulu-tech.com,912509264,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598699+00:00,2023-12-22 13:23:19.598708+00:00
+527,Musaab Alfatih,N/A,912501474,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598735+00:00,2023-12-22 13:23:19.598744+00:00
+528,Hisham Tajelsir,N/A,912174806,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598772+00:00,2023-12-22 13:23:19.598780+00:00
+529,Zainalabdein Salah Yousif,N/A,911228810,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598808+00:00,2023-12-22 13:23:19.598817+00:00
+530,Mohamed Abdelmalik,N/A,900907317,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598856+00:00,2023-12-22 13:23:19.598872+00:00
+531,Altigani Ahmed,N/A,914167975,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598919+00:00,2023-12-22 13:23:19.598935+00:00
+532,Sadam Dawood Makki,N/A,900943651,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.598983+00:00,2023-12-22 13:23:19.598997+00:00
+533,Mohamed Osman Hamid,N/A,912509241,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599043+00:00,2023-12-22 13:23:19.599059+00:00
+534,Ahmed Hassan Adam,N/A,912547174,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599109+00:00,2023-12-22 13:23:19.599123+00:00
+535,Mohamed Mirghani,N/A,912697665,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599170+00:00,2023-12-22 13:23:19.599186+00:00
+536,Alsir Adam Musa,N/A,900901474,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599234+00:00,2023-12-22 13:23:19.599249+00:00
+537,Mutaz hassan Abdelrahman,N/A,910145488,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599299+00:00,2023-12-22 13:23:19.599315+00:00
+538,Nadir Ahmed Mirghani,N/A,912694007,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599365+00:00,2023-12-22 13:23:19.599380+00:00
+539,Mhagoub Osama,N/A,900943650,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599428+00:00,2023-12-22 13:23:19.599444+00:00
+540,Shaimaa Salah,Shima@lulu-tech.com,900943640,,Power Supervisor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599493+00:00,2023-12-22 13:23:19.599508+00:00
+541,Mohamed Omer Elfaki,M.Omer@lulu-tech.com,900901866,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599558+00:00,2023-12-22 13:23:19.599575+00:00
+542,Osman Mohamed Elhassan,N/A,963283451,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599624+00:00,2023-12-22 13:23:19.599642+00:00
+543,Mohamed Mamoun,N/A,900943648,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599691+00:00,2023-12-22 13:23:19.599704+00:00
+544,Samih Sharif,N/A,900943658,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599742+00:00,2023-12-22 13:23:19.599758+00:00
+545,Malik Ibrahim Abdelkarim,N/A,911956617,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599795+00:00,2023-12-22 13:23:19.599804+00:00
+546,Rida Mohamed Ahmed Mohamed,N/A,901557740,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599833+00:00,2023-12-22 13:23:19.599842+00:00
+547,Altayeb Mohamed Husain,N/A,900840099,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599869+00:00,2023-12-22 13:23:19.599878+00:00
+548,Osman Yassir,N/A,900943641,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599905+00:00,2023-12-22 13:23:19.599914+00:00
+549,Bakri Ali Alnoor,N/A,912355537,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599942+00:00,2023-12-22 13:23:19.599950+00:00
+550,Mohamed Alsmani Abdelbasit,N/A,900901388,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.599980+00:00,2023-12-22 13:23:19.599989+00:00
+551,Mustafa Hussain Mohamed,N/A,900943645,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.600016+00:00,2023-12-22 13:23:19.600025+00:00
+552,Hussain Adbdalla Abdelgalil,N/A,907332824,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.600053+00:00,2023-12-22 13:23:19.600062+00:00
+553,Abdelhai Tajeldin Abdelhai,Abdalhai@lulu-tech.com,900943074,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.600090+00:00,2023-12-22 13:23:19.600105+00:00
+554,Omer Abdelaziz Widaa,N/A,900906311,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.600205+00:00,2023-12-22 13:23:19.600221+00:00
+555,Mahmoud hassan Ahmed,N/A,900943662,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.600285+00:00,2023-12-22 13:23:19.600304+00:00
+556,Altayeb Abdalla Mohamed,N/A,912501541,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.600448+00:00,2023-12-22 13:23:19.600483+00:00
+557,Moaaz Ahmed Said,N/A,968762790,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.600557+00:00,2023-12-22 13:23:19.600576+00:00
+558,Mugahid Mohamed Ahmed,N/A,912501662,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.600662+00:00,2023-12-22 13:23:19.600692+00:00
+559,Ahmed Mahgoub Saad,N/A,917995939,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.604711+00:00,2023-12-22 13:23:19.604739+00:00
+560,Abdalla Abuzaid Fadul,N/A,918243874,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.604772+00:00,2023-12-22 13:23:19.604782+00:00
+561,Mohamed Awad Ibrahim,M.Awad@lulu-tech.com,900925965,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.604811+00:00,2023-12-22 13:23:19.604820+00:00
+562,Rafie Abdalla Mohamed,N/A,912487949,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.604847+00:00,2023-12-22 13:23:19.604856+00:00
+563,Khalid Ibrahim,N/A,912501609,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.604884+00:00,2023-12-22 13:23:19.604892+00:00
+564,Sharaf Eldin Abdulmuttalab,N/A,999965214,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.604920+00:00,2023-12-22 13:23:19.604929+00:00
+565,Gumaa Abdu Gumaa,N/A,121815056,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.604956+00:00,2023-12-22 13:23:19.604965+00:00
+566,bashir Yahia abdelaziz,N/A,966858179,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.604993+00:00,2023-12-22 13:23:19.605001+00:00
+567,Omer Isam mohamed,N/A,929576849,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605029+00:00,2023-12-22 13:23:19.605037+00:00
+568,Altahir Mahmoud,N/A,912501489,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605065+00:00,2023-12-22 13:23:19.605073+00:00
+569,Mohamed Yahia Ahmed,N/A,915685494,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605100+00:00,2023-12-22 13:23:19.605108+00:00
+570,Awab Malik Mustafa Alshaikh,N/A,n/a,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605136+00:00,2023-12-22 13:23:19.605144+00:00
+571,Alnoor Fadlalla,N/A,n/a,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605171+00:00,2023-12-22 13:23:19.605179+00:00
+572,Mukhtar Mohamed Eltiema,N/A,917779005,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605207+00:00,2023-12-22 13:23:19.605216+00:00
+573,Mohamed Idriss Saeed,N/A,924019752,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605244+00:00,2023-12-22 13:23:19.605252+00:00
+574,Hamid Salah,N/A,9009063322,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605280+00:00,2023-12-22 13:23:19.605288+00:00
+575,Shuralla Algaylani Ahmed,N/A,966276663,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605316+00:00,2023-12-22 13:23:19.605325+00:00
+576,Ahmed Saifeldin Algasim,N/A,900943632,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605352+00:00,2023-12-22 13:23:19.605361+00:00
+577,Mohamed Almuntasir,N/A,916705212,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605389+00:00,2023-12-22 13:23:19.605397+00:00
+578,Rayan Mustafa Saadeldin,Rayan@lulu-tech.com,900943638,,Power assistant,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605425+00:00,2023-12-22 13:23:19.605433+00:00
+579,Abdelazim Sid Ahmed Mohamed,Abdulazim.Ahmed@lulu-tech.com,901235679,,office manmager,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605461+00:00,2023-12-22 13:23:19.605469+00:00
+580,Mahmoud Abdu Badawi Ismail,mahmoud@lulu-tech.com,900751190,,Zone Manager,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605497+00:00,2023-12-22 13:23:19.605505+00:00
+581,Mohamed Kamal Mohamed Ahmed,mohammed.kamal@lulu-tech.com,912501619,,Power Supervisor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605532+00:00,2023-12-22 13:23:19.605541+00:00
+582,Hussam Siddig Alobaid,Hussam.Siddig@lulu-tech.com,912501345,,Telecom Technical Support �& Access supervision,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605568+00:00,2023-12-22 13:23:19.605577+00:00
+583,Yousif Siddig Ata Elmannan,yousifalnager0117@gmail.com,912501462,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605604+00:00,2023-12-22 13:23:19.605612+00:00
+584,Salih Alsayed Diaa Eldin,Salehalsayed27@gmail.com,912501624,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605640+00:00,2023-12-22 13:23:19.605648+00:00
+585,Abulgasim Abbakar Husain,,926451243,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605675+00:00,2023-12-22 13:23:19.605684+00:00
+586,Ahmed Abdulsalam Mohamed Ahmed,72amida@gmail.com,912501425,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605711+00:00,2023-12-22 13:23:19.605720+00:00
+587,Ali Salaheldin Ali babiker,,912501483,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605747+00:00,2023-12-22 13:23:19.605756+00:00
+588,Mohamed Makkawi Elsharif Mohamed,wadalhob@gmail.com,912501548,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605783+00:00,2023-12-22 13:23:19.605791+00:00
+589,Waddah Mohamed Eltayeb Ahmed,wadahaltayeb30@gmail.com,912501517,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605819+00:00,2023-12-22 13:23:19.605827+00:00
+590,Suhaib Abdelrahman Ali Mukhtar,sohaibabdelrhmanali@gmail.com,912501608,,Telecom-Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605855+00:00,2023-12-22 13:23:19.605863+00:00
+591,Abdalla Gamal Elsir Eldusougi,,912501565,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605890+00:00,2023-12-22 13:23:19.605899+00:00
+592,Eglal Balla Mohamed Alamin,Eglal@lulu-tech.com,919374105,,PM coordinator,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605926+00:00,2023-12-22 13:23:19.605935+00:00
+593,Hassan Mohamed Ali Aboraida,,912501487,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605962+00:00,2023-12-22 13:23:19.605970+00:00
+594,Wali Eldin Mansour,,123930966,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.605998+00:00,2023-12-22 13:23:19.606006+00:00
+595,Yousif hashim Hassan Eltayeb,,900907314,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606034+00:00,2023-12-22 13:23:19.606042+00:00
+596,Mohamed Husain Ibrahim Adam,,912501656,,Spare Part Controller,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606069+00:00,2023-12-22 13:23:19.606078+00:00
+597,Mohamed Elkhatim Mohamed Abdalla,,911573273,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606105+00:00,2023-12-22 13:23:19.606113+00:00
+598,Alhadi Ali Hamdeen Salma,,912410902,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606141+00:00,2023-12-22 13:23:19.606149+00:00
+599,Kamal Mohamed Elamin,,927362447,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606176+00:00,2023-12-22 13:23:19.606185+00:00
+600,Mohamed Bushra Adam,,911572505,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606212+00:00,2023-12-22 13:23:19.606221+00:00
+601,Almunzir Alagib Abdelaziz Noreldaim,,924156072,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606248+00:00,2023-12-22 13:23:19.606256+00:00
+602,Ibrahim Mohamed Bakhit Mohamed,,916094901,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606284+00:00,2023-12-22 13:23:19.606293+00:00
+603,Samah Abumadi,Samah.AbuMadi@lulu-tech.com,909175145,,Fuel & Top-up Coordinator,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606320+00:00,2023-12-22 13:23:19.606328+00:00
+604,Mahdi Sulaiman Koko Tieah,,915903476,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606356+00:00,2023-12-22 13:23:19.606364+00:00
+605,Luai Hassan Ali Mustafa,,905386101,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606391+00:00,2023-12-22 13:23:19.606399+00:00
+606,Albushari Abdalla,,128448022,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606427+00:00,2023-12-22 13:23:19.606435+00:00
+607,Ahmed Shaikh Eldin Altag,,964252791,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606463+00:00,2023-12-22 13:23:19.606471+00:00
+608,Mohamed Abdalla Gismalla Abdelgadir,,912501658,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606498+00:00,2023-12-22 13:23:19.606507+00:00
+609,Salaheldin Babiker Idriss Abdelmagid,,963322799,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606534+00:00,2023-12-22 13:23:19.606542+00:00
+610,Ahmed Mohamed Alamin Alzubair,,964611240,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606570+00:00,2023-12-22 13:23:19.606578+00:00
+611,Hamdan Adam Koko Mahmoud,,911306688,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606606+00:00,2023-12-22 13:23:19.606614+00:00
+612,Husain Abdalla Hassan Abdalla,,906886396,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606642+00:00,2023-12-22 13:23:19.606650+00:00
+613,Mohamed Ahmed Awad Tieah,,912159719,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606677+00:00,2023-12-22 13:23:19.606686+00:00
+614,Khalid Abdelrahman,,915236158,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606713+00:00,2023-12-22 13:23:19.606722+00:00
+615,Aagib Issa Abdelrahman Babiker,,917617125,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606749+00:00,2023-12-22 13:23:19.606757+00:00
+616,Abdelmagid Ismail Mahmoud Bashar,,121643323,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606785+00:00,2023-12-22 13:23:19.606793+00:00
+617,Ahmed Siddig Aldood Miskeen,,915299005,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606821+00:00,2023-12-22 13:23:19.606829+00:00
+618,Sami Ahmed Abdalla Yahia,,911572606,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606857+00:00,2023-12-22 13:23:19.606865+00:00
+619,Mohamed Mansour Bukhari Yousif,,123596478,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606893+00:00,2023-12-22 13:23:19.606901+00:00
+620,Ahmed Alaaeldin Abdelhakam Idriss,,991112107,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.606929+00:00,2023-12-22 13:23:19.606937+00:00
+621,Muzamil Mohamed Mugaddam Altom,,912653704,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609649+00:00,2023-12-22 13:23:19.609668+00:00
+622,Ageet Lang Shol Ageet,,968447354,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609701+00:00,2023-12-22 13:23:19.609710+00:00
+623,Salaheldin Gamar Agoor Gigir,,924433793,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609739+00:00,2023-12-22 13:23:19.609748+00:00
+624,Ahmed Albagir Noreldin Adam Omer,,904027152,,Helper,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609776+00:00,2023-12-22 13:23:19.609784+00:00
+625,Faiz Hussain Ahmed Alhassan,,912862984,,team leader,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609812+00:00,2023-12-22 13:23:19.609821+00:00
+626,Tarig Mutasim Awad Bakri,,912539907,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609849+00:00,2023-12-22 13:23:19.609857+00:00
+627,Mohamed Almakki Mohamed Abdelrahman Ali,,900943655,,Admin& Warehous ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609885+00:00,2023-12-22 13:23:19.609893+00:00
+628,Alamin Subahi,alaminsubahi85@gmail.com,917499674,,Logistic,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609921+00:00,2023-12-22 13:23:19.609929+00:00
+629,Mohamed Musa,,Unreachable,,Operator assistant ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609957+00:00,2023-12-22 13:23:19.609965+00:00
+630,Ahmed Sabit,,Sim Swap to fiber team,,Operator assistant ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.609993+00:00,2023-12-22 13:23:19.610001+00:00
+631,Mohamed Gumaa Ibrahim Tieah,,917881387,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610028+00:00,2023-12-22 13:23:19.610036+00:00
+632,Abubaker Mohamed Ali,,914880882,,Driver ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610064+00:00,2023-12-22 13:23:19.610072+00:00
+633,Mohamed Tahir Salah Haroun,,913600073,,Telecom Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610100+00:00,2023-12-22 13:23:19.610108+00:00
+634,Khalid Gasim,,914873234,,Power Eng,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610136+00:00,2023-12-22 13:23:19.610145+00:00
+635,Hafiya Fadul Mohamed Fadul,,927519868,,Office labor,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610173+00:00,2023-12-22 13:23:19.610181+00:00
+636,Mohamed Abd Elraheem Elsheikh,,912162213,,Switches Manager,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610208+00:00,2023-12-22 13:23:19.610217+00:00
+637,Mouthier Siddig Mohamed,,124235976,,Switches Engineer ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610244+00:00,2023-12-22 13:23:19.610252+00:00
+638,Asad Eltag Abd Elmagid,,929950024,,Switches Engineer ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610280+00:00,2023-12-22 13:23:19.610288+00:00
+639,Abd Elrahman Ahmed Bakheet,,922213137,,Switches Engineer ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610315+00:00,2023-12-22 13:23:19.610323+00:00
+640,Anwar Mohamed Abu Elgasim,,0,,Switches Engineer ,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610351+00:00,2023-12-22 13:23:19.610359+00:00
+641,Musab Ahmed Abuzid ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610386+00:00,2023-12-22 13:23:19.610394+00:00
+642,Mazin Hider Wedaa,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610421+00:00,2023-12-22 13:23:19.610429+00:00
+643,Abd Elmahoud Ahmed Mohamed,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610457+00:00,2023-12-22 13:23:19.610465+00:00
+644,Adil Suliman Musa ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610493+00:00,2023-12-22 13:23:19.610501+00:00
+645,Mohamed Hassan Abd Allah,,123652924,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610529+00:00,2023-12-22 13:23:19.610537+00:00
+646,Elsahfie Ali FadlAlmola Mohamed,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610564+00:00,2023-12-22 13:23:19.610573+00:00
+647,Alameen Elshafie Osman,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610600+00:00,2023-12-22 13:23:19.610608+00:00
+648,Mohamed Abd Elrahman Mohamed,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610635+00:00,2023-12-22 13:23:19.610643+00:00
+649,Lutfi Abas Suliman,,121026991,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610671+00:00,2023-12-22 13:23:19.610679+00:00
+650,Mohamed ahmed abuzid,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610707+00:00,2023-12-22 13:23:19.610715+00:00
+651,Abas Ahmed Mohamed ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610742+00:00,2023-12-22 13:23:19.610750+00:00
+652,Bakri Ali younis,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610777+00:00,2023-12-22 13:23:19.610786+00:00
+653,Ahmed abas,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610813+00:00,2023-12-22 13:23:19.610822+00:00
+654,Zuhir Omer Shoeeb ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610849+00:00,2023-12-22 13:23:19.610858+00:00
+655,Abd Elrahman Ahmed Omer,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610885+00:00,2023-12-22 13:23:19.610893+00:00
+656,Mujahid Abd Elrahman Mohamed,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610920+00:00,2023-12-22 13:23:19.610929+00:00
+657,Yousif Mahmoud Osman ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610956+00:00,2023-12-22 13:23:19.610964+00:00
+658,Mohamed Aldaw Omer,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.610991+00:00,2023-12-22 13:23:19.610999+00:00
+659,Mohamed Salih ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.611027+00:00,2023-12-22 13:23:19.611035+00:00
+660,Ezat Mohamed Shreef ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.611062+00:00,2023-12-22 13:23:19.611070+00:00
+661,Ahmed Ismail Ishag,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.611097+00:00,2023-12-22 13:23:19.611105+00:00
+662,Abubaker Elsiddig Hassan Mustafa,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.611133+00:00,2023-12-22 13:23:19.611141+00:00
+663,Muzamil yousif ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.611168+00:00,2023-12-22 13:23:19.611176+00:00
+664,Musab Hamad ,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.611203+00:00,2023-12-22 13:23:19.611211+00:00
+665,Abubaker Gism Alseed,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.611238+00:00,2023-12-22 13:23:19.611247+00:00
+666,Ali Shreef Ahmed,,0,,Power-Tech,FM,,,,LuluTech,,,3,2023-12-22 13:23:19.611274+00:00,2023-12-22 13:23:19.611282+00:00
+667,Omer Imadaldeen Adwi,omer.Adawi@lycos-sd.com,912351938,,GM,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611309+00:00,2023-12-22 13:23:19.611318+00:00
+668,Mustafa  Gasim Abdllh,mustafa.gassim@lycos-sd.com ,912348134,,CTO,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611345+00:00,2023-12-22 13:23:19.611353+00:00
+669,Alzaki Abbas Aldood,alzaki.Abbas@lycos-sd.com,912202418,,ACOUNTANT,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611393+00:00,2023-12-22 13:23:19.611402+00:00
+670,Sara Ibrahim Salman ,sara.ibrahim@lycos-sd.com,900993009,,HR,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611428+00:00,2023-12-22 13:23:19.611436+00:00
+671,Hassan Altigani Hassan,hassan.altigani@lycos-sd.com,900994000,,Technical SUPPORT ENG,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611463+00:00,2023-12-22 13:23:19.611471+00:00
+672,Enas Osamaldeen Mohamed ,enas.esam@lycos-sd.com,900993006,,HELP DESK,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611497+00:00,2023-12-22 13:23:19.611505+00:00
+673,Raniya Alsied Adm ,raniya.sabbi@lycos-sd.com,900994001,,HELP DESK,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611532+00:00,2023-12-22 13:23:19.611540+00:00
+674,Abdalmahmud Adam Adalmhmud ,abdalmahmud.adam@lycos-sd.com,900994002,,Technical SUPPORT ENG,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611567+00:00,2023-12-22 13:23:19.611575+00:00
+675,Omer kamal Alajab,omer.alajab@lycos-sd.com,912180015,,PMO,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611601+00:00,2023-12-22 13:23:19.611609+00:00
+676,Abdalhameed Abdalgader,abdalhameed.abdelgadir@lycos-sd.com,912202180,,PLANING  ENG,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611636+00:00,2023-12-22 13:23:19.611644+00:00
+677,Esra Mohamed Hassn Ali,esra.Abusabib@lycos-sd.com,900993001,,PLANING  ENG,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611670+00:00,2023-12-22 13:23:19.611678+00:00
+678,Mudather Ahmmed Muosa,mudather.mussa@lycos-sd.com,900993005,,OSP ENG,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611704+00:00,2023-12-22 13:23:19.611712+00:00
+679,Mohamed Aldood Abaker ,mohamed.gassim@lycos-sd.com,900994020,,HSE,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611739+00:00,2023-12-22 13:23:19.611747+00:00
+680,Alsadig Abaker Abdallah,,900994017,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611774+00:00,2023-12-22 13:23:19.611782+00:00
+681,Salah Mohammed  Altoom ,,900994006,,ENG -TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611808+00:00,2023-12-22 13:23:19.611816+00:00
+682,Mohamed Abdalla Freeney,,,,DRIVER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.611842+00:00,2023-12-22 13:23:19.611850+00:00
+683,Kalma Security,,,,GUARD,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614408+00:00,2023-12-22 13:23:19.614428+00:00
+684,Edrees Mohamed Muosa ,,900993010,,Technician TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614460+00:00,2023-12-22 13:23:19.614469+00:00
+685,Ala aldeen Hamed Ahmmed,,900994023,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614497+00:00,2023-12-22 13:23:19.614506+00:00
+686,Atif Abaker,,,,HELPER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614533+00:00,2023-12-22 13:23:19.614541+00:00
+687,Naseraldeen Abdalraheem ,,910922083,,ENG -TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614568+00:00,2023-12-22 13:23:19.614576+00:00
+688,Anas Abdalla ,,910922083,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614603+00:00,2023-12-22 13:23:19.614611+00:00
+689,Wail Alaaldeen ,,910922083,,HELPER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614638+00:00,2023-12-22 13:23:19.614646+00:00
+690,Mosab Mohamed Ahmed Omran ,,900994004,,Technician TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614672+00:00,2023-12-22 13:23:19.614680+00:00
+691,Ahmed Alsmani Mohamed Alnoor,,900994024,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614707+00:00,2023-12-22 13:23:19.614715+00:00
+692,Daraj (driver),,,,DRIVER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614742+00:00,2023-12-22 13:23:19.614750+00:00
+693,Izaldeen Homaida ,ayman.abusara@lycos-sd.com,918703088,,HELPER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614776+00:00,2023-12-22 13:23:19.614784+00:00
+694,Ayman Husiyn Abusara,,900994003,,Technical SUPPORT ENG,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614811+00:00,2023-12-22 13:23:19.614819+00:00
+695,Ahmed Mukhtar Adam,,900993014,,ENG -TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614846+00:00,2023-12-22 13:23:19.614854+00:00
+696,Mohamed Altaj Edrees Maki,,900994012,,HELPER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614880+00:00,2023-12-22 13:23:19.614889+00:00
+697,Mohamed Moneer ,,901814888,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614915+00:00,2023-12-22 13:23:19.614923+00:00
+698,Khamis Juma Abdallah,,900993008,,Technician TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614950+00:00,2023-12-22 13:23:19.614958+00:00
+699,Mahmoud Sadaldeen Mahmoud ,,902010110,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.614985+00:00,2023-12-22 13:23:19.614993+00:00
+700,Ibrahim Younis Rahaal,,999991991,,HELPER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615020+00:00,2023-12-22 13:23:19.615028+00:00
+701,Ibrahim Omer ,,,,DRIVER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615055+00:00,2023-12-22 13:23:19.615063+00:00
+702,Mahmoud Ahmed  Alnoor,,900994007,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615090+00:00,2023-12-22 13:23:19.615098+00:00
+703,Mazin Ibrahim omer ,,900993016,,ENG -TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615125+00:00,2023-12-22 13:23:19.615133+00:00
+704,Mohaned Rahama Mohamed ,,960051606,,HELPER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615159+00:00,2023-12-22 13:23:19.615167+00:00
+705,Mohamed Shukeri Ameen ,,902216515,,Technical SUPPORT ENG,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615194+00:00,2023-12-22 13:23:19.615202+00:00
+706,Mohamed Ali,,900994018,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615229+00:00,2023-12-22 13:23:19.615238+00:00
+707,Mugtaba Mohamed Ahmed Omran,,900994005,,Technician TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615264+00:00,2023-12-22 13:23:19.615273+00:00
+708,Gazei Adam ,,903954134,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615299+00:00,2023-12-22 13:23:19.615308+00:00
+709,Mudather Algideel,,909719030,,HELPER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615334+00:00,2023-12-22 13:23:19.615343+00:00
+710,Alnzir Husin Abbas,,900994019,,Technician TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615371+00:00,2023-12-22 13:23:19.615379+00:00
+711,Mohamed Tarig ,,900994011,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615406+00:00,2023-12-22 13:23:19.615414+00:00
+712,Ibrahim Mohamed ,,903242901,,HELPER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615440+00:00,2023-12-22 13:23:19.615449+00:00
+713,Hazim Faig ,,900993017,,ENG-TEAM LEADER,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615476+00:00,2023-12-22 13:23:19.615484+00:00
+714,Husin Osamn,,900662540,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615511+00:00,2023-12-22 13:23:19.615519+00:00
+715,Mutwakel Altib Hassn Ahmed ,,900662540,,Technician,OSP,,,,Lycos,,,3,2023-12-22 13:23:19.615546+00:00,2023-12-22 13:23:19.615554+00:00
+716,Ahmed Babiker,,901233685,,Technician,OSP,,,,3G,,,3,2023-12-22 13:23:19.615582+00:00,2023-12-22 13:23:19.615590+00:00
+717,Abelhalim Ishaq,,901233679,,Technician,OSP,,,,3G,,,3,2023-12-22 13:23:19.615617+00:00,2023-12-22 13:23:19.615625+00:00
+718,Amer Ahmed,,916914514,,Technician,OSP,,,,3G,,,3,2023-12-22 13:23:19.615651+00:00,2023-12-22 13:23:19.615660+00:00
+719,Mohamed Altegani,,912669541,,Technician,OSP,,,,3G,,,3,2023-12-22 13:23:19.615687+00:00,2023-12-22 13:23:19.615695+00:00
+720,Abdelaziz Ahmed ,,901233670,,Maintenance Manager,OSP,,,,3G,,,3,2023-12-22 13:23:19.615723+00:00,2023-12-22 13:23:19.615732+00:00
+721,Dya Satti,,915140016,,Project manager ,OSP,,,,3G,,,3,2023-12-22 13:23:19.615758+00:00,2023-12-22 13:23:19.615767+00:00
+722,Ahmed Elhifni,,912921451,,Maintenance Manager,OSP,,,,3G,,,3,2023-12-22 13:23:19.615794+00:00,2023-12-22 13:23:19.615802+00:00
+723,Ayman Abdalla,,929943643,,Team Leader,OSP,,,,3G,,,3,2023-12-22 13:23:19.615830+00:00,2023-12-22 13:23:19.615839+00:00
+724,Rayan Ibrahim,,996000458,,Dispatcher,OSP,,,,3G,,,3,2023-12-22 13:23:19.615866+00:00,2023-12-22 13:23:19.615875+00:00
+725,Mohammed Abd Elsattar� Abd Allah,m.abdelsattar@lulu-tech.com,912349387,,Manger,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.615902+00:00,2023-12-22 13:23:19.615910+00:00
+726,Munzer zain elabdein esmail zain elabdein,Munzerzain@gmail.com,900751194,,BO engineer,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.615938+00:00,2023-12-22 13:23:19.615946+00:00
+727,Mohamed salah adam mohamed,mohamed.salah@lulu-tech.com,900750858,,Workshop Engineer,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.615973+00:00,2023-12-22 13:23:19.615982+00:00
+728,Khalid Abdalla abdalmajid Ali,,901233687,,Telecom tech,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.616010+00:00,2023-12-22 13:23:19.616018+00:00
+729,TajAlasfia AddUlgadir Mohamed,,912531608,,civil tech,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.616047+00:00,2023-12-22 13:23:19.616056+00:00
+730,Ahmed Emad Ahmed,,123425449,,Telecom tech,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.616083+00:00,2023-12-22 13:23:19.616093+00:00
+731,Khalid Yagoub Alnour,,900943656,,Patroller,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.616121+00:00,2023-12-22 13:23:19.616129+00:00
+732,Muhand Babikr Mohamed,,927925660,,Patroller,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.616157+00:00,2023-12-22 13:23:19.616166+00:00
+733,Sirageldin hatim abdalla abdelmageed,,904988013,,Patroller,OSP,,,,LuluTech,,,3,2023-12-22 13:23:19.616194+00:00,2023-12-22 13:23:19.616203+00:00
+734,Abbas Siddig Ahmed Noor,abbas.noor@metconetworks.com,900914606,,Team Leader ,OSP,,,,Nuba,,,3,2023-12-22 13:23:19.616232+00:00,2023-12-22 13:23:19.616242+00:00
+735,Hussain Adam Hassan,,900914613,,Telecom Technician,OSP,,,,Nuba,,,3,2023-12-22 13:23:19.616271+00:00,2023-12-22 13:23:19.616282+00:00
+736,Mohammed Ahmed  Elmustafa,,900914604,,Telecom Technician,OSP,,,,Nuba,,,3,2023-12-22 13:23:19.616322+00:00,2023-12-22 13:23:19.616332+00:00
+737,Mujahid Ebaid Saeed Ahmed,,900914609,,Telecom Technician,OSP,,,,Nuba,,,3,2023-12-22 13:23:19.616361+00:00,2023-12-22 13:23:19.616369+00:00
+738,Yahaya Mohammed Abdelwahab,,912153529,,Telecom Engineer,OSP,,,,Nuba,,,3,2023-12-22 13:23:19.616397+00:00,2023-12-22 13:23:19.616405+00:00
+739,Magdy Bahr Eldeen,,912157761,,Telecom Technician,OSP,,,,Nuba,,,3,2023-12-22 13:23:19.616432+00:00,2023-12-22 13:23:19.616440+00:00
+740,Hafiz Fadlallah Abdelwahid,hafiz.fadlallah@metconetworks.com,900914600,,Telecom Engineer,OSP,,,,Nuba,,,3,2023-12-22 13:23:19.616468+00:00,2023-12-22 13:23:19.616477+00:00
+741,Mohammed Esmat Adam,,901231157,,Telecom Engineer,OSP,,,,Nuba,,,3,2023-12-22 13:23:19.616505+00:00,2023-12-22 13:23:19.616513+00:00
+742,Amein Hassan Badeen,amin.hassan@shabakkatsd.com,900716481,,Fuel Supervisor,Fuel,,,,Shabakkat,,,3,2023-12-22 13:23:19.616540+00:00,2023-12-22 13:23:19.616549+00:00
+743,Abbas Adam,,912509902,,Fuel Field,Fuel,,,,Shabakkat,,,3,2023-12-22 13:23:19.616576+00:00,2023-12-22 13:23:19.616585+00:00
+744,Ahmed Alnorani,,912713644,,Fuel Field,Fuel,,,,Shabakkat,,,3,2023-12-22 13:23:19.616613+00:00,2023-12-22 13:23:19.616621+00:00
+745,Modther Alfadil Dafaalla ,,900901868,,Fuel Field,Fuel,,,,Shabakkat,,,3,2023-12-22 13:23:19.619765+00:00,2023-12-22 13:23:19.619794+00:00
+746,Moaaz Abdelmoneam,Muaaz1980@gmai.com,912788987,,Madani fuel supervisor,Fuel,,,,Shabakkat,,,3,2023-12-22 13:23:19.619827+00:00,2023-12-22 13:23:19.619836+00:00
+747,Abdul Rahim Sheikh Ahmed,daboura90@gmail.com,912304104,,Chairman of the Board,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.619864+00:00,2023-12-22 13:23:19.619873+00:00
+748,Hashem Omar Ali Al-Amin,hashim.alamin@nawawe-tech.com,915012713,,financial advisor,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.619900+00:00,2023-12-22 13:23:19.619908+00:00
+749,ELTayeb Hassan Babiker,eltayb.Hassan@nawawe-tech.com,901230411,,Transport and Logistics Officer,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.619935+00:00,2023-12-22 13:23:19.619943+00:00
+750,Musab Mohamed Elkheder,musab.moh@nawawe-tech.com,901230412,,Fuel Operations Director,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.619969+00:00,2023-12-22 13:23:19.619978+00:00
+751,Mirghani Mohamed Bakhit,,901230413,,Accountant,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620004+00:00,2023-12-22 13:23:19.620012+00:00
+752,Kamal Al-Din Ahmed Al-Hassan,kamaleldeen.ahmed@nawawe-tech.com,121121033,,chief of accounts,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620039+00:00,2023-12-22 13:23:19.620048+00:00
+753,Abdullah Sayed Ibrahim,,901230414,,Accountant,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620074+00:00,2023-12-22 13:23:19.620083+00:00
+754,Saif Al-Din HassbAlrssol,,901230415,,Vehicle maintenance responsible,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620109+00:00,2023-12-22 13:23:19.620117+00:00
+755,Dania Al Fatih Bakri Omar,dania.alfatih@nawawe-tech.com,,,Accountant,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620144+00:00,2023-12-22 13:23:19.620152+00:00
+756,Ahmed Salah El Din Ahmed Abdel Maged,ahmed.salah@nawawe-tech.com,901234547,,Fuel Coordinator,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620178+00:00,2023-12-22 13:23:19.620186+00:00
+757,Mohamed Ahmed Al-Nour,,923253397,,Driver,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620213+00:00,2023-12-22 13:23:19.620222+00:00
+758,Hassan Ahmed Ibrahim Abdel Rahman,,901234539,,Driver,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620249+00:00,2023-12-22 13:23:19.620257+00:00
+759,Taj Al-Sir Omar Al-Mahi,,120004604,,Driver,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620283+00:00,2023-12-22 13:23:19.620291+00:00
+760,Ali Mustafa Ahmed Banga,N/A,901230421,,Team leader,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620318+00:00,2023-12-22 13:23:19.620326+00:00
+761,Abdel Qader Mohamed Ahmed Al-Shaher,N/A,901230431,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620353+00:00,2023-12-22 13:23:19.620361+00:00
+762,Diaa Al-Din Ibrahim Agbana,N/A,901230432,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620388+00:00,2023-12-22 13:23:19.620396+00:00
+763,Al-Taj Ismail,N/A,901230435,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620422+00:00,2023-12-22 13:23:19.620430+00:00
+764,Abu Ubaida Ibrahim,N/A,963355876,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620457+00:00,2023-12-22 13:23:19.620465+00:00
+765,Abdel Moneim Mahmoud Hamed Saleh,N/A,911328108,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620492+00:00,2023-12-22 13:23:19.620500+00:00
+766,Abdullah Muhammad Abdullah ,N/A,0,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620527+00:00,2023-12-22 13:23:19.620535+00:00
+767,Mohamed Awad Al-Sayed Suleiman Hamed,N/A,0,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620562+00:00,2023-12-22 13:23:19.620570+00:00
+768,Muzammil FathurALRahman Al-Khidr,N/A,912304532,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620596+00:00,2023-12-22 13:23:19.620604+00:00
+769,Mojtaba Mohammed Khamis,N/A,901234187,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620631+00:00,2023-12-22 13:23:19.620639+00:00
+770,Ali Abdallah Mahjoub,N/A,901230433,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620666+00:00,2023-12-22 13:23:19.620674+00:00
+771,Omar Hussein Mohammed Al Hussein,N/A,901230422,,Team leader,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620700+00:00,2023-12-22 13:23:19.620709+00:00
+772,Mubarak Othman Al-Hassan,N/A,901230437,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620735+00:00,2023-12-22 13:23:19.620743+00:00
+773,Abdul Aziz Idris Ahmed Saeed,N/A,901230438,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620769+00:00,2023-12-22 13:23:19.620778+00:00
+774,Siddiq Khalifa Fath al-Rahman,N/A,901234538,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620804+00:00,2023-12-22 13:23:19.620812+00:00
+775,Abdullah Hassan Abdullah Othman,N/A,911188437,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620839+00:00,2023-12-22 13:23:19.620847+00:00
+776,Mohammad Al Haj Al Zubair,N/A,912685747,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620874+00:00,2023-12-22 13:23:19.620882+00:00
+777,Taqi al-Din Muhammad Khater,N/A,914654810,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620909+00:00,2023-12-22 13:23:19.620917+00:00
+778,Khaled Mukhtar Abu Jalha Touhou,N/A,0,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620944+00:00,2023-12-22 13:23:19.620952+00:00
+779,Mortada Suleiman,N/A,0,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.620978+00:00,2023-12-22 13:23:19.620987+00:00
+780,Abdul Salam Al-Hajj,N/A,129637444,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621013+00:00,2023-12-22 13:23:19.621022+00:00
+781,Louay Mohamed Saad,N/A,901230436,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621049+00:00,2023-12-22 13:23:19.621057+00:00
+782,Al-Radi Ismail Hamed,N/A,0,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621083+00:00,2023-12-22 13:23:19.621092+00:00
+783,Jamal al-Din Babakir Jamal,N/A,901230423,,Team leader,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621118+00:00,2023-12-22 13:23:19.621126+00:00
+784,Ayman Mohamed Khalifa,N/A,901230429,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621153+00:00,2023-12-22 13:23:19.621161+00:00
+785,Nader Mohamed ,N/A,91230430,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621187+00:00,2023-12-22 13:23:19.621195+00:00
+786,Moataz Ahmed Boshara,N/A,901230418,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621222+00:00,2023-12-22 13:23:19.621230+00:00
+787,Hamza Fathelrhaman,N/A,912206922,,Team leader,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621256+00:00,2023-12-22 13:23:19.621265+00:00
+788,Aldadi Mohamed Mosalam,N/A,0,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621291+00:00,2023-12-22 13:23:19.621299+00:00
+789,Zaki Ismail,N/A,901230439,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621326+00:00,2023-12-22 13:23:19.621334+00:00
+790,Yassir Alsaddig,N/A,912546609,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621361+00:00,2023-12-22 13:23:19.621369+00:00
+791,Abdelrhman Sir elkatim Jaffar,N/A,901230425,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621395+00:00,2023-12-22 13:23:19.621403+00:00
+792,Faisal Karar Mohamed ,N/A,918587919,,Fuel Delivery Delegate,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621430+00:00,2023-12-22 13:23:19.621438+00:00
+793,Moaeiz Ahmed ALdow,N/A,901234534,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621464+00:00,2023-12-22 13:23:19.621472+00:00
+794,Yosif Adm Abakr,N/A,0,,TRUCK DRIVER,Fuel,,,,Nawawe Tech,,,3,2023-12-22 13:23:19.621499+00:00,2023-12-22 13:23:19.621507+00:00
+795,Abuhryra Musa Adam Ahmed,,915663380,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621533+00:00,2023-12-22 13:23:19.621542+00:00
+796,Alhassan fathi mhjoub mohamed,,910374848,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621591+00:00,2023-12-22 13:23:19.621606+00:00
+797,Ashraf saifaldin Mohamed Ibrahim,,912147511,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621637+00:00,2023-12-22 13:23:19.621646+00:00
+798,Alhaj Abdulgabar Ahmed Mohamed,,925707928,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621673+00:00,2023-12-22 13:23:19.621682+00:00
+799,Mohamed Ishag Ahmed Adam,,906297298,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621709+00:00,2023-12-22 13:23:19.621717+00:00
+800,Altoum mohamed Mohamed Toum,,123329150,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621744+00:00,2023-12-22 13:23:19.621753+00:00
+801,Altahir Joda Abdulla Alsakin,,995695547,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621780+00:00,2023-12-22 13:23:19.621788+00:00
+802,Gazafi Abdulla Ahmed Alnono,,117411621,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621815+00:00,2023-12-22 13:23:19.621823+00:00
+803,Abdullah Altom Mohamed Brear,,,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621850+00:00,2023-12-22 13:23:19.621858+00:00
+804,Al Tayeb Abbass Mohamed Ibrahim,,914843805,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621885+00:00,2023-12-22 13:23:19.621893+00:00
+805,Bashir Balla Idrees Ali Mohamed,,,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621920+00:00,2023-12-22 13:23:19.621929+00:00
+806,Musaab Altaj Nasreldin Abdelrahman,,,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.621955+00:00,2023-12-22 13:23:19.621964+00:00
+807,Yousif Osman Nasereldin Abdelrahman,,,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624548+00:00,2023-12-22 13:23:19.624566+00:00
+808,Abdelmoneam Omer Abdelrahman,,115122272,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624598+00:00,2023-12-22 13:23:19.624607+00:00
+809,Abdelrazig Saeed Bakheet,,918690960,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624635+00:00,2023-12-22 13:23:19.624643+00:00
+810,Aymen Yousof Ali,,,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624671+00:00,2023-12-22 13:23:19.624679+00:00
+811,Belal Hamid Belal Hamid,,900996012,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624706+00:00,2023-12-22 13:23:19.624714+00:00
+812,Hassan Eissa Toto,,,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624741+00:00,2023-12-22 13:23:19.624749+00:00
+813,Magdi Ali Belal,,968808222,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624776+00:00,2023-12-22 13:23:19.624785+00:00
+814,Mojahid Altaj Nasereldein,,,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624812+00:00,2023-12-22 13:23:19.624820+00:00
+815,Musa Mohamed Ali,,918416476,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624847+00:00,2023-12-22 13:23:19.624855+00:00
+816,Taqiuldein Abdalla Musa,,915736747,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624882+00:00,2023-12-22 13:23:19.624890+00:00
+817,Ismail Mohamed,,111653692,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.624917+00:00,2023-12-22 13:23:19.624925+00:00
+818,Ahmed Suliman,Intact/Well,912880550,,Account Manager,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.624952+00:00,2023-12-22 13:23:19.624960+00:00
+819,Abas Ahmed Alnor Bokhari,Intact/Well,,,driver,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.624986+00:00,2023-12-22 13:23:19.624995+00:00
+820,Abdelbagi Mohamed Hussan Alsheikh,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625021+00:00,2023-12-22 13:23:19.625029+00:00
+821,Abdelgader Abdalla Ezerig,Intact/Well,,,driver,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625056+00:00,2023-12-22 13:23:19.625064+00:00
+822,Adam Algaily,Intact/Well,,,driver,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625090+00:00,2023-12-22 13:23:19.625099+00:00
+823,Alradi Ahmed Mohamed Alradi,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625126+00:00,2023-12-22 13:23:19.625134+00:00
+824,Arabi Ibrahim Mahmoud Ibrahim,Intact/Well,,,driver,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625160+00:00,2023-12-22 13:23:19.625169+00:00
+825,arwa alhaj abdalla alhaj,Intact/Well,909041202,,supervisor,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625195+00:00,2023-12-22 13:23:19.625203+00:00
+826,elgaili mohamed abdelrahman sadan,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625230+00:00,2023-12-22 13:23:19.625238+00:00
+827,elsedig gasmallaa ahmed albasheir,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625264+00:00,2023-12-22 13:23:19.625272+00:00
+828,Essam eldeen hassan mohamed,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625299+00:00,2023-12-22 13:23:19.625308+00:00
+829,fathya mohamed ali ahmed,Intact/Well,900189710,,supervisor,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625335+00:00,2023-12-22 13:23:19.625344+00:00
+830,hagaz algasim gismalseed abdalla,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625371+00:00,2023-12-22 13:23:19.625379+00:00
+831,almadani alrayah madani,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625406+00:00,2023-12-22 13:23:19.625415+00:00
+832,mogahid ahmed mohamed hamid ,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625442+00:00,2023-12-22 13:23:19.625450+00:00
+833,mohamed alfatih hussain musa ,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625476+00:00,2023-12-22 13:23:19.625485+00:00
+834,mosab hassan mahjoub alkhalifa,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625511+00:00,2023-12-22 13:23:19.625519+00:00
+835,Ragda Mohamed Seseg Nasr,Intact/Well,900189713,,supervisor,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625546+00:00,2023-12-22 13:23:19.625555+00:00
+836,ameir ahmed mohamed ,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625581+00:00,2023-12-22 13:23:19.625589+00:00
+837,abdelgafar husam mustafa,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625616+00:00,2023-12-22 13:23:19.625624+00:00
+838,Alshazly husain,Intact/Well,,,technician,Fuel,,,,LuluTech,,,3,2023-12-22 13:23:19.625651+00:00,2023-12-22 13:23:19.625659+00:00
+839,Algaily Mustafa Algaily Mohamed,,910070088,,Fuel and supply directer,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.625685+00:00,2023-12-22 13:23:19.625693+00:00
+840,Moamen Mohamed Elmustafa Altayib Mohamed,,910400976,,Fuel Manager,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.625720+00:00,2023-12-22 13:23:19.625729+00:00
+841,Mohamed Alawab Hassan Mahmoud,,910400972,,Fuel Coordinator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.625755+00:00,2023-12-22 13:23:19.625763+00:00
+842,Ayman Khalid Ahmed Abdulrahman,,912478764,,Fuel Superviser,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.625791+00:00,2023-12-22 13:23:19.625799+00:00
+843,Hala Mohamed Alhassan Ahmed Abdulhafiz,,910070469,,Fuel Coordinator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.625825+00:00,2023-12-22 13:23:19.625833+00:00
+844,Ahmed Abdelrazig Ahmed Mohamed,,912382075,,Fuel Coordinator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.625860+00:00,2023-12-22 13:23:19.625868+00:00
+845,Altoum mohamed Mohamed Toum,,100700100,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.625895+00:00,2023-12-22 13:23:19.625903+00:00
+846,Abuhryra Musa Adam Ahmed,,915663380,,Fuel Delegator,Fuel,,,,AGM,,,3,2023-12-22 13:23:19.625930+00:00,2023-12-22 13:23:19.625938+00:00

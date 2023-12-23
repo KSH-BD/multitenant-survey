@@ -1,4 +1,4 @@
-<form class="ui form" hx-post="{% url 'section-create' id=tenant.id %}" hx-target="#id_section" hx-swap="outerHTML" hx-select="#id_section" hx-on="htmx:afterRequest:{$('.ui.modal').modal('hide')}">
+<form style="padding: 2em;" class="ui form" hx-post="{% url 'section-create' id=tenant.id %}" hx-target="#id_section" hx-swap="outerHTML" hx-select="#id_section" hx-on="htmx:afterRequest:{$('.ui.modal').modal('hide')}">
     {% csrf_token %}
     {% for f in form %}
     <div class="field">

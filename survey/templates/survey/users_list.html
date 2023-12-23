@@ -21,14 +21,20 @@
       <thead>
         <tr>
           <th>Name</th>
-          <th ></th>          
-          <th >Action</th>          
+          <th>Role</th>          
+          <th></th>          
+          <th>Action</th>          
         </tr>
       </thead>
       <tbody>
         {% for user in tenant.authuser_set.all %}
           <tr>
             <td>{{ user.username }}</td>
+            <td>
+              <div class="ui label">            
+              {{ user.role|upper }}
+              </div>
+            </td>
             <td>
               <a style="float:right;margin-top: 1em;margin-bottom: 1em;" class="ui blue basic label" href="{% url 'users_edit' id=tenant.id userid=user.id %}">Edit <i class="fa-regular fa-pen-to-square"></i></a>
             </td>
@@ -40,9 +46,4 @@
       </tbody>
     </table>
   </div>
-  <div class="ui tiny modal">
-    <div class="header">Header</div>
-    <div class="contentmodal padded">
-    </div>
-  </div>  
 {% endblock %}

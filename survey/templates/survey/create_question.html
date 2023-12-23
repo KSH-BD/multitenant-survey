@@ -1,7 +1,8 @@
 {% extends 'survey/base.html' %}
 
 {% block content %}
-<div class="ui very padded container">
+<div style="padding: 2em;">
+<div class="ui very padded">
   <div class="ui large breadcrumb">
     <a href="{% url 'tenant_details' id=tenant.id %}" class="section">Home</a>
     <i class="fa-solid fa-chevron-right fa-2xs" style="color: #95989d;margin: .5em;"></i>    
@@ -16,7 +17,6 @@
       hx-target="#formContainer" 
       hx-swap="beforeend"
     >Add Question <i class="fa-solid fa-plus"></i></button>
-  
 </div>
 
 <form class="ui form" id="questionform" action="." method="post">
@@ -84,7 +84,7 @@
           class="ui green basic label"           
           hx-on:click="$('.ui.modal').modal('show')"
           hx-get="{% url 'questionoptions' id=tenant.id qid=question.id %}" 
-          hx-target=".content" 
+          hx-target=".contentmodal" 
           hx-swap="innerhtml"
            >Add Options</button>
           {% elif question.type == 'Radio' %}
@@ -102,7 +102,7 @@
           class="ui green basic label"           
           hx-on:click="$('.ui.modal').modal('show')"
           hx-get="{% url 'questionoptions' id=tenant.id qid=question.id %}" 
-          hx-target=".content" 
+          hx-target=".contentmodal" 
           hx-swap="innerhtml"
            >Add Options</button>
             </div>
@@ -114,7 +114,7 @@
           class="ui blue mini button"
           hx-on:click="$('.ui.modal').modal('show')"
           hx-get="{% url 'edit_question' id=tenant.id qid=question.id %}" 
-          hx-target=".content" 
+          hx-target=".contentmodal" 
           hx-swap="innerhtml"
           >Edit</button>
           <button
@@ -134,4 +134,5 @@
 </div>
 </div>
 {% include "survey/modal.html" %}
+</div>
 {% endblock content %}

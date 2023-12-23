@@ -4,7 +4,7 @@
   <form
     class="ui form"
     hx-post="{% url 'questionoptions' id=question.tenant.id qid=question.id %}" 
-    hx-target=".content" 
+    hx-target=".contentmodal" 
     hx-swap="innerhtml">
     {% csrf_token %}
     <div class="tags field">
@@ -28,7 +28,7 @@
           <button 
           class="ui red button tiny"
           hx-post="{% url 'questionoptionsdelete' id=question.tenant.id qoid=op.id %}" 
-          hx-target=".content"           
+          hx-target=".contentmodal"           
           hx-swap="innerhtml"
           hx-confirm="Are you sure ?">          
             delete</button></td>

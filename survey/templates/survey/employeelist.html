@@ -16,16 +16,18 @@
     </div>
   </h1>
   <br>
+  
   <a style="margin-top: 1em;margin-bottom: 1em;" class="ui teal right floated button" href="{% url 'createemployee' id=tenant.id %}">Add Employee <i class="fa-solid fa-plus"></i></a>  
+  <a style="margin-top: 1em;margin-bottom: 1em;" class="ui green right floated button" href="{% url 'employeedownload' id=tenant.id %}">Export <i class="fa-solid fa-file-csv"></i></a>  
   <table class="ui blue small very compact table">
     <thead>
       <tr>
-        <th>Employee ID</th>
-        <th>Employee Name</th>
-        <th>Employee Email</th>
-        <th>Employee Phone</th>
-        <th>Employee Emergency Email</th>      
-        <th>Employee Emergency Phone</th>      
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Emergency Email</th>      
+        <th>Emergency Phone</th>      
         <th>Section</th>      
         <th>Company</th>      
         <th>Job Title</th>      
@@ -36,7 +38,7 @@
       {% for emp in tenant.employee_set.all %}
       <tr>
         <td>{{emp.employee_id}}</td>        
-        <td><a class="fluid ui basic button" href="{% url 'employeedetails' id=emp.tenant.id employeeid=emp.employee_id %}">{{emp.name}}</a></td>        
+        <td><a class="ui label" href="{% url 'employeedetails' id=emp.tenant.id employeeid=emp.employee_id %}">{{emp.name}}</a></td>        
         <td>{{emp.email}}</td>        
         <td>{{emp.phone_number}}</td>        
         <td>{{emp.emergency_email}}</td>        
