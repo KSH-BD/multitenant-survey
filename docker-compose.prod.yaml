@@ -24,15 +24,6 @@ services:
       - POSTGRES_USER=multitenantadmin
       - POSTGRES_PASSWORD=admin@123
       - POSTGRES_DB=multitenant
-  
-  nginx:
-    build: ./nginx
-    ports:
-      - 1337:80
-    volumes:
-      - static_volume:/home/app/web/staticfiles
-    depends_on:
-      - web
 
 
 volumes:
