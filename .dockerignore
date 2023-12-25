@@ -1,0 +1,10 @@
+.git
+.vscode
+.gitignore
+.venv
+venv/
+*/*__pycache__/
+__pycache__/
+survey/migrations
+db1.sqlite3
+db1.sqlite3-journal
