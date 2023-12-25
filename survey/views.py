@@ -5,12 +5,10 @@ import json
 import folium
 import string
 import datetime
+import operator
 import pandas as pd
 from .models import *
-from uuid import uuid4
 from django import forms
-from pprint import pprint
-import plotly.express as px
 from django.conf import settings
 from django.db.models import Count
 from django.contrib import messages
@@ -73,22 +71,16 @@ def lookahead(iterable):
     information if there are more values to come after the current one
     (True), or if it is the last value (False).
     """
-    # Get an iterator and pull the first value.
     it = iter(iterable)        
     try:
         last = next(it)
     except StopIteration:
         return
-    # Run the iterator to exhaustion (starting from the second value).
     for val in it:
-        # Report the *previous* value (more to come).        
         
         yield last, True        
         last = val
-    # Report the last value.
     yield last, False
-
-import operator
 
 @login_required(login_url='/survey/login/')
 @unauthenticated_users
@@ -96,9 +88,6 @@ def week_form_details(request, id, formid):
     tenant = Tenant.objects.get(id=id)
     form = tenant.form_set.prefetch_related("week","answer_set").get(id=formid)
     
-    # print(Answer.objects.filter(form=form).all())
-    # data = [{'emp': emp, 'data': [x for x in emp.answer_set.filter(
-    #     form=form).all()]} for emp in tenant.employee_set.all()]
     data = []
     temp = []
     item = []
@@ -110,10 +99,7 @@ def week_form_details(request, id, formid):
             temp.append(curr)
             item.clear()
             item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
-            data.append(item[0] + sorted(temp,key=operator.attrgetter('question_id')))            
-            # data.append(item[0] + temp)            
-            
-            # data.append({"emp":prev.employee,"data":temp})            
+            data.append(item[0] + sorted(temp,key=operator.attrgetter('question_id')))                                 
             break            
         
         if not prev:
@@ -121,33 +107,14 @@ def week_form_details(request, id, formid):
             temp.append(curr)
         elif curr.employee.employee_id == prev.employee.employee_id:
             prev = curr
-            temp.append(curr)
-            # print(temp)        
+            temp.append(curr)            
         else:
             item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
             data.append(item[0] + sorted(temp,key=operator.attrgetter('question_id')))
-            # data.append({"emp":prev.employee,"data":temp})
             temp = []
             item = []
             temp.append(curr)
-            prev = curr
-    
-    print(data)
-        # if not prev or curr.employee.employee_id == prev.employee.employee_id:
-        #     print(f"prev : {prev}")
-        #     print(f"curr : {curr}")
-        #     prev = curr
-        #     temp.append(curr)            
-        # else:
-        #     print("here")
-        #     data.append({"Employee":prev.employee,"data":temp})
-        #     temp.clear()
-        #     temp.append(curr)       
-        #     prev = curr
-    
-    # print(data)
-    
-    # print(data1)
+            prev = curr       
 
     return render(request, 'survey/week_form_details.html', {'form': form, "data": data, "tenant": tenant,"headers":headers})
 
@@ -239,7 +206,6 @@ def survey_form(request, id,formid):
             city = "Current City  - المدينة الحالية?"
             cityname = f'{city.replace(" ", "_").replace("?","")}'            
             form.fields[cityname].widget.attrs.update({"hx-post": f"/survey/tenant/{tenant.id}/get_company_zone/{form.id}/","hx-target":"#company_zone","hx-swap":"innerHTML","hx-trigger":"load, change"})
-            # data = 
             x = "Company - الشركة ?"
             y = "Current Zone - الزون الحالي ?"
             field_name = f'{x.replace(" ", "_").replace("?","")}'
@@ -256,11 +222,7 @@ def submit_survey_form(request, id,formid):
     f = Form.objects.get(id=formid)
     employee = Employee.objects.filter(employee_id=int(
         request.POST.get("employeeid")), tenant=f.tenant).first()
-
-    # if Answer.objects.filter(form=f, employee=employee):
-    #     messages.error(request, "employee with thids id already submited")
-    #     return render(request, 'survey/employee_id_form.html', {'id': formid})
-    
+   
     if request.method == 'POST':
         form = FormForm(formid, request.POST)            
         if form.is_valid():
@@ -275,7 +237,6 @@ def submit_survey_form(request, id,formid):
                 city = "Current City  - المدينة الحالية?"
                 cityname = f'{city.replace(" ", "_").replace("?","")}'            
                 form.fields[cityname].widget.attrs.update({"hx-post": f"/survey/tenant/{tenant.id}/get_company_zone/{f.id}/","hx-target":"#company_zone","hx-swap":"innerHTML","hx-trigger":"load, change"})
-                # data = 
                 x = "Company - الشركة ?"
                 y = "Current Zone - الزون الحالي ?"
                 field_name = f'{x.replace(" ", "_").replace("?","")}'
@@ -307,8 +268,7 @@ def login_page(request):
 def change_password(request,id,userid):
     tenant = Tenant.objects.get(id=id)
     user = AuthUser.objects.get(id=userid)
-    # if user.tenant != tenant:
-    #     return redirect("users_list", id=tenant.id)
+
     if request.method == "POST":
         passwd = request.POST.get("change_password")
         user.set_password(passwd)
@@ -326,7 +286,6 @@ def users_register(request, id):
     if request.method == "POST":
         form = RegisterForm(request.POST)
         if form.is_valid():
-            # print(form.cleaned_data)
             form.save()
             return redirect("users_list", id=tenant.id)
     if tenant.name != "FM":
@@ -369,38 +328,6 @@ def logout_page(request):
     logout(request)
     return redirect("login_page")
 
-
-def data(request,id):
-    # city = ["Madani", "Kenana", "Shandi", "Kassala", "Atbara", "Karima", "Marawi", "Nori", "Sinnar", "Obied", "Alnihood", "Umrawaba", "Managil", "New Halfa", "Port Sudan", "Sinkat", "KTM", "Dubai / UAE", "Dongola", "Cairo / Egypt", "Kamlin", "Kosti", "Alhaj Abdalla", "Rahad", "Dewaim", "Gazira", "Gitena", "Hasahisa", "Jabalain", "Genina", "Zalingy", "Adre / Tchad", "Mershing",
-    #         "Murne", "Nyala", "OMD", "Deain", "Tulus", "Fashir", "Umkdada", "Dalang", "Babanosa", "Foula", "Kadogly", "Abu Jebaiha", "Gadarif", "Al Faw", "Doha / Qatar", "Barbar", "Wadi Halfa", "KSA", "KTN", "Singa", "Unknown ", "Palastine", "Al Damar", "Karma", "Kagbar", "Addis Ababa / Ethiopia", "Damazin", "Al Rahad", "Rabak", "Darfur ", "DONGOLA ", "Kass", "Libya", "Tandalty"]
-    # q = Question.objects.get(text="Current City ?")
-    # QuestionOption.objects.bulk_create([QuestionOption(question=q,value=x) for x in city])
-    tenant = Tenant.objects.get(id=id)
-    
-    # tenant.employee_set.all().delete()
-    
-    with open('survey/utils/fm_users1.csv') as f:
-        empdata = csv.reader(f.readlines())        
-        # tenant.companyjson_set.bulk_create([CompanyJson(data={"city":i[0],"company":i[1],"zone":i[2]},tenant=tenant) for i in empdata])
-        
-        # tenant.employee_set.bulk_create([
-        # Employee(employee_id=i[0], name=i[1], email=i[3], section=i[5], company="KSHC", job_title=i[2],
-        #                         phone_number=i[4],division="Call Center",department="Call Center", tenant=tenant) for i in empdata
-        # ])
-        
-        # tenant.employee_set.bulk_create([Employee(
-        #             employee_id=i[0], name=i[1], email=i[8], section=i[2], company=i[3], job_title=i[4],job_type=i[5],
-        #             phone_number=i[6],actual_zone=i[9], tenant=tenant) for i in empdata])
-        # for i in empdata:            
-        #     employee = Employee(employee_id=i[0], name=i[1], email=i[3], section=i[5], company="KSHC", job_title=i[2],
-        #                         phone_number=i[4],division="Call Center",department="Call Center", tenant=tenant)
-        #     # print(employee)
-        #     employee.save()
-            # break
-
-    
-    context = {"employee": tenant.employee_set.all()}
-    return render(request, "survey/data.html", context)
 
 @login_required(login_url='/survey/login/')
 @unauthenticated_users
@@ -488,16 +415,11 @@ def updateemployee(request, id, empid):
     form = EmployeeForm(request.POST or None, instance=employee)
     if tenant.name != "FM":
         form.fields.pop("actual_zone")
-    # if request.method == "POST":
-    #     form = EmployeeForm(request.POST)
+    
     if form.is_valid():
         empid = form.cleaned_data.get("employee_id")
         email = form.cleaned_data.get("email")
 
-        # if tenant.employee_set.filter(employee_id=empid).first() or tenant.employee_set.filter(email=email).first():
-        #     form.add_error('employee_id','user with this id already exist')
-        #     form.add_error('email','user with this email already exist')
-        # else:
         i = form.save(commit=False)
         i.section = form.cleaned_data.get('section').name if form.cleaned_data.get('section') else ""
         i.division = form.cleaned_data.get('division').name if form.cleaned_data.get('division') else ""
@@ -506,34 +428,7 @@ def updateemployee(request, id, empid):
         i.job_title = form.cleaned_data.get('job_title').name if form.cleaned_data.get('job_title') else ""
         i.save()
         return redirect('employeelist', id=tenant.id)
-        # if form.is_valid():
-
-        #     # empid = form.cleaned_data.get("employee_id")
-        #     # email = form.cleaned_data.get("email")
-        #     # if tenant.employee_set.filter(employee_id=empid).first():
-        #     #     form.add_error('employee_id','user with this id already exist')
-        #     # if tenant.employee_set.filter(email=email).first():
-        #     #     form.add_error('email','user with this email already exist')
-        #     # else:
-        #     # employee.employee_id = form.cleaned_data.get("employee_id")
-        #     employee.name = form.cleaned_data.get("name")
-        #     employee.email = form.cleaned_data.get("email")
-        #     employee.section = form.cleaned_data.get("section")
-        #     employee.division = form.cleaned_data.get("division")
-        #     employee.department = form.cleaned_data.get("department")
-        #     employee.company = form.cleaned_data.get("company")
-        #     employee.job_title = form.cleaned_data.get("job_title")
-        #     employee.job_type = form.cleaned_data.get("job_type")
-        #     employee.phone_number = form.cleaned_data.get("phone_number")
-        #     employee.emergency_number = form.cleaned_data.get("emergency_number")
-        #     employee.emergency_email = form.cleaned_data.get("emergency_email")
-        #     employee.tenant = form.cleaned_data.get("tenant")
-        #     employee.save()
-        # return redirect('employeelist', id=tenant.id)
-
-    # form.initial['employee_id'] = employee.employee_id
-    # form.initial['name'] = employee.name
-    # form.initial['email'] = employee.email
+        
     form.initial['tenant'] = tenant
     form.fields['section'].queryset = tenant.section_set
     form.fields['division'].queryset = tenant.division_set
@@ -551,14 +446,10 @@ def updateemployee(request, id, empid):
         name=employee.company).first()
     form.initial['job_title'] = tenant.jobtitle_set.filter(
         name=employee.job_title).first()
-    # form.initial['job_type'] = employee.job_type
-    # form.initial['phone_number'] = employee.phone_number
-    # form.initial['emergency_number'] = employee.emergency_number
-    # form.initial['emergency_email'] = employee.emergency_email
+    
     form.initial['tenant'] = tenant
 
     form.fields['employee_id'].widget.attrs.update({"readonly": True})
-    # form.fields['section'].widget.attrs['class'] = "ui dropdown"
     return render(request, 'survey/employee_update.html', {"form": form, "tenant": tenant, "employee": employee})
 
 @login_required(login_url='/survey/login/')
@@ -571,7 +462,6 @@ def questionoptions(request, id, qid):
             for tag in json.loads(data[0]):
                 qo = QuestionOption(question=question, value=tag.get('value'))
                 qo.save()
-            # return redirect('create_question', id=id)
 
     return render(request, "survey/questionoptions.html", {"question": question})
 
@@ -712,6 +602,22 @@ def cords_status(request, id):
 def create_question(request, id):
     tenant = Tenant.objects.get(id=id)
     if "Hx-Request" in request.headers:
+        if request.method == 'POST':
+            form = QuestionForm(request.POST)
+            if form.is_valid():
+                text = request.POST.getlist("text")
+                datatype = request.POST.getlist("datatype")
+                required = request.POST.getlist("required")
+                dashboard = request.POST.getlist("dashboard")
+                data = list(zip(text, datatype, required, dashboard))
+                for i in data:
+                    question = Question(
+                        tenant=tenant, text=i[0], type=i[1], required=True if i[2] == "Yes" else False,dashboard=True if i[3] == "Yes" else False)
+                    question.save()
+            return render(request, 'survey/create_question.html', {"tenant": tenant, "questions": tenant.question_set.all()})
+
+ 
+        
         form = QuestionForm()
         form.fields['datatype'].widget.attrs['class'] = "ui dropdown"
         form.fields['required'].widget.attrs['class'] = "ui dropdown"
@@ -719,18 +625,7 @@ def create_question(request, id):
 
         return render(request, 'survey/questionfragment.html', {'form': form})
 
-    if request.method == 'POST':
-        form = QuestionForm(request.POST)
-        if form.is_valid():
-            text = request.POST.getlist("text")
-            datatype = request.POST.getlist("datatype")
-            required = request.POST.getlist("required")
-            dashboard = request.POST.getlist("dashboard")
-            data = list(zip(text, datatype, required, dashboard))
-            for i in data:
-                question = Question(
-                    tenant=tenant, text=i[0], type=i[1], required=True if i[2] == "Yes" else False,dashboard=True if i[3] == "Yes" else False)
-                question.save()
+  
 
     return render(request, 'survey/create_question.html', {"tenant": tenant, "questions": tenant.question_set.all()})
 
@@ -1014,8 +909,6 @@ def weekdownload(request,id,formid):
             
     d = pd.DataFrame(data)
     d.columns = ["Employee Name","Email","Phone Number","Section"] + list(tenant.question_set.values_list('text', flat=True))
-
-    # d.drop(columns=d.columns[0], axis=1, inplace=True)
     
     filename = f"form_{datetime.datetime.now()}.csv"
     export_path = os.path.join(os.getcwd(), "survey/export")
@@ -1033,21 +926,11 @@ def employeedownload(request,id):
     if tenant.name != "FM":
         d.drop(columns=d.columns[-5], axis=1, inplace=True)
 
-    # d.columns = ["Employee ID"]
     filename = f"employees{datetime.datetime.now()}.csv"
-    # export_path = os.path.join(app.root_path,"export")
     export_path = os.path.join(os.getcwd(), "survey/export")
     fullpath = os.path.join(export_path,filename)        
     d.to_csv(fullpath,index=False)
-    return FileResponse(open(fullpath, 'rb'), as_attachment=True)
-
-    # if os.path.exists(file_path):
-    #     with open(file_path, 'rb') as fh:
-    #         response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
-    #         response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
-    #         return response
-    # raise Http404
-
+    return FileResponse(open(fullpath, 'rb'), as_attachment=True)   
 
 def filterenglish(text):
     return re.sub(r'[^\x00-\x7f\W+]', r'', ''.join(filter(str.isalnum, text)))

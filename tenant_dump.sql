@@ -1,6 +1,0 @@
-PRAGMA foreign_keys=OFF;
-BEGIN TRANSACTION;
-CREATE TABLE IF NOT EXISTS "survey_tenant" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL);
-INSERT INTO survey_tenant VALUES(1,'FM','2023-11-09 14:18:26.760304','2023-11-09 14:18:26.760327');
-INSERT INTO survey_tenant VALUES(2,'CC','2023-11-09 14:22:40.640480','2023-11-09 14:22:40.640509');
-COMMIT;

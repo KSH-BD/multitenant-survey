@@ -1,7 +1,7 @@
 {% extends 'survey/base.html' %}
 
 {% block content %}
-<div style="padding: 2em;">
+<div id="mainswap" style="padding: 2em;">
 <div class="ui very padded">
   <div class="ui large breadcrumb">
     <a href="{% url 'tenant_details' id=tenant.id %}" class="section">Home</a>
@@ -19,7 +19,12 @@
     >Add Question <i class="fa-solid fa-plus"></i></button>
 </div>
 
-<form class="ui form" id="questionform" action="." method="post">
+<form class="ui form" id="questionform"
+      hx-post="{% url 'create_question' id=tenant.id %}"
+      hx-target="#mainswap"
+      hx-select="#mainswap"
+      hx-swap="outerHTML"
+      >
   {% csrf_token %}
     <div id="formContainer">
     </div>        

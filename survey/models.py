@@ -2,7 +2,6 @@ import uuid
 from django.db import models
 from django.db.models import JSONField
 from django.contrib.auth.models import AbstractUser
-from autoslug import AutoSlugField
 
 TYPE_CHOICES = (
     ('Number', 'Number'),
@@ -104,7 +103,6 @@ class Tenant(models.Model):
     title = models.CharField(max_length=100,blank=True,null=True)
     image_url = models.TextField(null=True,blank=True)
     has_cords = models.BooleanField(default=False)
-    slug = AutoSlugField(populate_from='name',null=True,blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

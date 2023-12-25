@@ -1,4 +1,4 @@
-<form class="ui form" action="{% url 'edit_question' id=tenant.id qid=question.id %}" method="post">
+<form style="padding: 2em;" class="ui form" action="{% url 'edit_question' id=tenant.id qid=question.id %}" method="post">
     {% csrf_token %}
     {% for f in form %}
     <div class="field {% if f.name == 'dashboard' %}ui toggle checkbox{% endif %}">
