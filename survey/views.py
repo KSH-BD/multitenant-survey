@@ -98,6 +98,8 @@ def week_form_details(request, id, formid):
         if not has_more:
             temp.append(curr)
             item.clear()
+            if not prev:
+                prev = curr
             item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
             data.append(item[0] + sorted(temp,key=operator.attrgetter('question_id')))                                 
             break            
@@ -114,7 +116,8 @@ def week_form_details(request, id, formid):
             temp = []
             item = []
             temp.append(curr)
-            prev = curr       
+            prev = curr             
+
 
     return render(request, 'survey/week_form_details.html', {'form': form, "data": data, "tenant": tenant,"headers":headers})
 
@@ -172,7 +175,9 @@ def get_company_zone(request,id,formid):
     form = FormForm(id=formid)
     for f in form.fields.copy():        
         if f not in ["Company_-_الشركة_","Current_Zone_-_الزون_الحالي_"]:
+            
             form.fields.pop(f)
+    
     if initdata:
         form.initial["Company_-_الشركة_"] = initdata.data.get("company")
         form.initial["Current_Zone_-_الزون_الحالي_"] = initdata.data.get("zone")    
@@ -202,7 +207,7 @@ def survey_form(request, id,formid):
             return render(request, 'survey/form.html', {'f': f})
 
         form = FormForm(id=formid)
-        if tenant.name == "FM":            
+        if tenant.name == "FM":                   
             city = "Current City  - المدينة الحالية?"
             cityname = f'{city.replace(" ", "_").replace("?","")}'            
             form.fields[cityname].widget.attrs.update({"hx-post": f"/survey/tenant/{tenant.id}/get_company_zone/{form.id}/","hx-target":"#company_zone","hx-swap":"innerHTML","hx-trigger":"load, change"})
@@ -305,7 +310,8 @@ def users_edit(request, id, userid):
     if form.is_valid():
         form.save()
         return redirect("users_list", id=tenant.id)
-
+    if tenant.name != "FM":
+        form.fields.pop("company")
     form.initial['tenant'] = tenant
     return render(request, "survey/users_edit.html", {"form": form,"tenant":tenant})
 
@@ -348,6 +354,8 @@ def employeedetails(request, id, employeeid):
     for curr,has_more in lookahead(Answer.objects.select_related("form").filter(employee=employee).order_by("created_at").all()):   
         if not has_more:
             temp.append(curr)
+            if not prev:
+                prev = curr
             data.append({"form":prev.form,"data":temp})            
             break            
         
@@ -467,12 +475,30 @@ def questionoptions(request, id, qid):
 
 @login_required(login_url='/survey/login/')
 @unauthenticated_users
+def delete_user(request,id, userid):
+    tenant = Tenant.objects.get(id=id)
+    user = AuthUser.objects.get(id=userid)    
+    user.delete()
+    
+    return render(request, 'survey/users_list.html', {"tenant": tenant})
+
+@login_required(login_url='/survey/login/')
+@unauthenticated_users
 def delete_question(request,id, qid):
     tenant = Tenant.objects.get(id=id)
     q = Question.objects.get(id=qid)    
     q.delete()
     
     return render(request, 'survey/create_question.html', {"tenant": tenant, "questions": tenant.question_set.all()})
+
+@login_required(login_url='/survey/login/')
+@unauthenticated_users
+def delete_employee(request,id, empid):
+    tenant = Tenant.objects.get(id=id)
+    emp = Employee.objects.get(id=empid)    
+    emp.delete()
+    
+    return render(request, 'survey/employeelist.html', {"tenant": tenant})
 
     
 @login_required(login_url='/survey/login/')
@@ -756,11 +782,14 @@ def dashboard(request, id, formid):
     allemp = set(x for x in tenant.employee_set.all())
     submited = set(x.employee for x in form.answer_set.select_related("employee").all())    
     not_submited = allemp.difference(submited)    
-        
-    e_p_c = pd.DataFrame(list(tenant.employee_set.values(
-        "company").order_by().annotate(nums_of_employess=Count("id"))))
-    emp_pre_comapny = {"title": "number of employees per company", "label": e_p_c.company.values.tolist(
-    ), "value": e_p_c.nums_of_employess.values.tolist()}
+    emp_pre_comapny = []    
+    try:      
+        e_p_c = pd.DataFrame(list(tenant.employee_set.values(
+            "company").order_by().annotate(nums_of_employess=Count("id"))))
+        emp_pre_comapny = {"title": "number of employees per company", "label": e_p_c.company.values.tolist(
+        ), "value": e_p_c.nums_of_employess.values.tolist()}
+    except AttributeError as ae:
+        e_p_c = []
 
     for q in tenant.question_set.filter(dashboard=True).all():
         df = ""
@@ -826,13 +855,13 @@ def dashboard(request, id, formid):
             df = pd.DataFrame(list(form.answer_set.select_related("employee","question").filter(question__text=q.text,employee__company=request.user.company).values(
                 "answer").order_by("question__id").annotate(nums_of_employess=Count("employee__id"))))
 
-            idlist = [x.employee.employee_id for x in tenant_question.select_related("employee").answer_set.filter(
+            idlist = [x.employee.employee_id for x in tenant_question.answer_set.select_related("employee").filter(
                 form=form,employee__company=request.user.company).order_by("employee_id").all()]
             namelist = [x.employee.name for x in tenant_question.answer_set.select_related("employee").filter(
                 form=form,employee__company=request.user.company).order_by("employee_id").all()]
             try:
                 latitude = [x.answer for x in lat.answer_set.select_related("employee").filter(
-                    form=form,employee__company=request.user.select_related("employee").company).order_by("employee_id").all()]
+                    form=form,employee__company=request.user.company).order_by("employee_id").all()]
                 longitude = [x.answer for x in lon.answer_set.select_related("employee").filter(
                     form=form,employee__company=request.user.company).order_by("employee_id").all()]
             except:
@@ -889,6 +918,8 @@ def weekdownload(request,id,formid):
         if not has_more:
             temp.append(curr)
             item.clear()
+            if not prev:
+                prev = curr
             item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
             data.append(item[0] + temp)            
             break            
@@ -911,10 +942,16 @@ def weekdownload(request,id,formid):
     d.columns = ["Employee Name","Email","Phone Number","Section"] + list(tenant.question_set.values_list('text', flat=True))
     
     filename = f"form_{datetime.datetime.now()}.csv"
-    export_path = os.path.join(os.getcwd(), "survey/export")
+    export_path = os.path.join(settings.MEDIA_ROOT, "media")
     fullpath = os.path.join(export_path,filename)        
     d.to_csv(fullpath,index=False)
-    return FileResponse(open(fullpath, 'rb'), as_attachment=True)
+    if os.path.exists(fullpath):
+        with open(fullpath, 'rb') as fh:
+            response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
+            response['Content-Disposition'] = 'inline; filename=' + os.path.basename(fullpath)
+            return response
+    raise Http404
+    # return FileResponse(open(fullpath, 'rb'), as_attachment=True)
 
 def employeedownload(request,id):
     tenant = Tenant.objects.get(id=id)
@@ -927,10 +964,16 @@ def employeedownload(request,id):
         d.drop(columns=d.columns[-5], axis=1, inplace=True)
 
     filename = f"employees{datetime.datetime.now()}.csv"
-    export_path = os.path.join(os.getcwd(), "survey/export")
+    export_path = os.path.join(settings.MEDIA_ROOT, "media")
     fullpath = os.path.join(export_path,filename)        
     d.to_csv(fullpath,index=False)
-    return FileResponse(open(fullpath, 'rb'), as_attachment=True)   
+    if os.path.exists(fullpath):
+        with open(fullpath, 'rb') as fh:
+            response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
+            response['Content-Disposition'] = 'inline; filename=' + os.path.basename(fullpath)
+            return response
+    raise Http404
+    # return FileResponse(open(fullpath, 'rb'), as_attachment=True)   
 
 def filterenglish(text):
     return re.sub(r'[^\x00-\x7f\W+]', r'', ''.join(filter(str.isalnum, text)))

@@ -1,8 +1,8 @@
 {% load static %}
 
-<div style="background-color: f8f9fa;" class="fluid ui very text container">
+<div id="main" style="background-color: f8f9fa;" class="fluid ui very text container">
 
-  <form class="ui form" hx-post="{% url 'submit_survey_form' id=f.tenant.id formid=f.id %}" method="post" novalidate>
+  <form class="ui form" hx-post="{% url 'submit_survey_form' id=f.tenant.id formid=f.id %}" hx-target="#main" hx-swap="outerHTML" novalidate>
     {% csrf_token %}
     {% if f.tenant.image_url %}
       <div style="margin-bottom: 3em;" class="fluid ui black segment">
@@ -14,7 +14,9 @@
    
   <h1 class="ui header">
     <div class="content">
+      {% if f.tenant.title %}
       {{ f.tenant.title }}
+      {% endif %}
     <div class="sub header">&nbsp;&nbsp;&nbsp; Week {{f.week.number}}</div>
   </div>
 </h1>

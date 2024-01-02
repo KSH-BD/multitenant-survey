@@ -39,14 +39,15 @@
 <div class="ui form cord">
   <div class="ui info message">    
     <div class="header">
-      Survey Questions 
+      Note 
     </div>
     <ul class="list">
-      <li>Survey Questions will be showing in the dashboard.</li>
-      <li>Unchecking the survey question below will remove the survey questions for this tenant and all employee answers to the questions.</li>
+      <li>Add option is only for data type "Radio"  "List"</li>
+      <li>Choose dashboard option will show the question answers in dashboard ,only for "Radio" "List"</li>
     </ul>
   </div> 
   
+  {% if request.user.username == 'admin' %}
   <div class="ui toggle checkbox">
     <input 
     hx-get="{% url 'cords_status' id=tenant.id %}"
@@ -57,6 +58,7 @@
     type="checkbox" {% if tenant.has_cords %}checked{% endif %} name="cords">
     <label>Add Survey Questions</label>
   </div>
+  {% endif %}
 <br>
 <br>
   <table class="ui celled blue striped table"

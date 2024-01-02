@@ -16,9 +16,12 @@
     </div>
   </h1>
   <br>
+  <div id="data">
   
   <a style="margin-top: 1em;margin-bottom: 1em;" class="ui teal right floated button" href="{% url 'createemployee' id=tenant.id %}">Add Employee <i class="fa-solid fa-plus"></i></a>  
+  {% if tenant.employee_set.count > 0 %}
   <a style="margin-top: 1em;margin-bottom: 1em;" class="ui green right floated button" href="{% url 'employeedownload' id=tenant.id %}">Export <i class="fa-solid fa-file-csv"></i></a>  
+  {% endif %}
   <table class="ui blue small very compact table">
     <thead>
       <tr>
@@ -47,10 +50,22 @@
         <td>{{emp.company}}</td>        
         <td>{{emp.job_title}}</td>        
         <td>{{emp.job_type}}</td>        
-        <td><a style="margin-top: 1em;margin-bottom: 1em;" class="fluid ui blue basic label" href="{% url 'updateemployee' id=tenant.id empid=emp.id %}">Edit <i class="fa-regular fa-pen-to-square"></i></a></td>        
+        <td>
+          <a style="margin-top: 1em;margin-bottom: 1em;" class=" ui blue basic label" href="{% url 'updateemployee' id=tenant.id empid=emp.id %}">Edit <i class="fa-regular fa-pen-to-square"></i></a>
+          <button
+          id="deletebtn"
+          class="ui mini button red right"
+          type="button"        
+          hx-post="{% url 'delete_employee' id=tenant.id empid=emp.id %}" 
+          hx-target="#data"           
+          hx-swap="outerHTML"
+          hx-select="#data"
+          hx-confirm="Are you sure ?">Delete</button>    
+        </td>        
       </tr>      
       {% endfor %}
     </tbody>
   </table>
+</div>
 </div>
 {% endblock content %}

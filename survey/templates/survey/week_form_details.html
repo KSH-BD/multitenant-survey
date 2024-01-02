@@ -23,7 +23,9 @@
     <br />
     <br />    
       <div class=""></div>
+      {% if data|length > 0 %}
       <a style="margin-top: 1em;margin-bottom: 1em;" class="ui green right floated button" href="{% url 'weekdownload' id=tenant.id formid=form.id %}">Export <i class="fa-solid fa-file-csv"></i></a>  
+      {% endif %}
 
     <table class="ui celled blue striped compact small table">
       <thead>

@@ -8,12 +8,14 @@ services:
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - .:/usr/src/app/
+      - static_volume:/home/app/web/staticfiles
     ports:
       - '8000:8000'
     env_file:
       - ./.env.prod
     depends_on:
       - db
+    restart: unless-stopped
       
   db:
     image: postgres
@@ -23,6 +25,9 @@ services:
       - POSTGRES_USER=multitenantadmin
       - POSTGRES_PASSWORD=admin@123
       - POSTGRES_DB=multitenant  
+    ports:
+      - '5432:5432'
 
 volumes:
+  static_volume:
   postgres_data:

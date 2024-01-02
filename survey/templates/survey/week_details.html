@@ -38,7 +38,7 @@
             {% endif %}
             {% if week.form.status == 'o' %}
             <div class="ui icon" data-tooltip="Copy Link">
-              <i hx-on:click="navigator.clipboard.writeText('localhost:8000{% url 'survey_form' id=tenant.id|safe formid=week.form.id|safe %}')" style="color:lightseagreen;cursor: pointer;" class="fa-solid fa-copy"></i>
+              <i hx-on:click="navigator.clipboard.writeText('https://ksholding.ddns.net{% url 'survey_form' id=tenant.id|safe formid=week.form.id|safe %}')" style="color:lightseagreen;cursor: pointer;" class="fa-solid fa-copy"></i>
             </div>
             {% endif %}
           </td>

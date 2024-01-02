@@ -23,6 +23,7 @@
           <th>Name</th>
           <th>Role</th>          
           <th></th>          
+                    
           <th>Action</th>          
         </tr>
       </thead>
@@ -40,6 +41,16 @@
             </td>
             <td>
               <a class="ui orange basic label" style="cursor: pointer;margin-top: 1em;margin-bottom: 1em;" hx-on:click="$('.ui.modal').modal('show')" hx-get="{% url 'change_password' id=tenant.id userid=user.id %}" hx-target=".contentmodal" hx-swap="innerhtml">Change Password <i class="fa-solid fa-key"></i></a>              
+            
+                <button
+                id="deletebtn"
+                class="ui mini button red right"
+                type="button"        
+                hx-post="{% url 'delete_user' id=tenant.id userid=user.id %}" 
+                hx-target="table"           
+                hx-swap="outerHTML"
+                hx-select="table"
+                hx-confirm="Are you sure ?">Delete</button>    
             </td>
           </tr>
         {% endfor %}
