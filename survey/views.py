@@ -226,8 +226,11 @@ def submit_survey_form(request, id,formid):
     tenant = Tenant.objects.get(id=id)
     f = Form.objects.get(id=formid)
     employee = Employee.objects.filter(employee_id=int(
-        request.POST.get("employeeid")), tenant=f.tenant).first()
-   
+        request.POST.get("employeeid")), tenant=f.tenant).first()       
+    
+    if Answer.objects.filter(form=f,employee=employee).first():
+        return render(request, "survey/success.html")
+
     if request.method == 'POST':
         form = FormForm(formid, request.POST)            
         if form.is_valid():
@@ -354,8 +357,8 @@ def employeedetails(request, id, employeeid):
     for curr,has_more in lookahead(Answer.objects.select_related("form").filter(employee=employee).order_by("created_at").all()):   
         if not has_more:
             temp.append(curr)
-            if not prev:
-                prev = curr
+            # if not prev:
+            #     prev = curr
             data.append({"form":prev.form,"data":temp})            
             break            
         
@@ -371,7 +374,7 @@ def employeedetails(request, id, employeeid):
             temp = []
             temp.append(curr)
             prev = curr    
-    
+    print(data)
     context = {"employee": employee, "data": data}
     return render(request, "survey/employeedetails.html", context)
 
