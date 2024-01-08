@@ -1,4 +1,5 @@
 {% extends 'survey/base.html' %}
+{% load static %}
 
 {% block content %}
 <div class="ui very padded container" >
@@ -11,7 +12,10 @@
 </h1>
 <br>
   <div style="display: flex;justify-content: space-between;align-items: center;">
-      <h1>{{ tenant.name }}</h1>      
+      <h1>{{ tenant.name }}</h1>   
+      {% if tenant.image_url %}
+      <img class="ui rounded image" width="185" height="175" style="object-fit: fill;" src="{% static tenant.image_url %}">         
+      {% endif %}
     </div>
     <br>
     <div class="ui four cards">

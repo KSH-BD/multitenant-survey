@@ -918,13 +918,35 @@ def weekdownload(request,id,formid):
     prev = None
     
     for curr,has_more in lookahead(form.answer_set.select_related("employee").order_by("employee__name")):   
+        # if not has_more:
+        #     temp.append(curr)
+        #     item.clear()
+        #     if not prev:
+        #         prev = curr
+        #     item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
+        #     data.append(item[0] + temp)            
+        #     break            
+        
+        # if not prev:
+        #     prev = curr
+        #     temp.append(curr)
+        # elif curr.employee.employee_id == prev.employee.employee_id:
+        #     prev = curr
+        #     temp.append(curr)
+        # else:
+        #     item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
+        #     data.append(item[0] + temp)
+        #     temp = []
+        #     item = []
+        #     temp.append(curr)
+        #     prev = curr
         if not has_more:
             temp.append(curr)
             item.clear()
             if not prev:
                 prev = curr
             item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
-            data.append(item[0] + temp)            
+            data.append(item[0] + sorted(temp,key=operator.attrgetter('question_id')))                                 
             break            
         
         if not prev:
@@ -932,26 +954,33 @@ def weekdownload(request,id,formid):
             temp.append(curr)
         elif curr.employee.employee_id == prev.employee.employee_id:
             prev = curr
-            temp.append(curr)
+            temp.append(curr)            
         else:
             item.append([prev.employee.name,prev.employee.email,prev.employee.phone_number,prev.employee.section])
-            data.append(item[0] + temp)
+            data.append(item[0] + sorted(temp,key=operator.attrgetter('question_id')))
             temp = []
             item = []
             temp.append(curr)
-            prev = curr
+            prev = curr 
             
     d = pd.DataFrame(data)
+
     d.columns = ["Employee Name","Email","Phone Number","Section"] + list(tenant.question_set.values_list('text', flat=True))
     
     filename = f"form_{datetime.datetime.now()}.csv"
     export_path = os.path.join(settings.MEDIA_ROOT, "media")
     fullpath = os.path.join(export_path,filename)        
-    d.to_csv(fullpath,index=False)
+    d.to_csv(fullpath,index=False,encoding='utf-8-sig')
     if os.path.exists(fullpath):
-        with open(fullpath, 'rb') as fh:
-            response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")
-            response['Content-Disposition'] = 'inline; filename=' + os.path.basename(fullpath)
+        with open(fullpath) as fh:
+            
+            # response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")                        
+            # response['Content-Disposition'] = 'inline; filename=' + os.path.basename(fullpath)
+            
+            response = HttpResponse(fh.read(),content_type='text/csv')            
+            
+            response['Content-Disposition'] = f'attachment; filename={ os.path.basename(fullpath) }'
+
             return response
     raise Http404
     # return FileResponse(open(fullpath, 'rb'), as_attachment=True)
@@ -969,7 +998,7 @@ def employeedownload(request,id):
     filename = f"employees{datetime.datetime.now()}.csv"
     export_path = os.path.join(settings.MEDIA_ROOT, "media")
     fullpath = os.path.join(export_path,filename)        
-    d.to_csv(fullpath,index=False)
+    d.to_csv(fullpath,index=False,encoding='utf-8-sig')
     if os.path.exists(fullpath):
         with open(fullpath, 'rb') as fh:
             response = HttpResponse(fh.read(), content_type="application/vnd.ms-excel")

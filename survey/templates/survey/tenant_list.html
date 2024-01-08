@@ -1,4 +1,6 @@
 {% extends 'survey/base.html' %}
+{% load static %}
+
 {% block content %}
 <div class="ui very padded container">
   <div style="display: flex;justify-content: space-between;align-items: center;">
@@ -18,7 +20,7 @@
       <tr>
         <td>        
           <a class="fluid ui basic button" href="{% url 'tenant_details' id=tenant.id %}">{{ tenant.name }}</a>
-        </td>
+        </td>        
         <td>{{ tenant.created_at|date:"d-m-Y" }}</td>
         <td>{{ tenant.updated_at|date:"d-m-Y" }}</td>
         </tr>
