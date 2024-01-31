@@ -18,7 +18,7 @@ class FormForm(forms.Form):
             field_name = f'{i.text.replace(" ", "_").replace("?","")}'
 
             if i.type == "Text":
-                if field_name == "Longitude" or "Latitude":
+                if field_name in ["Longitude","Latitude"]:
                     if self.form.tenant.has_cords:
                         self.fields[field_name] = forms.CharField(
                             label=i.text, required=i.required)
